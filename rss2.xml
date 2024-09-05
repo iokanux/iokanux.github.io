@@ -9,7 +9,7 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Do something with the world</description>
-    <pubDate>Thu, 05 Sep 2024 06:53:06 GMT</pubDate>
+    <pubDate>Thu, 05 Sep 2024 06:56:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,15 +18,11 @@
       <guid>http://example.com/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/</guid>
       <pubDate>Wed, 04 Sep 2024 10:09:55 GMT</pubDate>
       
-        
-        
-      <description>&lt;h1 id=&quot;前缀和&quot;&gt;&lt;a href=&quot;#前缀和&quot; class=&quot;headerlink&quot; title=&quot;前缀和&quot;&gt;&lt;/a&gt;前缀和&lt;/h1&gt;&lt;p&gt;测试一下&lt;/p&gt;
-&lt;figure class=&quot;highlight text&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutt</description>
-        
+      <description>&lt;h1 id=&quot;前缀和&quot;&gt;&lt;a href=&quot;#前缀和&quot; class=&quot;headerlink&quot; title=&quot;前缀和&quot;&gt;&lt;/a&gt;前缀和&lt;/h1&gt;&lt;p&gt;测试一下 &lt;/p&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<h1 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h1><p>测试一下</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    cout&lt;&lt;n&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h1><p>测试一下 </p><span id="more"></span><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    cout&lt;&lt;n&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       
