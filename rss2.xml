@@ -9,8 +9,32 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Do something with the world</description>
-    <pubDate>Thu, 05 Sep 2024 06:56:27 GMT</pubDate>
+    <pubDate>Thu, 05 Sep 2024 09:33:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>差分测试</title>
+      <link>http://example.com/2024/09/05/%E5%B7%AE%E5%88%86%E6%B5%8B%E8%AF%95/</link>
+      <guid>http://example.com/2024/09/05/%E5%B7%AE%E5%88%86%E6%B5%8B%E8%AF%95/</guid>
+      <pubDate>Thu, 05 Sep 2024 09:29:40 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">再次测试一下</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      
+      <category domain="http://example.com/tags/XCPC%E6%A8%A1%E6%9D%BF/">XCPC模板</category>
+      
+      
+      <comments>http://example.com/2024/09/05/%E5%B7%AE%E5%88%86%E6%B5%8B%E8%AF%95/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>前缀和</title>
