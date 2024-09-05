@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>iokanux</title>
+    <link>http://example.com/</link>
+    
+    <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>Do something with the world</description>
+    <pubDate>Wed, 04 Sep 2024 10:45:03 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>前缀和</title>
+      <link>http://example.com/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/</link>
+      <guid>http://example.com/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/</guid>
+      <pubDate>Wed, 04 Sep 2024 10:09:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;前缀和&quot;&gt;&lt;a href=&quot;#前缀和&quot; class=&quot;headerlink&quot; title=&quot;前缀和&quot;&gt;&lt;/a&gt;前缀和&lt;/h1&gt;&lt;p&gt;这个太难了我不会&lt;/p&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h1><p>这个太难了我不会</p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://example.com/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
