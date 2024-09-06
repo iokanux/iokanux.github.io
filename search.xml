@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>categories</title>
+    <url>/2024/09/06/categories/</url>
+    <content><![CDATA[<p>第一次测试</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">iosia</span><br><span class="line">    saioas</span><br><span class="line">    siaoias</span><br><span class="line">    siaois</span><br><span class="line">    dsjdsk</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>XCPC</category>
+      </categories>
+      <tags>
+        <tag>XCPCtest</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>前缀和</title>
     <url>/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/</url>
     <content><![CDATA[<h1 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h1><p>测试一下 </p>
 <span id="more"></span>
 
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    cout&lt;&lt;n&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>XCPC模板</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>差分测试</title>
-    <url>/2024/09/05/%E5%B7%AE%E5%88%86%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">再次测试一下</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <tags>

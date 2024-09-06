@@ -9,30 +9,33 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Do something with the world</description>
-    <pubDate>Thu, 05 Sep 2024 09:33:15 GMT</pubDate>
+    <pubDate>Fri, 06 Sep 2024 12:32:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>差分测试</title>
-      <link>http://example.com/2024/09/05/%E5%B7%AE%E5%88%86%E6%B5%8B%E8%AF%95/</link>
-      <guid>http://example.com/2024/09/05/%E5%B7%AE%E5%88%86%E6%B5%8B%E8%AF%95/</guid>
-      <pubDate>Thu, 05 Sep 2024 09:29:40 GMT</pubDate>
+      <title>categories</title>
+      <link>http://example.com/2024/09/06/categories/</link>
+      <guid>http://example.com/2024/09/06/categories/</guid>
+      <pubDate>Fri, 06 Sep 2024 12:31:21 GMT</pubDate>
       
         
         
-      <description>&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class</description>
+      <description>&lt;p&gt;第一次测试&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;</description>
         
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">再次测试一下</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<p>第一次测试</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">iosia</span><br><span class="line">    saioas</span><br><span class="line">    siaoias</span><br><span class="line">    siaois</span><br><span class="line">    dsjdsk</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
+      <category domain="http://example.com/categories/XCPC/">XCPC</category>
       
-      <category domain="http://example.com/tags/XCPC%E6%A8%A1%E6%9D%BF/">XCPC模板</category>
+      
+      <category domain="http://example.com/tags/XCPCtest/">XCPCtest</category>
       
       
-      <comments>http://example.com/2024/09/05/%E5%B7%AE%E5%88%86%E6%B5%8B%E8%AF%95/#disqus_thread</comments>
+      <comments>http://example.com/2024/09/06/categories/#disqus_thread</comments>
       
     </item>
     
