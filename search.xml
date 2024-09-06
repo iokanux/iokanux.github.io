@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>categories</title>
-    <url>/2024/09/06/categories/</url>
-    <content><![CDATA[<p>第一次测试</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">iosia</span><br><span class="line">    saioas</span><br><span class="line">    siaoias</span><br><span class="line">    siaois</span><br><span class="line">    dsjdsk</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>XCPC</category>
-      </categories>
-      <tags>
-        <tag>XCPCtest</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>前缀和</title>
     <url>/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/</url>
     <content><![CDATA[<h1 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h1><p>测试一下 </p>
@@ -25,6 +11,21 @@
 ]]></content>
       <tags>
         <tag>XCPC模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>categories</title>
+    <url>/2024/09/06/categories/</url>
+    <content><![CDATA[<p>第一次测试</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">iosia</span><br><span class="line">    saioas</span><br><span class="line">    siaoias</span><br><span class="line">    siaois</span><br><span class="line">    dsjdsk</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>XCPC</category>
+        <category>test1</category>
+      </categories>
+      <tags>
+        <tag>XCPCtest</tag>
       </tags>
   </entry>
 </search>

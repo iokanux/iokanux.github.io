@@ -9,7 +9,7 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Do something with the world</description>
-    <pubDate>Fri, 06 Sep 2024 12:32:27 GMT</pubDate>
+    <pubDate>Fri, 06 Sep 2024 12:37:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -30,6 +30,8 @@
       
       
       <category domain="http://example.com/categories/XCPC/">XCPC</category>
+      
+      <category domain="http://example.com/categories/XCPC/test1/">test1</category>
       
       
       <category domain="http://example.com/tags/XCPCtest/">XCPCtest</category>
