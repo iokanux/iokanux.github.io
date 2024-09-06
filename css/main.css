@@ -1214,7 +1214,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d9e3eb;
+  background: #74a1d0;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2752,7 +2752,7 @@ mjx-container + br {
   }
 }
 body {
-  background-image: url("/images/wheat.png");
+  background-image: url("/images/home.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
