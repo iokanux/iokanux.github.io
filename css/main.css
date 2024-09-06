@@ -1004,6 +1004,7 @@ pre .javascript .function {
   display: flex;
   flex-shrink: 0;
   padding: 0 10px;
+  border-radius: 18.8px 18.8px 0 0;
 }
 .headband {
   background: #222;
@@ -1213,7 +1214,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #6fff96;
+  background: #d9e3eb;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
