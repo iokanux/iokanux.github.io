@@ -1213,7 +1213,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #c1e88c;
+  background: #2fffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2751,7 +2751,7 @@ mjx-container + br {
   }
 }
 body {
-  background-image: url("/images/ceshi-chunzhi.png");
+  background-image: url("/images/everlastingsummer.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
