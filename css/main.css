@@ -1214,7 +1214,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7fb4ff;
+  background: #e5d226;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2410,7 +2410,7 @@ mjx-container + br {
   }
 }
 .site-brand-container {
-  background: #222;
+  background: url("/images/wheat.png");
 }
 @media (max-width: 991px) {
   .site-brand-container {
