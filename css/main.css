@@ -1213,7 +1213,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #2e9aff;
+  background: #ff294d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2751,7 +2751,7 @@ mjx-container + br {
   }
 }
 body {
-  background-image: url("/images/everlastingsummer.png");
+  background-image: url("/images/summer.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
