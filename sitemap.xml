@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2024/09/06/categories/</loc>
+    <loc>http://iokanux.com/about/index.html</loc>
     
     <lastmod>2024-09-06</lastmod>
     
@@ -11,16 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
-    
-    <lastmod>2024-09-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/</loc>
+    <loc>http://iokanux.com/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/</loc>
     
     <lastmod>2024-09-05</lastmod>
     
@@ -29,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>http://iokanux.com/tags/index.html</loc>
     
     <lastmod>2024-09-04</lastmod>
     
@@ -38,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>http://iokanux.com/categories/index.html</loc>
     
     <lastmod>2024-09-04</lastmod>
     
@@ -48,41 +39,20 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <loc>http://iokanux.com/</loc>
+    <lastmod>2024-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://example.com/tags/XCPC%E6%A8%A1%E6%9D%BF/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/XCPCtest/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <loc>http://iokanux.com/tags/XCPC%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2024-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
 
-  
-  <url>
-    <loc>http://example.com/categories/XCPC/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/categories/XCPC/test1/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
 </urlset>
