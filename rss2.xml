@@ -9,8 +9,29 @@
     <atom:link href="http://iokanux.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Do something with the world</description>
-    <pubDate>Thu, 05 Sep 2024 06:56:27 GMT</pubDate>
+    <pubDate>Sat, 07 Sep 2024 14:19:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>高精度</title>
+      <link>http://iokanux.com/2024/09/07/%E9%AB%98%E7%B2%BE%E5%BA%A6/</link>
+      <guid>http://iokanux.com/2024/09/07/%E9%AB%98%E7%B2%BE%E5%BA%A6/</guid>
+      <pubDate>Sat, 07 Sep 2024 14:14:05 GMT</pubDate>
+      
+      
+      
+      
+      <category domain="http://iokanux.com/categories/XCPC/">XCPC</category>
+      
+      <category domain="http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/">XCPC模板</category>
+      
+      <category domain="http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/">XCPC基础</category>
+      
+      
+      
+      <comments>http://iokanux.com/2024/09/07/%E9%AB%98%E7%B2%BE%E5%BA%A6/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>前缀和</title>

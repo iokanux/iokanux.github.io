@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iokanux.com/2024/09/07/%E9%AB%98%E7%B2%BE%E5%BA%A6/</loc>
+    
+    <lastmod>2024-09-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://iokanux.com/about/index.html</loc>
     
     <lastmod>2024-09-06</lastmod>
@@ -54,5 +63,26 @@
   </url>
   
 
+  
+  <url>
+    <loc>http://iokanux.com/categories/XCPC/</loc>
+    <lastmod>2024-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2024-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2024-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
