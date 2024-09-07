@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>对拍</title>
+    <url>/2024/09/07/%E5%AF%B9%E6%8B%8D/</url>
+    <content><![CDATA[<p>介绍Windows环境下与Linux环境下的对拍</p>
+<span id="more"></span>
+
+<h2 id="Windows环境"><a href="#Windows环境" class="headerlink" title="Windows环境"></a>Windows环境</h2><p>以DEV为例，首先建四个源代码到一个新建文件夹中，源代码分别命名为wa.cpp,data.cpp,violent.cpp,windows.cpp,除此之外什么也不需要添加</p>
+<ol>
+<li>一份错误的&#x2F;需要比对的代码，导入wa.cpp</li>
+<li>一份暴力的&#x2F;用来比对的代码，导入violent.cpp</li>
+<li>一份用来造数据的代码</li>
+<li>一份执行对拍程序的代码</li>
+</ol>
+<h3 id="wa-cpp"><a href="#wa-cpp" class="headerlink" title="wa.cpp"></a>wa.cpp</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;in.txt&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin); <span class="comment">//读入数据生成器造出来的数据</span></span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;wa.txt&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout); <span class="comment">//输出答案</span></span><br><span class="line">	<span class="comment">//下方注释为你的程序</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">	int a, b;</span></span><br><span class="line"><span class="comment">	cin &gt;&gt; a &gt;&gt; b;</span></span><br><span class="line"><span class="comment">	cout &lt;&lt; a;</span></span><br><span class="line"><span class="comment">	*/</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="violent-cpp"><a href="#violent-cpp" class="headerlink" title="violent.cpp"></a>violent.cpp</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;in.txt&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);      <span class="comment">//读入数据生成器造出来的数据</span></span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;violent.txt&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout); <span class="comment">//输出答案</span></span><br><span class="line">	<span class="comment">//下方程序为你已经导入的程序</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">	int a, b;</span></span><br><span class="line"><span class="comment">	cin &gt;&gt; a &gt;&gt; b;</span></span><br><span class="line"><span class="comment">	cout &lt;&lt; a + b;</span></span><br><span class="line"><span class="comment">	*/</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="data-cpp"><a href="#data-cpp" class="headerlink" title="data.cpp"></a>data.cpp</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">struct</span> <span class="title class_">_timeb</span> T;</span><br><span class="line">	_ftime(&amp;T);</span><br><span class="line">	<span class="built_in">srand</span>(T.millitm); <span class="comment">//获得毫秒，减小运行时间</span></span><br><span class="line">	<span class="type">int</span> a = <span class="built_in">rand</span>(); <span class="comment">//此时a是一个随机数字</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="windows-cpp"><a href="#windows-cpp" class="headerlink" title="windows.cpp"></a>windows.cpp</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span> (<span class="number">1</span>) &#123; <span class="comment">//一直循环，直到找到不一样的数据</span></span><br><span class="line">		<span class="built_in">system</span>(<span class="string">&quot;data.exe&quot;</span>);</span><br><span class="line">		<span class="built_in">system</span>(<span class="string">&quot;violent.exe&quot;</span>);</span><br><span class="line">		<span class="built_in">system</span>(<span class="string">&quot;wa.exe&quot;</span>);</span><br><span class="line">		<span class="keyword">if</span> (<span class="built_in">system</span>(<span class="string">&quot;fc wa.txt violent.txt&quot;</span>)) <span class="comment">//当 fc 返回 1 时，说明这时数据不一样</span></span><br><span class="line">			<span class="keyword">break</span>;                          <span class="comment">//不一样就跳出循环</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意，以上所有程序均需要编译并运行</strong></p>
+<p>当出现不同的结果时候，结果图片如下</p>
+<p><img data-src="/iokanux.com/img/202409072335187.png" alt="image-20240907233526088"></p>
+]]></content>
+      <categories>
+        <category>XCPC</category>
+        <category>XCPC模板</category>
+        <category>XCPC基础</category>
+      </categories>
+  </entry>
+  <entry>
     <title>前缀和</title>
     <url>/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/</url>
     <content><![CDATA[<h1 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h1><p>测试一下 </p>
