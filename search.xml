@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>时间复杂度</title>
-    <url>/2024/09/08/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>XCPC</tag>
-        <tag>Tips</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ICPC网络赛第一场</title>
     <url>/2024/09/08/ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA/</url>
     <content><![CDATA[<h2 id="A-Intelligent-Warehouse"><a href="#A-Intelligent-Warehouse" class="headerlink" title="A  Intelligent Warehouse"></a>A  Intelligent Warehouse</h2><h3 id="Topic"><a href="#Topic" class="headerlink" title="Topic"></a>Topic</h3><p>In <em>MI Intelligent Warehouse</em>, there are $n_{}$ products, where the $i_{}$-th product is of size $a_i$. We always need to box producsts into all kinds of containers, and it will be safer and more cost efficient(效率高的) if for any two sizes of products, one is the other’s multiple, since(因为) there won’t be any residual(残余的) room in one container. So for each boxing we need to choose some products that for any two chosen products, either $a_i$ is multiple of $a_j$ or $a_j$ is multiple of $a_i$. Print the maximum number of products that can be chosen in one boxing.</p>
@@ -66,6 +57,19 @@
       </categories>
   </entry>
   <entry>
+    <title>前缀和</title>
+    <url>/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/</url>
+    <content><![CDATA[<h1 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h1><p>测试一下 </p>
+<span id="more"></span>
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    cout&lt;&lt;n&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>XCPC模板</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>XCPC中的时间技巧</title>
     <url>/2024/09/08/XCPC%E4%B8%AD%E7%9A%84%E6%97%B6%E9%97%B4%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<p>除了时间复杂度,还有什么会影响程序的运行时间</p>
@@ -90,16 +94,12 @@
       </categories>
   </entry>
   <entry>
-    <title>前缀和</title>
-    <url>/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/</url>
-    <content><![CDATA[<h1 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h1><p>测试一下 </p>
-<span id="more"></span>
-
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    cout&lt;&lt;n&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
+    <title>时间复杂度</title>
+    <url>/2024/09/08/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
+    <content><![CDATA[]]></content>
       <tags>
-        <tag>XCPC模板</tag>
+        <tag>XCPC</tag>
+        <tag>Tips</tag>
       </tags>
   </entry>
   <entry>
