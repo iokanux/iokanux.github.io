@@ -36,21 +36,19 @@
       })();
   </script>
 
-  <meta name="description" content="介绍Windows环境下与Linux环境下的对拍">
+  <meta name="description" content="割点与桥割点(cut vertex &#x2F; articulation point）给出定义：删除该点后导致图不再连通的点称为割点 求割点的方法称为tarjan，在连通性相关的问题中广泛运用了该方法 tarjan的主要思想就是dfn与low数组 dfn：时间戳数组，dfn[i]称为节点i的dfs序 dfs序指的是在dfs过程中，该节点是第几个被访问到的节点。dfn数组的值随dfs过程单调上升。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="对拍">
-<meta property="og:url" content="http://iokanux.com/2024/09/07/%E5%AF%B9%E6%8B%8D/index.html">
+<meta property="og:title" content="连通性相关">
+<meta property="og:url" content="http://iokanux.com/2024/09/09/%E8%BF%9E%E9%80%9A%E6%80%A7%E7%9B%B8%E5%85%B3/index.html">
 <meta property="og:site_name" content="iokanux">
-<meta property="og:description" content="介绍Windows环境下与Linux环境下的对拍">
+<meta property="og:description" content="割点与桥割点(cut vertex &#x2F; articulation point）给出定义：删除该点后导致图不再连通的点称为割点 求割点的方法称为tarjan，在连通性相关的问题中广泛运用了该方法 tarjan的主要思想就是dfn与low数组 dfn：时间戳数组，dfn[i]称为节点i的dfs序 dfs序指的是在dfs过程中，该节点是第几个被访问到的节点。dfn数组的值随dfs过程单调上升。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://iokanux.com/iokanux.com/img/202409072335187.png">
-<meta property="article:published_time" content="2024-09-07T15:15:41.000Z">
-<meta property="article:modified_time" content="2024-09-07T15:36:35.439Z">
+<meta property="article:published_time" content="2024-09-09T06:50:56.000Z">
+<meta property="article:modified_time" content="2024-09-09T08:29:50.699Z">
 <meta property="article:author" content="iokanux">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://iokanux.com/iokanux.com/img/202409072335187.png">
 
-<link rel="canonical" href="http://iokanux.com/2024/09/07/%E5%AF%B9%E6%8B%8D/">
+<link rel="canonical" href="http://iokanux.com/2024/09/09/%E8%BF%9E%E9%80%9A%E6%80%A7%E7%9B%B8%E5%85%B3/">
 
 
 <script id="page-configurations">
@@ -63,7 +61,7 @@
   };
 </script>
 
-  <title>对拍 | iokanux</title>
+  <title>连通性相关 | iokanux</title>
   
 
 
@@ -203,7 +201,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/07/%E5%AF%B9%E6%8B%8D/">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/09/%E8%BF%9E%E9%80%9A%E6%80%A7%E7%9B%B8%E5%85%B3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wodetouxiang.png">
@@ -216,7 +214,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          对拍
+          连通性相关
         </h1>
 
         <div class="post-meta">
@@ -227,7 +225,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2024-09-07 23:15:41 / Modified: 23:36:35" itemprop="dateCreated datePublished" datetime="2024-09-07T23:15:41+08:00">2024-09-07</time>
+              <time title="Created: 2024-09-09 14:50:56 / Modified: 16:29:50" itemprop="dateCreated datePublished" datetime="2024-09-09T14:50:56+08:00">2024-09-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -243,7 +241,7 @@
                 </span>
                   , 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">XCPC基础</span></a>
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/" itemprop="url" rel="index"><span itemprop="name">XCPC图论</span></a>
                 </span>
             </span>
 
@@ -263,8 +261,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2024/09/07/%E5%AF%B9%E6%8B%8D/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/07/%E5%AF%B9%E6%8B%8D/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/09/09/%E8%BF%9E%E9%80%9A%E6%80%A7%E7%9B%B8%E5%85%B3/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/09/%E8%BF%9E%E9%80%9A%E6%80%A7%E7%9B%B8%E5%85%B3/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -279,28 +277,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>介绍Windows环境下与Linux环境下的对拍</p>
-<span id="more"></span>
+        <h2 id="割点与桥"><a href="#割点与桥" class="headerlink" title="割点与桥"></a>割点与桥</h2><h3 id="割点-cut-vertex-articulation-point）"><a href="#割点-cut-vertex-articulation-point）" class="headerlink" title="割点(cut vertex &#x2F; articulation point）"></a>割点(cut vertex &#x2F; articulation point）</h3><p>给出定义：删除该点后导致图不再连通的点称为割点</p>
+<p>求割点的方法称为tarjan，在连通性相关的问题中广泛运用了该方法</p>
+<p>tarjan的主要思想就是dfn与low数组</p>
+<p>dfn：时间戳数组，dfn[i]称为节点i的dfs序</p>
+<p>dfs序指的是在dfs过程中，该节点是第几个被访问到的节点。dfn数组的值随dfs过程单调上升。</p>
+<p>low[i] 代表节点 i 在不直接返回父亲节点的情况下，通过“绕路”，能够访问到的节点里，最小的dfn值</p>
+<p>由于割点与dfn数组的性质，不返回父亲节点的情况下，其low数组一定不小于dfn数组</p>
+<p>特别的，根节点的判断方法为子节点大于1</p>
+<h2 id="双连通分量-Biconnected-component"><a href="#双连通分量-Biconnected-component" class="headerlink" title="双连通分量 (Biconnected component)"></a>双连通分量 (Biconnected component)</h2><p>由于是双连通图，所以这部分讨论的均为无向图</p>
+<h3 id="边双连通分量-EBC"><a href="#边双连通分量-EBC" class="headerlink" title="边双连通分量 (EBC)"></a>边双连通分量 (EBC)</h3><p>边双是Edge Biconnected Component，所以其实是EBCC，但是为了和割边缩点(EBCC)区别开，这里我们命名为EBC</p>
+<p>给出定义：不存在割边&#x2F;桥的极大双连通子图称为边双连通分量</p>
+<p>所以求边双的方法也很显然，将一张图中的所有割边&#x2F;桥断掉后，剩下的连通块均为一个边双，边双与边双之间以割边&#x2F;桥连接成一棵树</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">EBC</span> &#123;</span><br><span class="line">    vector&lt;vector&lt;PII&gt;&gt;adj;</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;ans;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;dfn,low,stk;</span><br><span class="line">    <span class="type">int</span> cur,n;</span><br><span class="line">    <span class="built_in">EBC</span>()&#123;&#125;;</span><br><span class="line">    <span class="built_in">EBC</span>(<span class="type">int</span> n)&#123;</span><br><span class="line">        <span class="built_in">init</span>(n);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(<span class="type">int</span> n)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>-&gt;n=n;</span><br><span class="line">        adj.<span class="built_in">resize</span>(n,&#123;&#125;);</span><br><span class="line">        dfn.<span class="built_in">resize</span>(n,<span class="number">-1</span>);</span><br><span class="line">        low.<span class="built_in">resize</span>(n);</span><br><span class="line">        stk.<span class="built_in">clear</span>();</span><br><span class="line">        cur=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">edge</span><span class="params">(<span class="type">int</span> u,<span class="type">int</span> v,<span class="type">int</span> i)</span></span>&#123;</span><br><span class="line">        adj[u].<span class="built_in">push_back</span>(&#123;v,i&lt;&lt;<span class="number">1</span>&#125;);</span><br><span class="line">        adj[v].<span class="built_in">push_back</span>(&#123;u,i&lt;&lt;<span class="number">1</span>|<span class="number">1</span>&#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> u,<span class="type">int</span> p)</span></span>&#123;</span><br><span class="line">        stk.<span class="built_in">push_back</span>(u);</span><br><span class="line">        dfn[u]=low[u]=cur++;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> i:adj[u])&#123;</span><br><span class="line">            <span class="keyword">if</span>(i.second==(p^<span class="number">1</span>)) <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">if</span>(dfn[i.first]==<span class="number">-1</span>)&#123;</span><br><span class="line">                <span class="built_in">dfs</span>(i.first,i.second);</span><br><span class="line">                low[u]=<span class="built_in">min</span>(low[u],low[i.first]);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                low[u]=<span class="built_in">min</span>(low[u],dfn[i.first]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(dfn[u]==low[u])&#123;</span><br><span class="line">            vector&lt;<span class="type">int</span>&gt;vec;</span><br><span class="line">            <span class="type">int</span> y;</span><br><span class="line">            <span class="keyword">do</span>&#123;</span><br><span class="line">                y=stk.<span class="built_in">back</span>();</span><br><span class="line">                vec.<span class="built_in">push_back</span>(y);</span><br><span class="line">                stk.<span class="built_in">pop_back</span>();</span><br><span class="line">            &#125;<span class="keyword">while</span>(y!=u);</span><br><span class="line">            ans.<span class="built_in">push_back</span>(vec);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">work</span>()&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(dfn[i]==<span class="number">-1</span>)&#123;</span><br><span class="line">                <span class="built_in">dfs</span>(i,<span class="number">0</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<h2 id="Windows环境"><a href="#Windows环境" class="headerlink" title="Windows环境"></a>Windows环境</h2><p>以DEV为例，首先建四个源代码到一个新建文件夹中，源代码分别命名为wa.cpp,data.cpp,violent.cpp,windows.cpp,除此之外什么也不需要添加</p>
-<ol>
-<li>一份错误的&#x2F;需要比对的代码，导入wa.cpp</li>
-<li>一份暴力的&#x2F;用来比对的代码，导入violent.cpp</li>
-<li>一份用来造数据的代码</li>
-<li>一份执行对拍程序的代码</li>
-</ol>
-<h3 id="wa-cpp"><a href="#wa-cpp" class="headerlink" title="wa.cpp"></a>wa.cpp</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;in.txt&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin); <span class="comment">//读入数据生成器造出来的数据</span></span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;wa.txt&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout); <span class="comment">//输出答案</span></span><br><span class="line">	<span class="comment">//下方注释为你的程序</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">	int a, b;</span></span><br><span class="line"><span class="comment">	cin &gt;&gt; a &gt;&gt; b;</span></span><br><span class="line"><span class="comment">	cout &lt;&lt; a;</span></span><br><span class="line"><span class="comment">	*/</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Employ"><a href="#Employ" class="headerlink" title="Employ"></a>Employ</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">EBC <span class="title">ebc</span><span class="params">(n<span class="number">+1</span>)</span></span>;<span class="comment">//建EBC</span></span><br><span class="line">ebc.<span class="built_in">edge</span>(u,v,i)<span class="comment">//i是for读入数据的i</span></span><br><span class="line"><span class="keyword">auto</span> ans=ebc.<span class="built_in">work</span>()<span class="comment">//ans数组存储每个双连通分量</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> i:ans)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> j:i)&#123;</span><br><span class="line">        <span class="comment">//每个边双的点</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="violent-cpp"><a href="#violent-cpp" class="headerlink" title="violent.cpp"></a>violent.cpp</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;in.txt&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);      <span class="comment">//读入数据生成器造出来的数据</span></span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;violent.txt&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout); <span class="comment">//输出答案</span></span><br><span class="line">	<span class="comment">//下方程序为你已经导入的程序</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">	int a, b;</span></span><br><span class="line"><span class="comment">	cin &gt;&gt; a &gt;&gt; b;</span></span><br><span class="line"><span class="comment">	cout &lt;&lt; a + b;</span></span><br><span class="line"><span class="comment">	*/</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="data-cpp"><a href="#data-cpp" class="headerlink" title="data.cpp"></a>data.cpp</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">struct</span> <span class="title class_">_timeb</span> T;</span><br><span class="line">	_ftime(&amp;T);</span><br><span class="line">	<span class="built_in">srand</span>(T.millitm); <span class="comment">//获得毫秒，减小运行时间</span></span><br><span class="line">	<span class="type">int</span> a = <span class="built_in">rand</span>(); <span class="comment">//此时a是一个随机数字</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="windows-cpp"><a href="#windows-cpp" class="headerlink" title="windows.cpp"></a>windows.cpp</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span> (<span class="number">1</span>) &#123; <span class="comment">//一直循环，直到找到不一样的数据</span></span><br><span class="line">		<span class="built_in">system</span>(<span class="string">&quot;data.exe&quot;</span>);</span><br><span class="line">		<span class="built_in">system</span>(<span class="string">&quot;violent.exe&quot;</span>);</span><br><span class="line">		<span class="built_in">system</span>(<span class="string">&quot;wa.exe&quot;</span>);</span><br><span class="line">		<span class="keyword">if</span> (<span class="built_in">system</span>(<span class="string">&quot;fc wa.txt violent.txt&quot;</span>)) <span class="comment">//当 fc 返回 1 时，说明这时数据不一样</span></span><br><span class="line">			<span class="keyword">break</span>;                          <span class="comment">//不一样就跳出循环</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>注意，以上所有程序均需要编译并运行</strong></p>
-<p>当出现不同的结果时候，结果图片如下</p>
-<p><img data-src="/iokanux.com/img/202409072335187.png" alt="image-20240907233526088"></p>
-
+<h3 id="点双连通分量-VBC"><a href="#点双连通分量-VBC" class="headerlink" title="点双连通分量(VBC)"></a>点双连通分量(VBC)</h3>
     </div>
 
     
@@ -315,7 +308,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="http://iokanux.com/2024/09/07/%E5%AF%B9%E6%8B%8D/" title="对拍">http://iokanux.com/2024/09/07/对拍/</a>
+    <a href="http://iokanux.com/2024/09/09/%E8%BF%9E%E9%80%9A%E6%80%A7%E7%9B%B8%E5%85%B3/" title="连通性相关">http://iokanux.com/2024/09/09/连通性相关/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -351,13 +344,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2024/09/07/%E9%AB%98%E7%B2%BE%E5%BA%A6/" rel="prev" title="高精度">
-      <i class="fa fa-chevron-left"></i> 高精度
+    <a href="/2024/09/08/XCPC%E4%B8%AD%E7%9A%84%E6%97%B6%E9%97%B4%E6%8A%80%E5%B7%A7/" rel="prev" title="XCPC中的时间技巧">
+      <i class="fa fa-chevron-left"></i> XCPC中的时间技巧
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2024/09/08/ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA/" rel="next" title="ICPC网络赛第一场">
-      ICPC网络赛第一场 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -417,7 +407,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Windows%E7%8E%AF%E5%A2%83"><span class="nav-number">1.</span> <span class="nav-text">Windows环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#wa-cpp"><span class="nav-number">1.1.</span> <span class="nav-text">wa.cpp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#violent-cpp"><span class="nav-number">1.2.</span> <span class="nav-text">violent.cpp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#data-cpp"><span class="nav-number">1.3.</span> <span class="nav-text">data.cpp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#windows-cpp"><span class="nav-number">1.4.</span> <span class="nav-text">windows.cpp</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%B2%E7%82%B9%E4%B8%8E%E6%A1%A5"><span class="nav-number">1.</span> <span class="nav-text">割点与桥</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%B2%E7%82%B9-cut-vertex-articulation-point%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">割点(cut vertex &#x2F; articulation point）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8C%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F-Biconnected-component"><span class="nav-number">2.</span> <span class="nav-text">双连通分量 (Biconnected component)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%B9%E5%8F%8C%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F-EBC"><span class="nav-number">2.1.</span> <span class="nav-text">边双连通分量 (EBC)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Employ"><span class="nav-number">2.1.1.</span> <span class="nav-text">Employ</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%82%B9%E5%8F%8C%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F-VBC"><span class="nav-number">2.2.</span> <span class="nav-text">点双连通分量(VBC)</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
