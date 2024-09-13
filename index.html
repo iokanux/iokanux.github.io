@@ -198,7 +198,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/09/%E8%BF%9E%E9%80%9A%E6%80%A7%E7%9B%B8%E5%85%B3/">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/12/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/2024CCPC%E7%BD%91%E7%BB%9C%E8%B5%9B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wodetouxiang.png">
@@ -212,7 +212,114 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/09/09/%E8%BF%9E%E9%80%9A%E6%80%A7%E7%9B%B8%E5%85%B3/" class="post-title-link" itemprop="url">连通性相关</a>
+            <a href="/2024/09/12/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/2024CCPC%E7%BD%91%E7%BB%9C%E8%B5%9B/" class="post-title-link" itemprop="url">2024CCPC网络赛</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-09-12 19:03:33" itemprop="dateCreated datePublished" datetime="2024-09-12T19:03:33+08:00">2024-09-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-09-13 14:13:05" itemprop="dateModified" datetime="2024-09-13T14:13:05+08:00">2024-09-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/" itemprop="url" rel="index"><span itemprop="name">XCPC系列赛</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/09/12/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/2024CCPC%E7%BD%91%E7%BB%9C%E8%B5%9B/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/12/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/2024CCPC%E7%BD%91%E7%BB%9C%E8%B5%9B/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <span id="more"></span>
+
+<h2 id="B-军训-II"><a href="#B-军训-II" class="headerlink" title="B 军训 II"></a>B 军训 II</h2><p>对于这类问题一个很经典的思路就是求每个位置的贡献</p>
+<p>首先能感性的判断出来从小到大&#x2F;从大到小排不整齐度是最小的(因为最大&#x2F;最小值都是依次递增的)</p>
+<p>然后可以理性的证明一下：</p>
+<p>对于已经排好序的数组a 有a1&lt;&#x3D;a2&lt;&#x3D;a3&lt;&#x3D;…&lt;&#x3D;an,此时交换a2,ak(假设a2&lt;ak);</p>
+<p>交换完的结果就是l在[1,k-1],r在[l,k-1]的区间内最大值变大，最小值不变,l在[k,n]，r在[l,n]的区间内最大值不变，最小值变小</p>
+<p>身高相同的人可以交换位置,$A_{k}^k$,表示k个身高相同的人的排列方案,</p>
+<p>注意特判全相等序列(从小到大和从大到小排列一样)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n);</span><br><span class="line">    map&lt;<span class="type">int</span>,<span class="type">int</span>&gt;mp;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;a[i];mp[a[i]]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">sort</span>(a.<span class="built_in">begin</span>(),a.<span class="built_in">end</span>());</span><br><span class="line">    <span class="type">int</span> ans1=<span class="number">0</span>,ans2=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=i;j&lt;n;j++)&#123;</span><br><span class="line">            ans1+=a[j]-a[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">auto</span> A=[&amp;](<span class="type">int</span> x)&#123;</span><br><span class="line">        <span class="type">int</span> tem=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=x;i++)&#123;</span><br><span class="line">            tem=(tem*i)%mod;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> tem;</span><br><span class="line">    &#125;;</span><br><span class="line">    a.<span class="built_in">erase</span>(<span class="built_in">unique</span>(a.<span class="built_in">begin</span>(),a.<span class="built_in">end</span>()),a.<span class="built_in">end</span>());</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> i:a)&#123;</span><br><span class="line">        ans2=(ans2*<span class="built_in">A</span>(mp[i]))%mod;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(a.<span class="built_in">size</span>()!=<span class="number">1</span>) ans2=(ans2*<span class="number">2</span>)%mod;</span><br><span class="line">    cout&lt;&lt;ans1&lt;&lt;<span class="string">&#x27; &#x27;</span>&lt;&lt;ans2&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="K-取沙子游戏"><a href="#K-取沙子游戏" class="headerlink" title="K 取沙子游戏"></a>K 取沙子游戏</h2><p>考虑n的奇偶性</p>
+<p>当n为奇数时，第一手取1必然获胜</p>
+<p>当n为偶数时，考虑变成必胜态，即将n减去某两个数得到奇数，可知这两个数必然为一奇一偶，且先手必选偶数，当先手选择奇数后，后手必胜。</p>
+<p>由于选择的是偶数，初步猜想寄了，因为后手必然不会选择奇数，所以后手选择偶数阻止先手到达必胜态，此时第二轮到达先手手上的数还是偶数，这样归纳一下可以发现当n为偶数的时候，先后手都只会选择偶数</p>
+<p>考虑二进制，当先手第一次选择lowbit(n)时，后手无论选择什么我们都和其选择一样即可获胜，因为二进制下需要偶数次选择偶数才能将这个数归零</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/11/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/ICPC%C2%B72020%C2%B7%E5%B0%8F%E7%B1%B3%E7%BD%91%E7%BB%9C%E8%B5%9B%E4%BA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Do something with the world">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iokanux">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/09/11/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/ICPC%C2%B72020%C2%B7%E5%B0%8F%E7%B1%B3%E7%BD%91%E7%BB%9C%E8%B5%9B%E4%BA%8C/" class="post-title-link" itemprop="url">ICPC·2020·小米网络赛二</a>
         </h2>
 
         <div class="post-meta">
@@ -223,7 +330,366 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2024-09-09 14:50:56 / Modified: 21:30:44" itemprop="dateCreated datePublished" datetime="2024-09-09T14:50:56+08:00">2024-09-09</time>
+              <time title="Created: 2024-09-11 18:55:39 / Modified: 21:31:06" itemprop="dateCreated datePublished" datetime="2024-09-11T18:55:39+08:00">2024-09-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/" itemprop="url" rel="index"><span itemprop="name">XCPC系列赛</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/09/11/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/ICPC%C2%B72020%C2%B7%E5%B0%8F%E7%B1%B3%E7%BD%91%E7%BB%9C%E8%B5%9B%E4%BA%8C/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/11/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/ICPC%C2%B72020%C2%B7%E5%B0%8F%E7%B1%B3%E7%BD%91%E7%BB%9C%E8%B5%9B%E4%BA%8C/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <span id="more"></span>
+
+<h2 id="G-Shift-and-Reverse"><a href="#G-Shift-and-Reverse" class="headerlink" title="G Shift and Reverse"></a>G Shift and Reverse</h2><h3 id="Topic"><a href="#Topic" class="headerlink" title="Topic"></a>Topic</h3><p>Bobo has a sequence $a_1,a_2,\dots,a_n$. He can rearrange the sequence using the following operation any number of times:  </p>
+<p>+ Select an integer i ($1 \le i \le n$) and change the sequence to $a_i, a_{i-1}, \dots, a_1, a_n, a_{n-1}, \dots, a_{i+1}$.  </p>
+<p>Bobo would like to know the number of different sequences can be obtained modulo $(10^9+7)$.</p>
+<p>波波有一个序列$a_1,a_2,\dots,a_n$。他可以使用以下操作任意次数重新排列序列:</p>
+<p>选择整数i($1 \le i \le n$)并将序列更改为$a_i, a_{i-1}, \dots, a_1, a_n, a_{n-1}, \dots, a_{i+1}$。</p>
+<p>Bobo想知道有多少个不同的序列对$(10^9+7)$取模。</p>
+<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>遇到题目没思路就先模拟一下</p>
+<p>一个新的数组a,标号从a1-an,假定选择k进行反转操作，执行操作后的序列为$a_{k},a_{k-1}…a_{k+2},a_{k+1},$</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E7%9B%B8%E5%85%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Do something with the world">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iokanux">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E7%9B%B8%E5%85%B3/" class="post-title-link" itemprop="url">矩阵相关</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-09-11 18:12:22 / Modified: 18:33:12" itemprop="dateCreated datePublished" datetime="2024-09-11T18:12:22+08:00">2024-09-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/" itemprop="url" rel="index"><span itemprop="name">XCPC模板</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E8%AE%BA/" itemprop="url" rel="index"><span itemprop="name">XCPC数论</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E7%9B%B8%E5%85%B3/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E7%9B%B8%E5%85%B3/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <span id="more"></span>
+
+<h2 id="Matrix-Determinant-Lemma-矩阵行列式引理"><a href="#Matrix-Determinant-Lemma-矩阵行列式引理" class="headerlink" title="Matrix Determinant Lemma(矩阵行列式引理)"></a>Matrix Determinant Lemma(矩阵行列式引理)</h2><h3 id="引理"><a href="#引理" class="headerlink" title="引理"></a>引理</h3><p>对于可逆矩阵A,存在det($A+uv^T$)&#x3D;det(A)*($1+v^TA^{-1}u$)</p>
+<h3 id="题型"><a href="#题型" class="headerlink" title="题型"></a>题型</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/7502/D">D-Determinant_2020ICPC·小米 网络选拔赛第二场 (nowcoder.com)</a></li>
+<li></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AD%90%E5%BA%8F%E5%88%97%E7%9B%B8%E5%85%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Do something with the world">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iokanux">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AD%90%E5%BA%8F%E5%88%97%E7%9B%B8%E5%85%B3/" class="post-title-link" itemprop="url">子序列相关</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-09-11 13:40:25 / Modified: 16:23:10" itemprop="dateCreated datePublished" datetime="2024-09-11T13:40:25+08:00">2024-09-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/" itemprop="url" rel="index"><span itemprop="name">XCPC模板</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" itemprop="url" rel="index"><span itemprop="name">XCPC动态规划</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AD%90%E5%BA%8F%E5%88%97%E7%9B%B8%E5%85%B3/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AD%90%E5%BA%8F%E5%88%97%E7%9B%B8%E5%85%B3/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>动态规划中的子序列问题</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AD%90%E5%BA%8F%E5%88%97%E7%9B%B8%E5%85%B3/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Do something with the world">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iokanux">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/" class="post-title-link" itemprop="url">拓扑排序</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-09-10 21:45:15" itemprop="dateCreated datePublished" datetime="2024-09-10T21:45:15+08:00">2024-09-10</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/Dijkstra/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Do something with the world">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iokanux">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/Dijkstra/" class="post-title-link" itemprop="url">Dijkstra</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-09-10 21:41:56 / Modified: 21:44:43" itemprop="dateCreated datePublished" datetime="2024-09-10T21:41:56+08:00">2024-09-10</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -252,8 +718,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2024/09/09/%E8%BF%9E%E9%80%9A%E6%80%A7%E7%9B%B8%E5%85%B3/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/09/%E8%BF%9E%E9%80%9A%E6%80%A7%E7%9B%B8%E5%85%B3/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/Dijkstra/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/Dijkstra/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -268,117 +734,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="割点与桥"><a href="#割点与桥" class="headerlink" title="割点与桥"></a>割点与桥</h2><h3 id="割点-cut-vertex-articulation-point）"><a href="#割点-cut-vertex-articulation-point）" class="headerlink" title="割点(cut vertex &#x2F; articulation point）"></a>割点(cut vertex &#x2F; articulation point）</h3><p>给出定义：删除该点后导致图不再连通的点称为割点</p>
-<p>求割点的方法称为tarjan，在连通性相关的问题中广泛运用了该方法</p>
-<p>tarjan的主要思想就是dfn与low数组</p>
-<p>dfn：时间戳数组，dfn[i]称为节点i的dfs序</p>
-<p>dfs序指的是在dfs过程中，该节点是第几个被访问到的节点。dfn数组的值随dfs过程单调上升。</p>
-<p>low[i] 代表节点 i 在不直接返回父亲节点的情况下，通过“绕路”，能够访问到的节点里，最小的dfn值</p>
-<p>由于割点与dfn数组的性质，不返回父亲节点的情况下，其low数组一定不小于dfn数组</p>
-<p>特别的，根节点的判断方法为子节点大于1</p>
-<h2 id="双连通分量-Biconnected-component"><a href="#双连通分量-Biconnected-component" class="headerlink" title="双连通分量 (Biconnected component)"></a>双连通分量 (Biconnected component)</h2><p>由于是双连通图，所以这部分讨论的均为无向图</p>
-<h3 id="边双连通分量-EBC"><a href="#边双连通分量-EBC" class="headerlink" title="边双连通分量 (EBC)"></a>边双连通分量 (EBC)</h3><p>边双是Edge Biconnected Component，所以其实是EBCC，但是为了和割边缩点(EBCC)区别开，这里我们命名为EBC</p>
-<p>给出定义：不存在割边&#x2F;桥的极大双连通子图称为边双连通分量</p>
-<p>所以求边双的方法也很显然，将一张图中的所有割边&#x2F;桥断掉后，剩下的连通块均为一个边双，边双与边双之间以割边&#x2F;桥连接成一棵树</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">EBC</span> &#123;</span><br><span class="line">    vector&lt;vector&lt;PII&gt;&gt;adj;</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;ans;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;dfn,low,stk;</span><br><span class="line">    <span class="type">int</span> cur,n;</span><br><span class="line">    <span class="built_in">EBC</span>()&#123;&#125;;</span><br><span class="line">    <span class="built_in">EBC</span>(<span class="type">int</span> n)&#123;</span><br><span class="line">        <span class="built_in">init</span>(n);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(<span class="type">int</span> n)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>-&gt;n=n;</span><br><span class="line">        adj.<span class="built_in">resize</span>(n,&#123;&#125;);</span><br><span class="line">        dfn.<span class="built_in">resize</span>(n,<span class="number">-1</span>);</span><br><span class="line">        low.<span class="built_in">resize</span>(n);</span><br><span class="line">        stk.<span class="built_in">clear</span>();</span><br><span class="line">        cur=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">edge</span><span class="params">(<span class="type">int</span> u,<span class="type">int</span> v,<span class="type">int</span> i)</span></span>&#123;</span><br><span class="line">        adj[u].<span class="built_in">push_back</span>(&#123;v,i&lt;&lt;<span class="number">1</span>&#125;);</span><br><span class="line">        adj[v].<span class="built_in">push_back</span>(&#123;u,i&lt;&lt;<span class="number">1</span>|<span class="number">1</span>&#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> u,<span class="type">int</span> p)</span></span>&#123;</span><br><span class="line">        stk.<span class="built_in">push_back</span>(u);</span><br><span class="line">        dfn[u]=low[u]=cur++;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> i:adj[u])&#123;</span><br><span class="line">            <span class="keyword">if</span>(i.second==(p^<span class="number">1</span>)) <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">if</span>(dfn[i.first]==<span class="number">-1</span>)&#123;</span><br><span class="line">                <span class="built_in">dfs</span>(i.first,i.second);</span><br><span class="line">                low[u]=<span class="built_in">min</span>(low[u],low[i.first]);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                low[u]=<span class="built_in">min</span>(low[u],dfn[i.first]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(dfn[u]==low[u])&#123;</span><br><span class="line">            vector&lt;<span class="type">int</span>&gt;vec;</span><br><span class="line">            <span class="type">int</span> y;</span><br><span class="line">            <span class="keyword">do</span>&#123;</span><br><span class="line">                y=stk.<span class="built_in">back</span>();</span><br><span class="line">                vec.<span class="built_in">push_back</span>(y);</span><br><span class="line">                stk.<span class="built_in">pop_back</span>();</span><br><span class="line">            &#125;<span class="keyword">while</span>(y!=u);</span><br><span class="line">            ans.<span class="built_in">push_back</span>(vec);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">work</span>()&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(dfn[i]==<span class="number">-1</span>)&#123;</span><br><span class="line">                <span class="built_in">dfs</span>(i,<span class="number">0</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="Employ"><a href="#Employ" class="headerlink" title="Employ"></a>Employ</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">EBC <span class="title">ebc</span><span class="params">(n<span class="number">+1</span>)</span></span>;<span class="comment">//建EBC</span></span><br><span class="line">ebc.<span class="built_in">edge</span>(u,v,i)<span class="comment">//i是for读入数据的i</span></span><br><span class="line"><span class="keyword">auto</span> ans=ebc.<span class="built_in">work</span>()<span class="comment">//ans数组存储每个双连通分量</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> i:ans)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> j:i)&#123;</span><br><span class="line">        <span class="comment">//每个边双的点</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="点双连通分量-VBC"><a href="#点双连通分量-VBC" class="headerlink" title="点双连通分量(VBC)"></a>点双连通分量(VBC)</h3>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/08/XCPC%E4%B8%AD%E7%9A%84%E6%97%B6%E9%97%B4%E6%8A%80%E5%B7%A7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wodetouxiang.png">
-      <meta itemprop="name" content="iokanux">
-      <meta itemprop="description" content="Do something with the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="iokanux">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/09/08/XCPC%E4%B8%AD%E7%9A%84%E6%97%B6%E9%97%B4%E6%8A%80%E5%B7%A7/" class="post-title-link" itemprop="url">XCPC中的时间技巧</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-09-08 15:55:28" itemprop="dateCreated datePublished" datetime="2024-09-08T15:55:28+08:00">2024-09-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-09-09 21:31:10" itemprop="dateModified" datetime="2024-09-09T21:31:10+08:00">2024-09-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/Tips/" itemprop="url" rel="index"><span itemprop="name">Tips</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/09/08/XCPC%E4%B8%AD%E7%9A%84%E6%97%B6%E9%97%B4%E6%8A%80%E5%B7%A7/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/08/XCPC%E4%B8%AD%E7%9A%84%E6%97%B6%E9%97%B4%E6%8A%80%E5%B7%A7/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>除了时间复杂度,还有什么会影响程序的运行时间</p>
+          <p>只介绍堆优化版的Dijikstra写法</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2024/09/08/XCPC%E4%B8%AD%E7%9A%84%E6%97%B6%E9%97%B4%E6%8A%80%E5%B7%A7/#more" rel="contents">
+              <a class="btn" href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/Dijkstra/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -402,7 +761,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/08/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%93%88%E5%B8%8C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wodetouxiang.png">
@@ -416,7 +775,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/09/08/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="post-title-link" itemprop="url">时间复杂度</a>
+            <a href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%93%88%E5%B8%8C/" class="post-title-link" itemprop="url">哈希</a>
         </h2>
 
         <div class="post-meta">
@@ -427,186 +786,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2024-09-08 15:14:11 / Modified: 21:28:07" itemprop="dateCreated datePublished" datetime="2024-09-08T15:14:11+08:00">2024-09-08</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/09/08/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/08/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/08/ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wodetouxiang.png">
-      <meta itemprop="name" content="iokanux">
-      <meta itemprop="description" content="Do something with the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="iokanux">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/09/08/ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA/" class="post-title-link" itemprop="url">ICPC网络赛第一场</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-09-08 11:58:33" itemprop="dateCreated datePublished" datetime="2024-09-08T11:58:33+08:00">2024-09-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-09-09 21:30:58" itemprop="dateModified" datetime="2024-09-09T21:30:58+08:00">2024-09-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/" itemprop="url" rel="index"><span itemprop="name">XCPC系列赛</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/09/08/ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/08/ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="A-Intelligent-Warehouse"><a href="#A-Intelligent-Warehouse" class="headerlink" title="A  Intelligent Warehouse"></a>A  Intelligent Warehouse</h2><h3 id="Topic"><a href="#Topic" class="headerlink" title="Topic"></a>Topic</h3><p>In <em>MI Intelligent Warehouse</em>, there are $n_{}$ products, where the $i_{}$-th product is of size $a_i$. We always need to box producsts into all kinds of containers, and it will be safer and more cost efficient(效率高的) if for any two sizes of products, one is the other’s multiple, since(因为) there won’t be any residual(残余的) room in one container. So for each boxing we need to choose some products that for any two chosen products, either $a_i$ is multiple of $a_j$ or $a_j$ is multiple of $a_i$. Print the maximum number of products that can be chosen in one boxing.</p>
-<p>在mi智能仓库中，有$n_{}$个产品，其中$i_{}$个产品的尺寸为$a_i$。我们总是需要把产品装进各种各样的容器中，如果任意两个尺寸的产品，一个是另一个的倍数，这样会更安全且成本效益更高，因为一个容器里不会有剩余的空间。因此，对于每次装箱，我们需要选择一些产品，对于任意两个选择的产品，要么是$a_i$是$a_j$的倍数，要么是$a_j$是$a_i$的倍数。打印出在一次装箱中选择的产品的最大数量。</p>
-<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>目的是选择若干个数字，其中任意两个数均成倍数关系</p>
-<p>考虑最终选定的序列，将其排序后，每个数都必然是最大数的约数，所以其实存在一种递推关系，当$ai$是某个数列的最大数时，将$ai$的倍数加进来，整个数列必然也满足条件</p>
-<p>考虑dp，dp[i]表示以i结尾的最长序列，dp关系式也如上文所说</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> N=<span class="number">1e7</span>;</span><br><span class="line"><span class="type">int</span> dp[N<span class="number">+10</span>],mp[N<span class="number">+10</span>];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="type">int</span> x;cin&gt;&gt;x;</span><br><span class="line">        mp[x]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(mp[i])&#123;</span><br><span class="line">            dp[i]+=mp[i];</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> j=i*<span class="number">2</span>;j&lt;=N;j+=i)&#123;</span><br><span class="line">                dp[j]=<span class="built_in">max</span>(dp[i],dp[j]);</span><br><span class="line">            &#125;</span><br><span class="line">            ans=<span class="built_in">max</span>(ans,dp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="B-Intelligent-Robot"><a href="#B-Intelligent-Robot" class="headerlink" title="B  Intelligent Robot"></a>B  Intelligent Robot</h2><h2 id="C-Smart-Browser"><a href="#C-Smart-Browser" class="headerlink" title="C  Smart Browser"></a>C  Smart Browser</h2><h3 id="Topic-1"><a href="#Topic-1" class="headerlink" title="Topic"></a>Topic</h3><p>In some social platforms(社交平台), there are some netizen(平台) who like to post “<em>www</em>“. Since the string is like the grass(草), which contains plenty of “&#x2F;\“ shapes, so there are also some netizen who post “<em>grass</em>“.  </p>
-<p>As a fast, smart, and convenient browser, <em>MI Browser</em> can recognize this kind of text and show some special effects. Specifically(具体来说), given a string, <em>MI Browser</em> will determine(确定) the number of “&#x2F;\“ shapes made by character “<em>w</em>“, where “<em>w</em>“ itself and the gap(间隙) between two adjacent(相邻的) “<em>w</em>“s both give one `&#x2F;\` shape. If still not clear, please turn to sample input&#x2F;output for more details.  </p>
-<p>As a <em>MI fan</em>, you want to detect(探究) the relationship between the special effects and the number of “&#x2F;\“ shapes, so the thing you should do first is to determine the number of “&#x2F;\“ shapes by yourself.</p>
-<p>在一些社交平台上，有些网民喜欢发布“www”。由于这个字符串看起来很像草，其中包含了许多“&#x2F;\”的形状，因此也有一些网民发布“grass”。</p>
-<p>作为一款快速、智能且便捷的浏览器，MI浏览器能够识别这种文本并展示一些特殊效果。具体来说，给定一个字符串，MI浏览器会确定由字符“w”构成的“&#x2F;\”形状的数量，其中“w”本身以及两个相邻“w”之间的间隙都构成一个“&#x2F;\”形状。如果仍然不清楚，请参考示例输入输出以获取更多详情。</p>
-<p>作为MI浏览器的粉丝，你想要探究这些特殊效果与“&#x2F;\”形状数量之间的关系，因此你首先要做的就是自己确定“&#x2F;\”形状的数量。</p>
-<h3 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h3><p>双指针判断以v分隔开的w的字符数量</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    string s;cin&gt;&gt;s;</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;s.<span class="built_in">length</span>();i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(s[i]==<span class="string">&#x27;w&#x27;</span>)&#123;</span><br><span class="line">            <span class="type">int</span> cnt=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span>(s[i<span class="number">+1</span>]==<span class="string">&#x27;w&#x27;</span>&amp;&amp;i<span class="number">+1</span>&lt;s.<span class="built_in">length</span>())&#123;</span><br><span class="line">                i++;cnt++;</span><br><span class="line">            &#125;</span><br><span class="line">            ans+=<span class="number">2</span>*cnt<span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/07/%E5%AF%B9%E6%8B%8D/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wodetouxiang.png">
-      <meta itemprop="name" content="iokanux">
-      <meta itemprop="description" content="Do something with the world">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="iokanux">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/09/07/%E5%AF%B9%E6%8B%8D/" class="post-title-link" itemprop="url">对拍</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2024-09-07 23:15:41 / Modified: 23:36:35" itemprop="dateCreated datePublished" datetime="2024-09-07T23:15:41+08:00">2024-09-07</time>
+              <time title="Created: 2024-09-10 21:34:19 / Modified: 21:40:04" itemprop="dateCreated datePublished" datetime="2024-09-10T21:34:19+08:00">2024-09-10</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -622,7 +802,7 @@
                 </span>
                   , 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">XCPC基础</span></a>
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">XCPC数据结构</span></a>
                 </span>
             </span>
 
@@ -635,8 +815,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2024/09/07/%E5%AF%B9%E6%8B%8D/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/07/%E5%AF%B9%E6%8B%8D/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%93%88%E5%B8%8C/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%93%88%E5%B8%8C/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -651,15 +831,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>介绍Windows环境下与Linux环境下的对拍</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/09/07/%E5%AF%B9%E6%8B%8D/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h2 id="双哈希基础封装"><a href="#双哈希基础封装" class="headerlink" title="双哈希基础封装"></a>双哈希基础封装</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">Shash</span>&#123;  </span><br><span class="line">    <span class="type">const</span> ll base[<span class="number">2</span>]=&#123;<span class="number">29</span>,<span class="number">31</span>&#125;;</span><br><span class="line">    <span class="comment">//base存储基数</span></span><br><span class="line">    <span class="type">const</span> ll hashmod[<span class="number">2</span>]=&#123;(ll)<span class="number">1e9</span><span class="number">+9</span>,<span class="number">998244353</span>&#125;;</span><br><span class="line">    <span class="comment">//hashmod存储模数</span></span><br><span class="line">    array&lt;vector&lt;ll&gt;,2&gt;hsh;</span><br><span class="line">    array&lt;vector&lt;ll&gt;,2&gt;pwMod;</span><br><span class="line">    <span class="comment">//hsh[2] 和 pwMod[2]：这两个二维 vector 分别用于存储哈希值和幂模值。</span></span><br><span class="line">    <span class="comment">//其中，hsh[i][j] 表示字符串前 j 个字符在基数 base[i] 和模数 hashmod[i] 下的哈希值；</span></span><br><span class="line">    <span class="comment">//pwMod[i][j] 表示基数 base[i] 的 j 次幂对 hashmod[i] 取模的结果。</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(string S)</span></span>&#123;</span><br><span class="line">        <span class="type">int</span> n=S.<span class="built_in">size</span>();S=<span class="string">&#x27; &#x27;</span>+S;</span><br><span class="line">        hsh[<span class="number">0</span>].<span class="built_in">resize</span>(n<span class="number">+1</span>),hsh[<span class="number">1</span>].<span class="built_in">resize</span>(n<span class="number">+1</span>);</span><br><span class="line">        pwMod[<span class="number">0</span>].<span class="built_in">resize</span>(n<span class="number">+1</span>),pwMod[<span class="number">1</span>].<span class="built_in">resize</span>(n<span class="number">+1</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;++i)&#123;</span><br><span class="line">            pwMod[i][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;++j)&#123;</span><br><span class="line">                pwMod[i][j]=pwMod[i][j<span class="number">-1</span>]*base[i]%hashmod[i];</span><br><span class="line">                hsh[i][j]=(hsh[i][j<span class="number">-1</span>]*base[i]+S[j])%hashmod[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//get函数输出[l,r]这段字符的哈希值,first是第一个模数下哈希值,second是第二个</span></span><br><span class="line">    pair&lt;ll,ll&gt;<span class="built_in">get</span>(<span class="type">int</span> l,<span class="type">int</span> r)&#123;</span><br><span class="line">        pair&lt;ll,ll&gt; ans;</span><br><span class="line">        ans.first=(hsh[<span class="number">0</span>][r]-hsh[<span class="number">0</span>][l<span class="number">-1</span>]*pwMod[<span class="number">0</span>][r-l<span class="number">+1</span>])%hashmod[<span class="number">0</span>];</span><br><span class="line">        ans.second=(hsh[<span class="number">1</span>][r]-hsh[<span class="number">1</span>][l<span class="number">-1</span>]*pwMod[<span class="number">1</span>][r-l<span class="number">+1</span>])%hashmod[<span class="number">1</span>];</span><br><span class="line">        ans.first=(ans.first+hashmod[<span class="number">0</span>])%hashmod[<span class="number">0</span>];</span><br><span class="line">        ans.second=(ans.second+hashmod[<span class="number">1</span>])%hashmod[<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">same</span><span class="params">(Shash &amp;a,<span class="type">int</span> la,<span class="type">int</span> ra,Shash &amp;b,<span class="type">int</span> lb,<span class="type">int</span> rb)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a.<span class="built_in">get</span>(la,ra)==b.<span class="built_in">get</span>(lb,rb);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Employ"><a href="#Employ" class="headerlink" title="Employ"></a>Employ</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Shash a;</span><br><span class="line">a.<span class="built_in">init</span>(s)<span class="comment">//s是待处理字符串</span></span><br><span class="line"><span class="keyword">if</span>(<span class="built_in">same</span>(a,l,r,b,l,r))<span class="comment">//判断字符串a,b在l,r区间内是否相等</span></span><br><span class="line"><span class="comment">//该模板下标从1开始    </span></span><br></pre></td></tr></table></figure>
+
+
       
     </div>
 
@@ -678,7 +854,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/07/%E9%AB%98%E7%B2%BE%E5%BA%A6/">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/ST%E8%A1%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wodetouxiang.png">
@@ -692,7 +868,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/09/07/%E9%AB%98%E7%B2%BE%E5%BA%A6/" class="post-title-link" itemprop="url">高精度</a>
+            <a href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/ST%E8%A1%A8/" class="post-title-link" itemprop="url">ST表</a>
         </h2>
 
         <div class="post-meta">
@@ -703,7 +879,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2024-09-07 22:14:05 / Modified: 22:41:23" itemprop="dateCreated datePublished" datetime="2024-09-07T22:14:05+08:00">2024-09-07</time>
+              <time title="Created: 2024-09-10 21:30:18 / Modified: 21:33:16" itemprop="dateCreated datePublished" datetime="2024-09-10T21:30:18+08:00">2024-09-10</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -719,7 +895,7 @@
                 </span>
                   , 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">XCPC基础</span></a>
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">XCPC数据结构</span></a>
                 </span>
             </span>
 
@@ -732,8 +908,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2024/09/07/%E9%AB%98%E7%B2%BE%E5%BA%A6/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/07/%E9%AB%98%E7%B2%BE%E5%BA%A6/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/ST%E8%A1%A8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/ST%E8%A1%A8/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -748,15 +924,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>高精度的封装板子</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/09/07/%E9%AB%98%E7%B2%BE%E5%BA%A6/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h2 id="ST表基础封装"><a href="#ST表基础封装" class="headerlink" title="ST表基础封装"></a>ST表基础封装</h2><p>解决RMQ问题，不支持静态查询，预处理复杂度为O(nlog(n))，O(1)查询，常数比线段树小</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">ST</span> &#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; in1, in2, lg;</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; Max, Min;</span><br><span class="line">    <span class="built_in">ST</span>(<span class="type">int</span> n) : <span class="built_in">n</span>(n), <span class="built_in">in1</span>(n + <span class="number">1</span>), <span class="built_in">in2</span>(n + <span class="number">1</span>), <span class="built_in">lg</span>(n + <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= n; i++) &#123;</span><br><span class="line">            lg[i] = lg[i / <span class="number">2</span>] + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        Max.<span class="built_in">resize</span>(n + <span class="number">1</span>, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(lg[n] + <span class="number">1</span>));</span><br><span class="line">        Min.<span class="built_in">resize</span>(n + <span class="number">1</span>, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(lg[n] + <span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">            Max[i][<span class="number">0</span>] = in1[i];</span><br><span class="line">            Min[i][<span class="number">0</span>] = in2[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> k = lg[n];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= k; j++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i + (<span class="number">1</span> &lt;&lt; j) - <span class="number">1</span> &lt;= n; i++) &#123;</span><br><span class="line">                Max[i][j] = <span class="built_in">max</span>(Max[i][j - <span class="number">1</span>], Max[i + (<span class="number">1</span> &lt;&lt; (j - <span class="number">1</span>))][j - <span class="number">1</span>]);</span><br><span class="line">                Min[i][j] = <span class="built_in">min</span>(Min[i][j - <span class="number">1</span>], Min[i + (<span class="number">1</span> &lt;&lt; (j - <span class="number">1</span>))][j - <span class="number">1</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">getMax</span><span class="params">(<span class="type">int</span> l, <span class="type">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (l &gt; r) &#123;</span><br><span class="line">            <span class="built_in">swap</span>(l, r);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> k = lg[r - l + <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">max</span>(Max[l][k], Max[r - (<span class="number">1</span> &lt;&lt; k) + <span class="number">1</span>][k]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">getMin</span><span class="params">(<span class="type">int</span> l, <span class="type">int</span> r)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (l &gt; r) &#123;</span><br><span class="line">            <span class="built_in">swap</span>(l, r);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> k = lg[r - l + <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">min</span>(Min[l][k], Min[r - (<span class="number">1</span> &lt;&lt; k) + <span class="number">1</span>][k]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
 
@@ -775,7 +946,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wodetouxiang.png">
@@ -789,7 +960,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/" class="post-title-link" itemprop="url">前缀和</a>
+            <a href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" class="post-title-link" itemprop="url">树状数组</a>
         </h2>
 
         <div class="post-meta">
@@ -798,16 +969,27 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2024-09-04 18:09:55" itemprop="dateCreated datePublished" datetime="2024-09-04T18:09:55+08:00">2024-09-04</time>
+              <time title="Created: 2024-09-10 21:25:38 / Modified: 21:28:51" itemprop="dateCreated datePublished" datetime="2024-09-10T21:25:38+08:00">2024-09-10</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-09-05 14:56:27" itemprop="dateModified" datetime="2024-09-05T14:56:27+08:00">2024-09-05</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/" itemprop="url" rel="index"><span itemprop="name">XCPC模板</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">XCPC数据结构</span></a>
+                </span>
+            </span>
 
           
   
@@ -818,8 +1000,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -834,15 +1016,106 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h1><p>测试一下 </p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/09/04/%E5%89%8D%E7%BC%80%E5%92%8C/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h2 id="树状数组基础封装"><a href="#树状数组基础封装" class="headerlink" title="树状数组基础封装"></a>树状数组基础封装</h2><p> <strong>Fenwick Tree</strong> </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Fenwick</span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    vector&lt;T&gt; tr;</span><br><span class="line">    <span class="built_in">Fenwick</span>(<span class="type">int</span> n) : <span class="built_in">n</span>(n), <span class="built_in">tr</span>(n + <span class="number">1</span>, <span class="number">0</span>)&#123;&#125;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x &amp; -x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">modify</span><span class="params">(<span class="type">int</span> x, T c)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i &lt;= n; i += <span class="built_in">lowbit</span>(i)) tr[i] += c;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">modify</span><span class="params">(<span class="type">int</span> l, <span class="type">int</span> r, T c)</span></span>&#123;</span><br><span class="line">        <span class="built_in">modify</span>(l, c);</span><br><span class="line">        <span class="keyword">if</span> (r + <span class="number">1</span> &lt;= n) <span class="built_in">modify</span>(r + <span class="number">1</span>, -c);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">T <span class="title">query</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">        T res = <span class="built_in">T</span>();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i; i -= <span class="built_in">lowbit</span>(i)) res += tr[i];</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">T <span class="title">query</span><span class="params">(<span class="type">int</span> l, <span class="type">int</span> r)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">query</span>(r) - <span class="built_in">query</span>(l - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">find_first</span><span class="params">(T sum)</span></span>&#123;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>; T val = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = __lg(n); i &gt;= <span class="number">0</span>; i--)&#123;</span><br><span class="line">            <span class="keyword">if</span> ((ans | (<span class="number">1</span> &lt;&lt; i)) &lt;= n &amp;&amp; val + tr[ans | (<span class="number">1</span> &lt;&lt; i)] &lt; sum)&#123;</span><br><span class="line">                ans |= <span class="number">1</span> &lt;&lt; i;</span><br><span class="line">                val += tr[ans];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">find_last</span><span class="params">(T sum)</span></span>&#123;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>; T val = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = __lg(n); i &gt;= <span class="number">0</span>; i--)&#123;</span><br><span class="line">            <span class="keyword">if</span> ((ans | (<span class="number">1</span> &lt;&lt; i)) &lt;= n &amp;&amp; val + tr[ans | (<span class="number">1</span> &lt;&lt; i)] &lt;= sum)&#123;</span><br><span class="line">                ans |= <span class="number">1</span> &lt;&lt; i;</span><br><span class="line">                val += tr[ans];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">using</span> BIT = Fenwick&lt;<span class="type">int</span>&gt;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Employ"><a href="#Employ" class="headerlink" title="Employ"></a>Employ</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">BIT <span class="title">tr</span><span class="params">(n)</span></span>;<span class="comment">//n是大小</span></span><br><span class="line"><span class="comment">//注意输入的时候要从1-n输入,vactor开n+1;</span></span><br><span class="line">tr.<span class="built_in">modify</span>(n,k)<span class="comment">//第n个数加上k</span></span><br><span class="line">tr.<span class="built_in">modify</span>(<span class="number">1</span>,n,k)<span class="comment">//从1到n每个数加k</span></span><br><span class="line">tr.<span class="built_in">query</span>(x)<span class="comment">//查询第x个数    </span></span><br><span class="line"><span class="comment">//三星提醒：初始化的时候是tr.modify(pos,pos,c),这样才代表只给pos位置赋值c</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Do something with the world">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iokanux">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/" class="post-title-link" itemprop="url">并查集</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-09-10 21:21:08 / Modified: 21:25:07" itemprop="dateCreated datePublished" datetime="2024-09-10T21:21:08+08:00">2024-09-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/" itemprop="url" rel="index"><span itemprop="name">XCPC模板</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">XCPC数据结构</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="并查集基础封装"><a href="#并查集基础封装" class="headerlink" title="并查集基础封装"></a>并查集基础封装</h2><p><strong>Disjoint Set Union</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">DSU</span> &#123;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; f,siz;</span><br><span class="line">    <span class="built_in">DSU</span>() &#123;&#125;</span><br><span class="line">    <span class="built_in">DSU</span>(<span class="type">int</span> n) &#123;</span><br><span class="line">        <span class="built_in">init</span>(n);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">        f.<span class="built_in">resize</span>(n);</span><br><span class="line">        <span class="built_in">iota</span>(f.<span class="built_in">begin</span>(), f.<span class="built_in">end</span>(), <span class="number">0</span>);</span><br><span class="line">        siz.<span class="built_in">assign</span>(n, <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">while</span> (x != f[x]) &#123;</span><br><span class="line">            x = f[x] = f[f[x]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">same</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">find</span>(x) == <span class="built_in">find</span>(y);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">merge</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123;</span><br><span class="line">        x = <span class="built_in">find</span>(x);</span><br><span class="line">        y = <span class="built_in">find</span>(y);</span><br><span class="line">        <span class="keyword">if</span> (x == y) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        siz[x] += siz[y];</span><br><span class="line">        f[y] = x;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">size</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> siz[<span class="built_in">find</span>(x)];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Employ"><a href="#Employ" class="headerlink" title="Employ"></a>Employ</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">DSU <span class="title">dsu</span><span class="params">(N)</span><span class="comment">//声明一个大小为N，名称为dsu的并查集</span></span></span><br><span class="line"><span class="function">dsu.<span class="title">merge</span><span class="params">(a,b)</span><span class="comment">//合并a,b</span></span></span><br><span class="line"><span class="function">dsu.<span class="title">find</span><span class="params">(x)</span><span class="comment">//找到x的祖宗节点</span></span></span><br><span class="line"><span class="function">dsu.size[dsu.<span class="title">find</span><span class="params">(x)</span>]<span class="comment">//以x为祖宗节点的个数 </span></span></span><br></pre></td></tr></table></figure>
+
+
       
     </div>
 
@@ -859,6 +1132,9 @@
 
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
 
 
 
@@ -924,14 +1200,14 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">

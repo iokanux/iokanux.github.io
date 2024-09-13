@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32%C3%9732.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16%C3%9716.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="U1bNH9i41U8sJYAP_vcgEX07HMfBpH8OM1rXtmPEE94">
+  <meta name="msvalidate.01" content="434F263C0FF4FF1F3CEC227722243E0C">
+  <meta name="baidu-site-verification" content="codeva-GRS7kmilR1">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"iokanux.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+<script> 
+   (function(){
+          if(''){
+              if (prompt('请输入文章密码') !== ''){
+                  alert('密码错误！');
+                  history.back();
+              }
+          }
+      })();
+  </script>
+
+  <meta name="description" content="前缀和(Prefix Sum)通过构建前缀和数组，从而能做到O(1)时间复杂度的区间查询(rangeQuery) 一维前缀和构建前缀和数组12vector&lt;int&gt;pre(n+1,0);for(int i&#x3D;1;i&lt;&#x3D;n;i++) pre[i]&#x3D;pre[i-1]+a[i];  rangeQuery1pre[r]-pre[l-1]&#x2F;&#x2F;求(l,r)区间和  二维前缀和构建前缀和数组">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前缀和与差分">
+<meta property="og:url" content="http://iokanux.com/2024/09/04/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86/index.html">
+<meta property="og:site_name" content="iokanux">
+<meta property="og:description" content="前缀和(Prefix Sum)通过构建前缀和数组，从而能做到O(1)时间复杂度的区间查询(rangeQuery) 一维前缀和构建前缀和数组12vector&lt;int&gt;pre(n+1,0);for(int i&#x3D;1;i&lt;&#x3D;n;i++) pre[i]&#x3D;pre[i-1]+a[i];  rangeQuery1pre[r]-pre[l-1]&#x2F;&#x2F;求(l,r)区间和  二维前缀和构建前缀和数组">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-09-04T10:09:55.000Z">
+<meta property="article:modified_time" content="2024-09-10T09:27:56.941Z">
+<meta property="article:author" content="iokanux">
+<meta property="article:tag" content="XCPC模板">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://iokanux.com/2024/09/04/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>前缀和与差分 | iokanux</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/rss2.xml" title="iokanux" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">iokanux</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/04/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Do something with the world">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iokanux">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          前缀和与差分
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-09-04 18:09:55" itemprop="dateCreated datePublished" datetime="2024-09-04T18:09:55+08:00">2024-09-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-09-10 17:27:56" itemprop="dateModified" datetime="2024-09-10T17:27:56+08:00">2024-09-10</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/09/04/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/04/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <span id="more"></span>
+
+<h2 id="前缀和-Prefix-Sum"><a href="#前缀和-Prefix-Sum" class="headerlink" title="前缀和(Prefix Sum)"></a>前缀和(Prefix Sum)</h2><p>通过构建前缀和数组，从而能做到O(1)时间复杂度的区间查询(rangeQuery)</p>
+<h3 id="一维前缀和"><a href="#一维前缀和" class="headerlink" title="一维前缀和"></a>一维前缀和</h3><h4 id="构建前缀和数组"><a href="#构建前缀和数组" class="headerlink" title="构建前缀和数组"></a>构建前缀和数组</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt;<span class="built_in">pre</span>(n<span class="number">+1</span>,<span class="number">0</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) pre[i]=pre[i<span class="number">-1</span>]+a[i];</span><br></pre></td></tr></table></figure>
+
+<h4 id="rangeQuery"><a href="#rangeQuery" class="headerlink" title="rangeQuery"></a>rangeQuery</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pre[r]-pre[l<span class="number">-1</span>]<span class="comment">//求(l,r)区间和</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="二维前缀和"><a href="#二维前缀和" class="headerlink" title="二维前缀和"></a>二维前缀和</h3><h4 id="构建前缀和数组-1"><a href="#构建前缀和数组-1" class="headerlink" title="构建前缀和数组"></a>构建前缀和数组</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;<span class="built_in">pre</span>(n<span class="number">+1</span>,<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(m<span class="number">+1</span>));</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=m;j++)&#123;</span><br><span class="line">        pre[i][j]=pre[i<span class="number">-1</span>][j]+pre[i][j<span class="number">-1</span>]-pre[i<span class="number">-1</span>][j<span class="number">-1</span>]+a[i][j];</span><br><span class="line">        <span class="comment">//pre[i][j]表示(1,1)为左上角,(i,j)为右下角的矩阵的和</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="rangeQuery-1"><a href="#rangeQuery-1" class="headerlink" title="rangeQuery"></a>rangeQuery</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pre[x2][y2]-pre[x2][y1<span class="number">-1</span>]-pre[x1<span class="number">-1</span>][y2]+pre[x1<span class="number">-1</span>][y1<span class="number">-1</span>];</span><br><span class="line"><span class="comment">//求左上角为(x1,y1)，右下角为(x2,y2)的矩阵和    </span></span><br></pre></td></tr></table></figure>
+
+<h2 id="差分-Difference"><a href="#差分-Difference" class="headerlink" title="差分(Difference)"></a>差分(Difference)</h2><p>通过构建差分数组，从而能做到O(1)时间复杂度的区间修改(rangeModify)</p>
+<h3 id="一维差分"><a href="#一维差分" class="headerlink" title="一维差分"></a>一维差分</h3><h4 id="构建差分数组"><a href="#构建差分数组" class="headerlink" title="构建差分数组"></a>构建差分数组</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt;<span class="built_in">dif</span>(n<span class="number">+5</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) dif[i]=a[i]-a[i<span class="number">-1</span>];</span><br></pre></td></tr></table></figure>
+
+<h4 id="rangeModify"><a href="#rangeModify" class="headerlink" title="rangeModify"></a>rangeModify</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dif[l]+=k;dif[r<span class="number">+1</span>]-=k;<span class="comment">//(l,r)区间每个数都加k</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Query"><a href="#Query" class="headerlink" title="Query"></a>Query</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) b[i]+=b[i<span class="number">-1</span>];<span class="comment">//此时b[i]就是修改完后的第i个数的值</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="二维差分"><a href="#二维差分" class="headerlink" title="二维差分"></a>二维差分</h3><p>与一维差分不同的是，二维差分数组的构建与修改均可以通过差分函数来完成</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;<span class="built_in">dif</span>(n<span class="number">+5</span>,<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(m<span class="number">+5</span>));</span><br><span class="line"><span class="keyword">auto</span> modify=[&amp;](<span class="type">int</span> x1,<span class="type">int</span> y1,<span class="type">int</span> x2,<span class="type">int</span> y2,<span class="type">int</span> x)&#123;</span><br><span class="line">    dif[x1][y1]+=x;</span><br><span class="line">    dif[x1][y2<span class="number">+1</span>]-=x;</span><br><span class="line">    dif[x2<span class="number">+1</span>][y1]-=x;</span><br><span class="line">    dif[x2<span class="number">+1</span>][y2<span class="number">+1</span>]+=x;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="构建差分数组-1"><a href="#构建差分数组-1" class="headerlink" title="构建差分数组"></a>构建差分数组</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=m;j++)&#123;</span><br><span class="line">        <span class="built_in">modify</span>(i,j,i,j,a[i][j]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="rangeModify-1"><a href="#rangeModify-1" class="headerlink" title="rangeModify"></a>rangeModify</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">modify</span>(x1,y1,x2,y2,x);<span class="comment">//对左上角为(x1,y1),右下角为(x2,y2)的矩阵每个数都加上x</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Query-1"><a href="#Query-1" class="headerlink" title="Query"></a>Query</h4><p>前缀和求</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=m;j++)&#123;</span><br><span class="line">        dif[i][j]+=dif[i<span class="number">-1</span>][j]+dif[i][j<span class="number">-1</span>]-dif[i<span class="number">-1</span>][j<span class="number">-1</span>];</span><br><span class="line">        <span class="comment">//pre[i][j]表示(1,1)为左上角,(i,j)为右下角的矩阵的和</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>iokanux
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="http://iokanux.com/2024/09/04/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86/" title="前缀和与差分">http://iokanux.com/2024/09/04/XCPC/XCPC模板/XCPC基础/前缀和与差分/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/XCPC%E6%A8%A1%E6%9D%BF/" rel="tag"># XCPC模板</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2024/09/07/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9F%BA%E7%A1%80/%E9%AB%98%E7%B2%BE%E5%BA%A6/" rel="next" title="高精度">
+      高精度 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BC%80%E5%92%8C-Prefix-Sum"><span class="nav-number">1.</span> <span class="nav-text">前缀和(Prefix Sum)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C"><span class="nav-number">1.1.</span> <span class="nav-text">一维前缀和</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9E%84%E5%BB%BA%E5%89%8D%E7%BC%80%E5%92%8C%E6%95%B0%E7%BB%84"><span class="nav-number">1.1.1.</span> <span class="nav-text">构建前缀和数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rangeQuery"><span class="nav-number">1.1.2.</span> <span class="nav-text">rangeQuery</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C"><span class="nav-number">1.2.</span> <span class="nav-text">二维前缀和</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9E%84%E5%BB%BA%E5%89%8D%E7%BC%80%E5%92%8C%E6%95%B0%E7%BB%84-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">构建前缀和数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rangeQuery-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">rangeQuery</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%AE%E5%88%86-Difference"><span class="nav-number">2.</span> <span class="nav-text">差分(Difference)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E7%BB%B4%E5%B7%AE%E5%88%86"><span class="nav-number">2.1.</span> <span class="nav-text">一维差分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9E%84%E5%BB%BA%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84"><span class="nav-number">2.1.1.</span> <span class="nav-text">构建差分数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rangeModify"><span class="nav-number">2.1.2.</span> <span class="nav-text">rangeModify</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Query"><span class="nav-number">2.1.3.</span> <span class="nav-text">Query</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E7%BB%B4%E5%B7%AE%E5%88%86"><span class="nav-number">2.2.</span> <span class="nav-text">二维差分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9E%84%E5%BB%BA%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">构建差分数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rangeModify-1"><span class="nav-number">2.2.2.</span> <span class="nav-text">rangeModify</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Query-1"><span class="nav-number">2.2.3.</span> <span class="nav-text">Query</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="iokanux"
+      src="/images/wodetouxiang.png">
+  <p class="site-author-name" itemprop="name">iokanux</p>
+  <div class="site-description" itemprop="description">Do something with the world</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">iokanux</span>
+</div>
+
+
+<!--
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div> -->
+
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">总访客数<span id="busuanzi_value_site_uv"></span>人</span>
+    <span class="post-meta-divider"></span>
+<!-- 不蒜子计数初始值纠正 -->
+<script>
+$(document).ready(function() {
+
+    var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+    var countOffset = 20000;  // 初始化首次数据
+
+    function fixCount() {            
+       if (document.getElementById("busuanzi_container_site_pv").style.display != "none")
+        {
+            $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + countOffset); 
+            clearInterval(int);
+        }                  
+        if ($("#busuanzi_container_site_pv").css("display") != "none")
+        {
+            $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + countOffset); // 加上初始数据 
+            clearInterval(int); // 停止检测
+        }  
+    }
+       	
+});
+</script> 
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'u7N0l1gvNPMnq99bBpqV2geY-gzGzoHsz',
+      appKey     : 'MMj1jYMwfho43FaVb4FU2mnc',
+      placeholder: "Welcome!",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
