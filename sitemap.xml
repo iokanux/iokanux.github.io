@@ -338,13 +338,6 @@
   </url>
   
   <url>
-    <loc>http://iokanux.com/categories/XCPC/Tips/</loc>
-    <lastmod>2024-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/</loc>
     <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -353,6 +346,13 @@
   
   <url>
     <loc>http://iokanux.com/categories/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/</loc>
+    <lastmod>2024-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/categories/XCPC/Tips/</loc>
     <lastmod>2024-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
