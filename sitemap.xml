@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iokanux.com/slideshare/slides.html</loc>
+    
+    <lastmod>2024-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/slideshare/another.html</loc>
+    
+    <lastmod>2024-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://iokanux.com/2024/09/10/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/ST%E8%A1%A8/</loc>
     
     <lastmod>2024-09-25</lastmod>
