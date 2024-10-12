@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iokanux.com/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2024-10-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://iokanux.com/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9B%BE%E8%AE%BA/</loc>
     
     <lastmod>2024-10-12</lastmod>
@@ -21,15 +30,6 @@
   
   <url>
     <loc>http://iokanux.com/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    
-    <lastmod>2024-10-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9F%BA%E7%A1%80/</loc>
     
     <lastmod>2024-10-12</lastmod>
     
@@ -146,6 +146,69 @@
 
   
   <url>
+    <loc>http://iokanux.com/tags/STL/</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Pre/</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Dif/</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Suf/</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Stoi/</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/trisection/</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Trick/</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Cross-verification/</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/high-precision/</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://iokanux.com/tags/SSSP/</loc>
     <lastmod>2024-10-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -245,62 +308,6 @@
   
   <url>
     <loc>http://iokanux.com/tags/Floyd/</loc>
-    <lastmod>2024-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/STL/</loc>
-    <lastmod>2024-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/%E5%89%8D%E7%BC%80%E5%92%8C/</loc>
-    <lastmod>2024-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/%E5%B7%AE%E5%88%86/</loc>
-    <lastmod>2024-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/%E8%BF%9B%E5%88%B6/</loc>
-    <lastmod>2024-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/%E4%B8%89%E5%88%86/</loc>
-    <lastmod>2024-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/Trick/</loc>
-    <lastmod>2024-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/%E5%AF%B9%E6%8B%8D/</loc>
-    <lastmod>2024-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/</loc>
     <lastmod>2024-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -463,13 +470,6 @@
   </url>
   
   <url>
-    <loc>http://iokanux.com/categories/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/</loc>
-    <lastmod>2024-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/</loc>
     <lastmod>2024-10-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -484,14 +484,21 @@
   </url>
   
   <url>
-    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
+    <loc>http://iokanux.com/categories/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/</loc>
     <lastmod>2024-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/</loc>
+    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E8%AE%BA/</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
     <lastmod>2024-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -505,14 +512,14 @@
   </url>
   
   <url>
-    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/</loc>
     <lastmod>2024-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E8%AE%BA/</loc>
+    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2024-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
