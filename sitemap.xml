@@ -38,15 +38,6 @@
   </url>
   
   <url>
-    <loc>http://iokanux.com/2024/10/06/XCPC/codeforces/[Div2]%20Codeforces%20Round%20977(A-E2)/</loc>
-    
-    <lastmod>2024-10-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://iokanux.com/slideshare/slides.html</loc>
     
     <lastmod>2024-09-25</lastmod>
@@ -59,24 +50,6 @@
     <loc>http://iokanux.com/slideshare/another.html</loc>
     
     <lastmod>2024-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/2024/09/16/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%20Template/</loc>
-    
-    <lastmod>2024-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/2024/09/16/English/word/</loc>
-    
-    <lastmod>2024-09-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -497,14 +470,14 @@
   </url>
   
   <url>
-    <loc>http://iokanux.com/categories/XCPC/Tips/</loc>
+    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/</loc>
     <lastmod>2024-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/</loc>
+    <loc>http://iokanux.com/categories/XCPC/Tips/</loc>
     <lastmod>2024-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
