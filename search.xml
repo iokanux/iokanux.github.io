@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2023ICPC网络赛(一)</title>
+    <url>/2024/09/13/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/2023ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B(%E4%B8%80)/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="D-Transitivity"><a href="#D-Transitivity" class="headerlink" title="D. Transitivity"></a>D. Transitivity</h2><p>Given a <strong>simple undirected graph</strong> with $n$ vertices and $m$ edges, and it’s guaranteed that</p>
+<p>We define an undirected graph to be transitive if and only if for any two <strong>different</strong> vertices $u, v$ :</p>
+<p>If there exists a path starting from $u$ and ending at $v$ in the graph, then there should exists an edge connected $u$ and $v$ in the graph.</p>
+<p>Now you should add some undirected edges to the graph (<strong>add at least one edge</strong>). You need to ensure that after adding edges, the graph is still a simple undirected graph and is transitive.</p>
+<p>The question is, how many edges need to be added at least?</p>
+<p>Recall that a simple undirected graph is an undirected graph that does not have more than one edge between any two vertices and no edge starts and ends at the same vertex.</p>
+<p>$n_{k}^9$</p>
+]]></content>
+      <categories>
+        <category>XCPC</category>
+        <category>XCPC系列赛</category>
+      </categories>
+  </entry>
+  <entry>
     <title>XCPC中的时间技巧</title>
     <url>/2024/09/08/XCPC/Tips/XCPC%E4%B8%AD%E7%9A%84%E6%97%B6%E9%97%B4%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<p>除了时间复杂度,还有什么会影响程序的运行时间</p>
@@ -22,6 +40,75 @@
       <categories>
         <category>XCPC</category>
         <category>Tips</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>2024CCPC网络赛</title>
+    <url>/2024/09/12/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/2024CCPC%E7%BD%91%E7%BB%9C%E8%B5%9B/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="B-军训-II"><a href="#B-军训-II" class="headerlink" title="B 军训 II"></a>B 军训 II</h2><p>对于这类问题一个很经典的思路就是求每个位置的贡献</p>
+<p>首先能感性的判断出来从小到大&#x2F;从大到小排不整齐度是最小的(因为最大&#x2F;最小值都是依次递增的)</p>
+<p>然后可以理性的证明一下：</p>
+<p>对于已经排好序的数组a 有a1&lt;&#x3D;a2&lt;&#x3D;a3&lt;&#x3D;…&lt;&#x3D;an,此时交换a2,ak(假设a2&lt;ak);</p>
+<p>交换完的结果就是l在[1,k-1],r在[l,k-1]的区间内最大值变大，最小值不变,l在[k,n]，r在[l,n]的区间内最大值不变，最小值变小</p>
+<p>身高相同的人可以交换位置,$A_{k}^k$,表示k个身高相同的人的排列方案,</p>
+<p>注意特判全相等序列(从小到大和从大到小排列一样)</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n);</span><br><span class="line">    map&lt;<span class="type">int</span>,<span class="type">int</span>&gt;mp;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;a[i];mp[a[i]]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">sort</span>(a.<span class="built_in">begin</span>(),a.<span class="built_in">end</span>());</span><br><span class="line">    <span class="type">int</span> ans1=<span class="number">0</span>,ans2=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=i;j&lt;n;j++)&#123;</span><br><span class="line">            ans1+=a[j]-a[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">auto</span> A=[&amp;](<span class="type">int</span> x)&#123;</span><br><span class="line">        <span class="type">int</span> tem=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=x;i++)&#123;</span><br><span class="line">            tem=(tem*i)%mod;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> tem;</span><br><span class="line">    &#125;;</span><br><span class="line">    a.<span class="built_in">erase</span>(<span class="built_in">unique</span>(a.<span class="built_in">begin</span>(),a.<span class="built_in">end</span>()),a.<span class="built_in">end</span>());</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> i:a)&#123;</span><br><span class="line">        ans2=(ans2*<span class="built_in">A</span>(mp[i]))%mod;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(a.<span class="built_in">size</span>()!=<span class="number">1</span>) ans2=(ans2*<span class="number">2</span>)%mod;</span><br><span class="line">    cout&lt;&lt;ans1&lt;&lt;<span class="string">&#x27; &#x27;</span>&lt;&lt;ans2&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="K-取沙子游戏"><a href="#K-取沙子游戏" class="headerlink" title="K 取沙子游戏"></a>K 取沙子游戏</h2><p>考虑n的奇偶性</p>
+<p>当n为奇数时，第一手取1必然获胜</p>
+<p>当n为偶数时，考虑变成必胜态，即将n减去某两个数得到奇数，可知这两个数必然为一奇一偶，且先手必选偶数，当先手选择奇数后，后手必胜。</p>
+<p>由于选择的是偶数，初步猜想寄了，因为后手必然不会选择奇数，所以后手选择偶数阻止先手到达必胜态，此时第二轮到达先手手上的数还是偶数，这样归纳一下可以发现当n为偶数的时候，先后手都只会选择偶数</p>
+<p>考虑二进制，当先手第一次选择lowbit(n)时，后手无论选择什么我们都和其选择一样即可获胜，因为二进制下需要偶数次选择偶数才能将这个数归零</p>
+]]></content>
+      <categories>
+        <category>XCPC</category>
+        <category>XCPC系列赛</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>ICPC·2020·小米网络赛二</title>
+    <url>/2024/09/11/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/ICPC%C2%B72020%C2%B7%E5%B0%8F%E7%B1%B3%E7%BD%91%E7%BB%9C%E8%B5%9B%E4%BA%8C/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="G-Shift-and-Reverse"><a href="#G-Shift-and-Reverse" class="headerlink" title="G Shift and Reverse"></a>G Shift and Reverse</h2><h3 id="Topic"><a href="#Topic" class="headerlink" title="Topic"></a>Topic</h3><p>Bobo has a sequence $a_1,a_2,\dots,a_n$. He can rearrange the sequence using the following operation any number of times:  </p>
+<p>+ Select an integer i ($1 \le i \le n$) and change the sequence to $a_i, a_{i-1}, \dots, a_1, a_n, a_{n-1}, \dots, a_{i+1}$.  </p>
+<p>Bobo would like to know the number of different sequences can be obtained modulo $(10^9+7)$.</p>
+<p>波波有一个序列$a_1,a_2,\dots,a_n$。他可以使用以下操作任意次数重新排列序列:</p>
+<p>选择整数i($1 \le i \le n$)并将序列更改为$a_i, a_{i-1}, \dots, a_1, a_n, a_{n-1}, \dots, a_{i+1}$。</p>
+<p>Bobo想知道有多少个不同的序列对$(10^9+7)$取模。</p>
+<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>遇到题目没思路就先模拟一下</p>
+<p>一个新的数组a,标号从a1-an,假定选择k进行反转操作，执行操作后的序列为$a_{k},a_{k-1}…a_{k+2},a_{k+1},$</p>
+]]></content>
+      <categories>
+        <category>XCPC</category>
+        <category>XCPC系列赛</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>ICPC网络赛第一场</title>
+    <url>/2024/09/08/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA/</url>
+    <content><![CDATA[<h2 id="A-Intelligent-Warehouse"><a href="#A-Intelligent-Warehouse" class="headerlink" title="A  Intelligent Warehouse"></a>A  Intelligent Warehouse</h2><h3 id="Topic"><a href="#Topic" class="headerlink" title="Topic"></a>Topic</h3><p>In <em>MI Intelligent Warehouse</em>, there are $n_{}$ products, where the $i_{}$-th product is of size $a_i$. We always need to box producsts into all kinds of containers, and it will be safer and more cost efficient(效率高的) if for any two sizes of products, one is the other’s multiple, since(因为) there won’t be any residual(残余的) room in one container. So for each boxing we need to choose some products that for any two chosen products, either $a_i$ is multiple of $a_j$ or $a_j$ is multiple of $a_i$. Print the maximum number of products that can be chosen in one boxing.</p>
+<p>在mi智能仓库中，有$n_{}$个产品，其中$i_{}$个产品的尺寸为$a_i$。我们总是需要把产品装进各种各样的容器中，如果任意两个尺寸的产品，一个是另一个的倍数，这样会更安全且成本效益更高，因为一个容器里不会有剩余的空间。因此，对于每次装箱，我们需要选择一些产品，对于任意两个选择的产品，要么是$a_i$是$a_j$的倍数，要么是$a_j$是$a_i$的倍数。打印出在一次装箱中选择的产品的最大数量。</p>
+<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>目的是选择若干个数字，其中任意两个数均成倍数关系</p>
+<p>考虑最终选定的序列，将其排序后，每个数都必然是最大数的约数，所以其实存在一种递推关系，当$ai$是某个数列的最大数时，将$ai$的倍数加进来，整个数列必然也满足条件</p>
+<p>考虑dp，dp[i]表示以i结尾的最长序列，dp关系式也如上文所说</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> N=<span class="number">1e7</span>;</span><br><span class="line"><span class="type">int</span> dp[N<span class="number">+10</span>],mp[N<span class="number">+10</span>];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="type">int</span> x;cin&gt;&gt;x;</span><br><span class="line">        mp[x]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(mp[i])&#123;</span><br><span class="line">            dp[i]+=mp[i];</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> j=i*<span class="number">2</span>;j&lt;=N;j+=i)&#123;</span><br><span class="line">                dp[j]=<span class="built_in">max</span>(dp[i],dp[j]);</span><br><span class="line">            &#125;</span><br><span class="line">            ans=<span class="built_in">max</span>(ans,dp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="B-Intelligent-Robot"><a href="#B-Intelligent-Robot" class="headerlink" title="B  Intelligent Robot"></a>B  Intelligent Robot</h2><h2 id="C-Smart-Browser"><a href="#C-Smart-Browser" class="headerlink" title="C  Smart Browser"></a>C  Smart Browser</h2><h3 id="Topic-1"><a href="#Topic-1" class="headerlink" title="Topic"></a>Topic</h3><p>In some social platforms(社交平台), there are some netizen(平台) who like to post “<em>www</em>“. Since the string is like the grass(草), which contains plenty of “&#x2F;\“ shapes, so there are also some netizen who post “<em>grass</em>“.  </p>
+<p>As a fast, smart, and convenient browser, <em>MI Browser</em> can recognize this kind of text and show some special effects. Specifically(具体来说), given a string, <em>MI Browser</em> will determine(确定) the number of “&#x2F;\“ shapes made by character “<em>w</em>“, where “<em>w</em>“ itself and the gap(间隙) between two adjacent(相邻的) “<em>w</em>“s both give one `&#x2F;\` shape. If still not clear, please turn to sample input&#x2F;output for more details.  </p>
+<p>As a <em>MI fan</em>, you want to detect(探究) the relationship between the special effects and the number of “&#x2F;\“ shapes, so the thing you should do first is to determine the number of “&#x2F;\“ shapes by yourself.</p>
+<p>在一些社交平台上，有些网民喜欢发布“www”。由于这个字符串看起来很像草，其中包含了许多“&#x2F;\”的形状，因此也有一些网民发布“grass”。</p>
+<p>作为一款快速、智能且便捷的浏览器，MI浏览器能够识别这种文本并展示一些特殊效果。具体来说，给定一个字符串，MI浏览器会确定由字符“w”构成的“&#x2F;\”形状的数量，其中“w”本身以及两个相邻“w”之间的间隙都构成一个“&#x2F;\”形状。如果仍然不清楚，请参考示例输入输出以获取更多详情。</p>
+<p>作为MI浏览器的粉丝，你想要探究这些特殊效果与“&#x2F;\”形状数量之间的关系，因此你首先要做的就是自己确定“&#x2F;\”形状的数量。</p>
+<h3 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h3><p>双指针判断以v分隔开的w的字符数量</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    string s;cin&gt;&gt;s;</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;s.<span class="built_in">length</span>();i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(s[i]==<span class="string">&#x27;w&#x27;</span>)&#123;</span><br><span class="line">            <span class="type">int</span> cnt=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span>(s[i<span class="number">+1</span>]==<span class="string">&#x27;w&#x27;</span>&amp;&amp;i<span class="number">+1</span>&lt;s.<span class="built_in">length</span>())&#123;</span><br><span class="line">                i++;cnt++;</span><br><span class="line">            &#125;</span><br><span class="line">            ans+=<span class="number">2</span>*cnt<span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>XCPC</category>
+        <category>XCPC系列赛</category>
       </categories>
   </entry>
   <entry>
@@ -70,93 +157,6 @@
       <tags>
         <tag>dp</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>2023ICPC网络赛(一)</title>
-    <url>/2024/09/13/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/2023ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B(%E4%B8%80)/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h2 id="D-Transitivity"><a href="#D-Transitivity" class="headerlink" title="D. Transitivity"></a>D. Transitivity</h2><p>Given a <strong>simple undirected graph</strong> with $n$ vertices and $m$ edges, and it’s guaranteed that</p>
-<p>We define an undirected graph to be transitive if and only if for any two <strong>different</strong> vertices $u, v$ :</p>
-<p>If there exists a path starting from $u$ and ending at $v$ in the graph, then there should exists an edge connected $u$ and $v$ in the graph.</p>
-<p>Now you should add some undirected edges to the graph (<strong>add at least one edge</strong>). You need to ensure that after adding edges, the graph is still a simple undirected graph and is transitive.</p>
-<p>The question is, how many edges need to be added at least?</p>
-<p>Recall that a simple undirected graph is an undirected graph that does not have more than one edge between any two vertices and no edge starts and ends at the same vertex.</p>
-<p>$n_{k}^9$</p>
-]]></content>
-      <categories>
-        <category>XCPC</category>
-        <category>XCPC系列赛</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>ICPC·2020·小米网络赛二</title>
-    <url>/2024/09/11/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/ICPC%C2%B72020%C2%B7%E5%B0%8F%E7%B1%B3%E7%BD%91%E7%BB%9C%E8%B5%9B%E4%BA%8C/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h2 id="G-Shift-and-Reverse"><a href="#G-Shift-and-Reverse" class="headerlink" title="G Shift and Reverse"></a>G Shift and Reverse</h2><h3 id="Topic"><a href="#Topic" class="headerlink" title="Topic"></a>Topic</h3><p>Bobo has a sequence $a_1,a_2,\dots,a_n$. He can rearrange the sequence using the following operation any number of times:  </p>
-<p>+ Select an integer i ($1 \le i \le n$) and change the sequence to $a_i, a_{i-1}, \dots, a_1, a_n, a_{n-1}, \dots, a_{i+1}$.  </p>
-<p>Bobo would like to know the number of different sequences can be obtained modulo $(10^9+7)$.</p>
-<p>波波有一个序列$a_1,a_2,\dots,a_n$。他可以使用以下操作任意次数重新排列序列:</p>
-<p>选择整数i($1 \le i \le n$)并将序列更改为$a_i, a_{i-1}, \dots, a_1, a_n, a_{n-1}, \dots, a_{i+1}$。</p>
-<p>Bobo想知道有多少个不同的序列对$(10^9+7)$取模。</p>
-<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>遇到题目没思路就先模拟一下</p>
-<p>一个新的数组a,标号从a1-an,假定选择k进行反转操作，执行操作后的序列为$a_{k},a_{k-1}…a_{k+2},a_{k+1},$</p>
-]]></content>
-      <categories>
-        <category>XCPC</category>
-        <category>XCPC系列赛</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>2024CCPC网络赛</title>
-    <url>/2024/09/12/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/2024CCPC%E7%BD%91%E7%BB%9C%E8%B5%9B/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h2 id="B-军训-II"><a href="#B-军训-II" class="headerlink" title="B 军训 II"></a>B 军训 II</h2><p>对于这类问题一个很经典的思路就是求每个位置的贡献</p>
-<p>首先能感性的判断出来从小到大&#x2F;从大到小排不整齐度是最小的(因为最大&#x2F;最小值都是依次递增的)</p>
-<p>然后可以理性的证明一下：</p>
-<p>对于已经排好序的数组a 有a1&lt;&#x3D;a2&lt;&#x3D;a3&lt;&#x3D;…&lt;&#x3D;an,此时交换a2,ak(假设a2&lt;ak);</p>
-<p>交换完的结果就是l在[1,k-1],r在[l,k-1]的区间内最大值变大，最小值不变,l在[k,n]，r在[l,n]的区间内最大值不变，最小值变小</p>
-<p>身高相同的人可以交换位置,$A_{k}^k$,表示k个身高相同的人的排列方案,</p>
-<p>注意特判全相等序列(从小到大和从大到小排列一样)</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n);</span><br><span class="line">    map&lt;<span class="type">int</span>,<span class="type">int</span>&gt;mp;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;a[i];mp[a[i]]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">sort</span>(a.<span class="built_in">begin</span>(),a.<span class="built_in">end</span>());</span><br><span class="line">    <span class="type">int</span> ans1=<span class="number">0</span>,ans2=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=i;j&lt;n;j++)&#123;</span><br><span class="line">            ans1+=a[j]-a[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">auto</span> A=[&amp;](<span class="type">int</span> x)&#123;</span><br><span class="line">        <span class="type">int</span> tem=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=x;i++)&#123;</span><br><span class="line">            tem=(tem*i)%mod;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> tem;</span><br><span class="line">    &#125;;</span><br><span class="line">    a.<span class="built_in">erase</span>(<span class="built_in">unique</span>(a.<span class="built_in">begin</span>(),a.<span class="built_in">end</span>()),a.<span class="built_in">end</span>());</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> i:a)&#123;</span><br><span class="line">        ans2=(ans2*<span class="built_in">A</span>(mp[i]))%mod;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(a.<span class="built_in">size</span>()!=<span class="number">1</span>) ans2=(ans2*<span class="number">2</span>)%mod;</span><br><span class="line">    cout&lt;&lt;ans1&lt;&lt;<span class="string">&#x27; &#x27;</span>&lt;&lt;ans2&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="K-取沙子游戏"><a href="#K-取沙子游戏" class="headerlink" title="K 取沙子游戏"></a>K 取沙子游戏</h2><p>考虑n的奇偶性</p>
-<p>当n为奇数时，第一手取1必然获胜</p>
-<p>当n为偶数时，考虑变成必胜态，即将n减去某两个数得到奇数，可知这两个数必然为一奇一偶，且先手必选偶数，当先手选择奇数后，后手必胜。</p>
-<p>由于选择的是偶数，初步猜想寄了，因为后手必然不会选择奇数，所以后手选择偶数阻止先手到达必胜态，此时第二轮到达先手手上的数还是偶数，这样归纳一下可以发现当n为偶数的时候，先后手都只会选择偶数</p>
-<p>考虑二进制，当先手第一次选择lowbit(n)时，后手无论选择什么我们都和其选择一样即可获胜，因为二进制下需要偶数次选择偶数才能将这个数归零</p>
-]]></content>
-      <categories>
-        <category>XCPC</category>
-        <category>XCPC系列赛</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>ICPC网络赛第一场</title>
-    <url>/2024/09/08/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA/</url>
-    <content><![CDATA[<h2 id="A-Intelligent-Warehouse"><a href="#A-Intelligent-Warehouse" class="headerlink" title="A  Intelligent Warehouse"></a>A  Intelligent Warehouse</h2><h3 id="Topic"><a href="#Topic" class="headerlink" title="Topic"></a>Topic</h3><p>In <em>MI Intelligent Warehouse</em>, there are $n_{}$ products, where the $i_{}$-th product is of size $a_i$. We always need to box producsts into all kinds of containers, and it will be safer and more cost efficient(效率高的) if for any two sizes of products, one is the other’s multiple, since(因为) there won’t be any residual(残余的) room in one container. So for each boxing we need to choose some products that for any two chosen products, either $a_i$ is multiple of $a_j$ or $a_j$ is multiple of $a_i$. Print the maximum number of products that can be chosen in one boxing.</p>
-<p>在mi智能仓库中，有$n_{}$个产品，其中$i_{}$个产品的尺寸为$a_i$。我们总是需要把产品装进各种各样的容器中，如果任意两个尺寸的产品，一个是另一个的倍数，这样会更安全且成本效益更高，因为一个容器里不会有剩余的空间。因此，对于每次装箱，我们需要选择一些产品，对于任意两个选择的产品，要么是$a_i$是$a_j$的倍数，要么是$a_j$是$a_i$的倍数。打印出在一次装箱中选择的产品的最大数量。</p>
-<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>目的是选择若干个数字，其中任意两个数均成倍数关系</p>
-<p>考虑最终选定的序列，将其排序后，每个数都必然是最大数的约数，所以其实存在一种递推关系，当$ai$是某个数列的最大数时，将$ai$的倍数加进来，整个数列必然也满足条件</p>
-<p>考虑dp，dp[i]表示以i结尾的最长序列，dp关系式也如上文所说</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> N=<span class="number">1e7</span>;</span><br><span class="line"><span class="type">int</span> dp[N<span class="number">+10</span>],mp[N<span class="number">+10</span>];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="type">int</span> x;cin&gt;&gt;x;</span><br><span class="line">        mp[x]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(mp[i])&#123;</span><br><span class="line">            dp[i]+=mp[i];</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> j=i*<span class="number">2</span>;j&lt;=N;j+=i)&#123;</span><br><span class="line">                dp[j]=<span class="built_in">max</span>(dp[i],dp[j]);</span><br><span class="line">            &#125;</span><br><span class="line">            ans=<span class="built_in">max</span>(ans,dp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="B-Intelligent-Robot"><a href="#B-Intelligent-Robot" class="headerlink" title="B  Intelligent Robot"></a>B  Intelligent Robot</h2><h2 id="C-Smart-Browser"><a href="#C-Smart-Browser" class="headerlink" title="C  Smart Browser"></a>C  Smart Browser</h2><h3 id="Topic-1"><a href="#Topic-1" class="headerlink" title="Topic"></a>Topic</h3><p>In some social platforms(社交平台), there are some netizen(平台) who like to post “<em>www</em>“. Since the string is like the grass(草), which contains plenty of “&#x2F;\“ shapes, so there are also some netizen who post “<em>grass</em>“.  </p>
-<p>As a fast, smart, and convenient browser, <em>MI Browser</em> can recognize this kind of text and show some special effects. Specifically(具体来说), given a string, <em>MI Browser</em> will determine(确定) the number of “&#x2F;\“ shapes made by character “<em>w</em>“, where “<em>w</em>“ itself and the gap(间隙) between two adjacent(相邻的) “<em>w</em>“s both give one `&#x2F;\` shape. If still not clear, please turn to sample input&#x2F;output for more details.  </p>
-<p>As a <em>MI fan</em>, you want to detect(探究) the relationship between the special effects and the number of “&#x2F;\“ shapes, so the thing you should do first is to determine the number of “&#x2F;\“ shapes by yourself.</p>
-<p>在一些社交平台上，有些网民喜欢发布“www”。由于这个字符串看起来很像草，其中包含了许多“&#x2F;\”的形状，因此也有一些网民发布“grass”。</p>
-<p>作为一款快速、智能且便捷的浏览器，MI浏览器能够识别这种文本并展示一些特殊效果。具体来说，给定一个字符串，MI浏览器会确定由字符“w”构成的“&#x2F;\”形状的数量，其中“w”本身以及两个相邻“w”之间的间隙都构成一个“&#x2F;\”形状。如果仍然不清楚，请参考示例输入输出以获取更多详情。</p>
-<p>作为MI浏览器的粉丝，你想要探究这些特殊效果与“&#x2F;\”形状数量之间的关系，因此你首先要做的就是自己确定“&#x2F;\”形状的数量。</p>
-<h3 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h3><p>双指针判断以v分隔开的w的字符数量</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    string s;cin&gt;&gt;s;</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;s.<span class="built_in">length</span>();i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(s[i]==<span class="string">&#x27;w&#x27;</span>)&#123;</span><br><span class="line">            <span class="type">int</span> cnt=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span>(s[i<span class="number">+1</span>]==<span class="string">&#x27;w&#x27;</span>&amp;&amp;i<span class="number">+1</span>&lt;s.<span class="built_in">length</span>())&#123;</span><br><span class="line">                i++;cnt++;</span><br><span class="line">            &#125;</span><br><span class="line">            ans+=<span class="number">2</span>*cnt<span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>XCPC</category>
-        <category>XCPC系列赛</category>
-      </categories>
   </entry>
   <entry>
     <title>XCPC图论</title>
@@ -537,5 +537,34 @@
         <tag>Matrix Determinant Lemma</tag>
         <tag>Combination</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Codeforces Round 980 (Div2,A-D)</title>
+    <url>/2024/10/21/XCPC/codeforces/Codeforces%20Round%20980%20(Div.%202)/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<p><a href="https://mirror.codeforces.com/contest/2024/problem/A">A - Profitable Interest Rate</a></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> a,b;cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    <span class="keyword">if</span>(a&gt;=b)&#123;</span><br><span class="line">        cout&lt;&lt;a&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="type">int</span> k=<span class="number">2</span>*a-b;</span><br><span class="line">        <span class="keyword">if</span>(k&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            cout&lt;&lt;k&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            cout&lt;&lt;<span class="number">0</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;            </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://mirror.codeforces.com/contest/2024/problem/B">B - Buying Lemonade</a></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="type">int</span> n,k;cin&gt;&gt;n&gt;&gt;k;</span><br><span class="line">   vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n);</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) cin&gt;&gt;a[i];</span><br><span class="line">   <span class="built_in">sort</span>(a.<span class="built_in">begin</span>(),a.<span class="built_in">end</span>());</span><br><span class="line">   <span class="type">int</span> sum=<span class="number">0</span>,ans=<span class="number">0</span>,mn=<span class="number">0</span>;</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">      a[i]-=mn;</span><br><span class="line">      <span class="keyword">if</span>(sum+a[i]*(n-i)&lt;k)&#123;</span><br><span class="line">         sum+=a[i]*(n-i);</span><br><span class="line">         mn+=a[i];ans+=a[i]*(n-i);</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">         ans+=k-sum;</span><br><span class="line">         <span class="keyword">break</span>;</span><br><span class="line">      &#125;  </span><br><span class="line">      ans++; </span><br><span class="line">   &#125;     </span><br><span class="line">   cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;       </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://mirror.codeforces.com/contest/2024/problem/C">C - Concatenation of Arrays</a></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;array&lt;<span class="type">int</span>,3&gt;&gt;<span class="built_in">a</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;a[i][<span class="number">0</span>]&gt;&gt;a[i][<span class="number">1</span>];</span><br><span class="line">        a[i][<span class="number">2</span>]=a[i][<span class="number">0</span>]+a[i][<span class="number">1</span>];</span><br><span class="line">    &#125;     </span><br><span class="line">    <span class="built_in">sort</span>(a.<span class="built_in">begin</span>(),a.<span class="built_in">end</span>(),[&amp;](<span class="keyword">auto</span> l,<span class="keyword">auto</span> r)&#123;</span><br><span class="line">        <span class="keyword">if</span>(l[<span class="number">2</span>]!=r[<span class="number">2</span>])<span class="keyword">return</span> l[<span class="number">2</span>]&lt;r[<span class="number">2</span>]; </span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="built_in">min</span>(l[<span class="number">0</span>],l[<span class="number">1</span>])&lt;<span class="built_in">min</span>(r[<span class="number">0</span>],r[<span class="number">1</span>]);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        cout&lt;&lt;a[i][<span class="number">0</span>]&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;a[i][<span class="number">1</span>]&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://mirror.codeforces.com/contest/2024/problem/D">D - Skipping</a></p>
+<p>只有答题才能得分，所以跳题相当于花费a[i]从位置i转移到b[i]</p>
+<p>答题就是花费0从i转移到i-1</p>
+<p>最终答案就是所有能遍历到的位置上的a[i]-cost[i]</p>
+<p>b[i]小于等于i时选择跳过是不明智的，因为此时在到达b[i]的过程中通过答题到b[i]能获得的分数一定更大</p>
+<p>i 到 j 有两种方法，第一种是 j&#x3D;b[i]，直接从 i 跳到 j ；第二种是 i&lt;j&lt;b[i] ，从 i 跳到 b[i] 再向左答题到 j，两种方法的花费都是a[i]，</p>
+<p>所以我们遍历所有位置，每次取能到当前位置且花费最小，转移到当前位置求每个能遍历到的位置的最小花费</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">   vector&lt;pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;&gt;<span class="built_in">a</span>(n<span class="number">+1</span>);</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) cin&gt;&gt;a[i].first;</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) cin&gt;&gt;a[i].second;</span><br><span class="line">   priority_queue&lt;pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;,vector&lt;pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;&gt;,greater&lt;pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;&gt;&gt;pq;</span><br><span class="line">   pq.<span class="built_in">push</span>(&#123;a[<span class="number">1</span>].first,a[<span class="number">1</span>].second&#125;);</span><br><span class="line">   vector&lt;<span class="type">int</span>&gt;<span class="built_in">dp</span>(n<span class="number">+1</span>,<span class="number">1e18</span>);</span><br><span class="line">   dp[<span class="number">1</span>]=<span class="number">0</span>;</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">      <span class="keyword">while</span>(pq.<span class="built_in">size</span>()&amp;&amp;pq.<span class="built_in">top</span>().second&lt;i)&#123;</span><br><span class="line">         pq.<span class="built_in">pop</span>();</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span>(pq.<span class="built_in">empty</span>())&#123;</span><br><span class="line">         <span class="keyword">break</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      dp[i]=pq.<span class="built_in">top</span>().first;   </span><br><span class="line">      <span class="keyword">if</span>(a[i].second&gt;i)&#123;</span><br><span class="line">         pq.<span class="built_in">push</span>(&#123;dp[i]+a[i].first,a[i].second&#125;);</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;  </span><br><span class="line">   <span class="type">int</span> sum=<span class="number">0</span>,ans=<span class="number">0</span>;          </span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">      sum+=a[i].first;</span><br><span class="line">      ans=<span class="built_in">max</span>(ans,sum-dp[i]);</span><br><span class="line">   &#125;</span><br><span class="line">   cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>XCPC</category>
+        <category>Codeforces</category>
+      </categories>
   </entry>
 </search>
