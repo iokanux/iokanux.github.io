@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iokanux.com/2024/10/21/XCPC/codeforces/Codeforces%20Round%20981%20(Div.%203)/</loc>
+    
+    <lastmod>2024-10-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://iokanux.com/2024/10/21/XCPC/codeforces/Codeforces%20Round%20980%20(Div.%202)/</loc>
     
     <lastmod>2024-10-21</lastmod>
@@ -157,7 +166,7 @@
 
   <url>
     <loc>http://iokanux.com/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -165,322 +174,322 @@
   
   <url>
     <loc>http://iokanux.com/tags/dp/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/SSSP/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/APSP/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/Bipartite-Graph/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/Cut-point/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/SCC/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/BCC/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/EBCC/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/HLD/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/Tree/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/MST/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/Kruskal/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/Dijkstral/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/Bellman-ford/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/SPFA/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/tags/Floyd/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/STL/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Pre/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Dif/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Suf/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Stoi/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/trisection/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Trick/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Cross-verification/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/high-precision/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/SSSP/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/APSP/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Bipartite-Graph/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Cut-point/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/SCC/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/BCC/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/EBCC/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/HLD/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Tree/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/MST/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Kruskal/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Dijkstral/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Bellman-ford/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/SPFA/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/tags/Floyd/</loc>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/ST%E8%A1%A8/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/DSU/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/SegmentTree/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/LazySegmentTree/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Monotonic-Stack/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Monotonic-Deque/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Trie/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Fenwick/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Mo-s-Algorithm/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/PST/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/FHQ-Treap/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Inversion/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Power/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Qadd/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Exgcd/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Pollard-Rho/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Miller-Rabin/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Sieve/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Expectation/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Matrix-Determinant-Lemma/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/tags/Combination/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -489,70 +498,70 @@
   
   <url>
     <loc>http://iokanux.com/categories/XCPC/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/categories/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/categories/XCPC/Tips/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/categories/XCPC/Codeforces/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/categories/XCPC/Tips/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/categories/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%9D%82%E9%A1%B9/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/</loc>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://iokanux.com/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E8%AE%BA/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

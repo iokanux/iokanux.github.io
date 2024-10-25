@@ -301,6 +301,136 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/10/21/XCPC/codeforces/Codeforces%20Round%20981%20(Div.%203)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Waiting You">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chonu">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/10/21/XCPC/codeforces/Codeforces%20Round%20981%20(Div.%203)/" class="post-title-link" itemprop="url">Codeforces Round 981 (Div3,A-F)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-10-21 15:40:25" itemprop="dateCreated datePublished" datetime="2024-10-21T15:40:25+08:00">2024-10-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-10-26 01:23:37" itemprop="dateModified" datetime="2024-10-26T01:23:37+08:00">2024-10-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/Codeforces/" itemprop="url" rel="index"><span itemprop="name">Codeforces</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/10/21/XCPC/codeforces/Codeforces%20Round%20981%20(Div.%203)/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/10/21/XCPC/codeforces/Codeforces%20Round%20981%20(Div.%203)/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <span id="more"></span>
+
+<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/A">A - Sakurako and Kosuke</a></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    <span class="type">int</span> m=<span class="number">1</span>,cnt=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i&amp;<span class="number">1</span>)&#123;</span><br><span class="line">            cnt-=(<span class="number">2</span>*i<span class="number">-1</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            cnt+=(<span class="number">2</span>*i<span class="number">-1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">abs</span>(cnt)&lt;=n)&#123;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            m=i;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;            </span><br><span class="line">    cout&lt;&lt;(m&amp;<span class="number">1</span>?<span class="string">&quot;Kosuke&quot;</span>:<span class="string">&quot;Sakurako&quot;</span>)&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/B"> B - Sakurako and Water</a></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;<span class="built_in">g</span>(n<span class="number">+1</span>,<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(n<span class="number">+1</span>));</span><br><span class="line">    map&lt;<span class="type">int</span>,vector&lt;<span class="type">int</span>&gt;&gt;mp;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            cin&gt;&gt;g[i][j];</span><br><span class="line">            <span class="keyword">if</span>(g[i][j]&lt;<span class="number">0</span>)&#123;</span><br><span class="line">                mp[i-j].<span class="built_in">push_back</span>(<span class="built_in">abs</span>(g[i][j]));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;    </span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> &amp;[x,y]:mp)&#123;</span><br><span class="line">        <span class="built_in">sort</span>(y.<span class="built_in">begin</span>(),y.<span class="built_in">end</span>(),<span class="built_in">greater</span>&lt;<span class="type">int</span>&gt;());</span><br><span class="line">        ans+=y[<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/C">C - Sakurako’s Field Trip</a></p>
+<p>C这个题有一点说法，其实想明白什么时候换就可以</p>
+<p>从左到n&#x2F;2的位置每次考虑是否交换当前位置，当i这个位置与i-1的数相同的时候或者n-i+1与其下一个数（就是当前数与其遍历过的上一个数）相同的时候选择交换，可以证明这样操作对答案的增益一定是非负的</p>
+<p>证明如下</p>
+<ol>
+<li><p>如果a[i]&#x3D;&#x3D;a[n-i+1]，操作无影响</p>
+</li>
+<li><p>a[i]!&#x3D;a[n-i+1]，</p>
+<p>设交换之前点i对答案的增益为 ans&#x3D;(a[i]&#x3D;&#x3D;a[i-1]+a[i]&#x3D;&#x3D;a[i+1]+a[n-i+1]&#x3D;&#x3D;a[n-i]+a[n-i+1]&#x3D;&#x3D;a[n-i+2])</p>
+<p>交换之后点i对答案的增益为 ans1&#x3D;(a[n-i+1]&#x3D;&#x3D;a[i-1]+a[n-i+1]&#x3D;&#x3D;a[i+1]+a[i]&#x3D;&#x3D;a[n-i]+a[i]&#x3D;&#x3D;a[n-i+2])</p>
+<p>最坏情况就是</p>
+<p>a[i]&#x3D;&#x3D;a[i-1]&amp;&amp;a[i]!&#x3D;a[i+1]&amp;&amp;a[n-i+1]!&#x3D;a[n-i]&amp;&amp;a[n-i+1]!&#x3D;a[n-i+2]</p>
+<p>a[n-i+1]&#x3D;&#x3D;a[i+1]&amp;&amp;a[i]&#x3D;&#x3D;a[n-i]&amp;&amp;a[i]&#x3D;&#x3D;a[n-i+2]</p>
+<p>这样的话，交换之后答案多2，但是这种情况下在下一次交换过程中会被重新满足条件执行交换</p>
+</li>
+</ol>
+<p>综上，一直执行交换，最后求答案即可</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n<span class="number">+10</span>,<span class="number">0</span>),<span class="built_in">cnt</span>(n<span class="number">+1</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) cin&gt;&gt;a[i];</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=(n<span class="number">+1</span>)/<span class="number">2</span>;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]==a[i<span class="number">-1</span>]||a[n-i<span class="number">+1</span>]==a[n-i<span class="number">+2</span>])&#123;</span><br><span class="line">            <span class="built_in">swap</span>(a[i],a[n-i<span class="number">+1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n<span class="number">-1</span>;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]==a[i<span class="number">+1</span>]) ans++;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/D">D - Kousuke’s Assignment</a></p>
+<p>没啥说的，遇到0就断开一定是最优的</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n<span class="number">+1</span>),<span class="built_in">pre</span>(n<span class="number">+1</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">        pre[i]=pre[i<span class="number">-1</span>]+a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>,lst=<span class="number">0</span>;</span><br><span class="line">    map&lt;<span class="type">int</span>,<span class="type">int</span>&gt;mp;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]==<span class="number">0</span>)&#123;</span><br><span class="line">            lst=i;ans++;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> d=pre[i]-pre[lst];</span><br><span class="line">        <span class="keyword">if</span>(d==<span class="number">0</span>)&#123; </span><br><span class="line">            <span class="keyword">if</span>(lst&lt;i)&#123;</span><br><span class="line">                ans++;</span><br><span class="line">                lst=<span class="built_in">max</span>(i,lst);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(mp.<span class="built_in">count</span>(d))&#123;</span><br><span class="line">            <span class="keyword">if</span>(lst&lt;mp[d])&#123;</span><br><span class="line">                 ans++;</span><br><span class="line">                lst=<span class="built_in">max</span>(i,lst);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        mp[d]=i;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/E">E - Sakurako, Kosuke, and the Permutation</a></p>
+<p>每次交换完之后就保证当前位置不再交换,这样顺序从1到n就是最小交换次数</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">     vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n<span class="number">+1</span>),<span class="built_in">pos</span>(n<span class="number">+1</span>);</span><br><span class="line">     <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">        pos[a[i]]=i;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">     <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">         <span class="keyword">if</span>(a[i]==i) <span class="keyword">continue</span>;</span><br><span class="line">         <span class="keyword">if</span>(pos[i]==a[i]&amp;&amp;a[a[i]]==i) <span class="keyword">continue</span>;</span><br><span class="line">         <span class="built_in">swap</span>(a[pos[i]],a[a[i]]);</span><br><span class="line">         <span class="built_in">swap</span>(pos[a[pos[i]]],pos[a[a[i]]]);</span><br><span class="line">         ans++;</span><br><span class="line">     &#125;</span><br><span class="line">     cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/F">F - Kosuke’s Sloth</a></p>
+<p>递推数列具有模周期性，找到第一个循环节中的下标再乘n即可</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">int</span> n,k;cin&gt;&gt;n&gt;&gt;k;</span><br><span class="line">	f[<span class="number">1</span>]=f[<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">	<span class="type">int</span> pos=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(i&gt;=<span class="number">3</span>) f[i]=(f[i<span class="number">-1</span>]+f[i<span class="number">-2</span>])%k;</span><br><span class="line">		<span class="keyword">if</span>(f[i]%k==<span class="number">0</span>)&#123;</span><br><span class="line">			pos=i;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;(pos%mod)*(n%mod)%mod&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/10/15/XCPC/codeforces/Educational%20Codeforces%20Round%20170%20(Rated%20for%20Div.%202)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -783,109 +913,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9B%BE%E8%AE%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wodetouxiang.png">
-      <meta itemprop="name" content="iokanux">
-      <meta itemprop="description" content="Waiting You">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chonu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9B%BE%E8%AE%BA/" class="post-title-link" itemprop="url">XCPC图论</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-09-11 13:40:25" itemprop="dateCreated datePublished" datetime="2024-09-11T13:40:25+08:00">2024-09-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-10-12 16:01:18" itemprop="dateModified" datetime="2024-10-12T16:01:18+08:00">2024-10-12</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/" itemprop="url" rel="index"><span itemprop="name">XCPC模板</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/" itemprop="url" rel="index"><span itemprop="name">XCPC图论</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9B%BE%E8%AE%BA/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9B%BE%E8%AE%BA/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>介绍XCPC赛事中图论相关的知识</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9B%BE%E8%AE%BA/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -966,6 +993,109 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9F%BA%E7%A1%80/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9B%BE%E8%AE%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Waiting You">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chonu">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9B%BE%E8%AE%BA/" class="post-title-link" itemprop="url">XCPC图论</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-09-11 13:40:25" itemprop="dateCreated datePublished" datetime="2024-09-11T13:40:25+08:00">2024-09-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-10-12 16:01:18" itemprop="dateModified" datetime="2024-10-12T16:01:18+08:00">2024-10-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/" itemprop="url" rel="index"><span itemprop="name">XCPC模板</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E5%9B%BE%E8%AE%BA/" itemprop="url" rel="index"><span itemprop="name">XCPC图论</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9B%BE%E8%AE%BA/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9B%BE%E8%AE%BA/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>介绍XCPC赛事中图论相关的知识</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9B%BE%E8%AE%BA/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -1088,109 +1218,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E6%95%B0%E8%AE%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wodetouxiang.png">
-      <meta itemprop="name" content="iokanux">
-      <meta itemprop="description" content="Waiting You">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chonu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E6%95%B0%E8%AE%BA/" class="post-title-link" itemprop="url">XCPC数论</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-09-11 13:40:25" itemprop="dateCreated datePublished" datetime="2024-09-11T13:40:25+08:00">2024-09-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-10-12 16:00:03" itemprop="dateModified" datetime="2024-10-12T16:00:03+08:00">2024-10-12</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/" itemprop="url" rel="index"><span itemprop="name">XCPC模板</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC%E6%95%B0%E8%AE%BA/" itemprop="url" rel="index"><span itemprop="name">XCPC数论</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E6%95%B0%E8%AE%BA/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E6%95%B0%E8%AE%BA/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>介绍XCPC赛事中数论的知识</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/09/11/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E6%95%B0%E8%AE%BA/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1261,7 +1288,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
