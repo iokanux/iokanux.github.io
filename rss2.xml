@@ -9,8 +9,30 @@
     <atom:link href="http://iokanux.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Waiting You</description>
-    <pubDate>Tue, 12 Nov 2024 11:49:18 GMT</pubDate>
+    <pubDate>Thu, 12 Dec 2024 10:35:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Guinness</title>
+      <link>http://iokanux.com/2024/12/11/Guinness/</link>
+      <guid>http://iokanux.com/2024/12/11/Guinness/</guid>
+      <pubDate>Wed, 11 Dec 2024 05:40:25 GMT</pubDate>
+      
+        
+        
+      <description>&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<span id="more"></span>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://iokanux.com/2024/12/11/Guinness/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>2023ICPC合肥</title>
@@ -242,34 +264,6 @@
       
       
       <comments>http://iokanux.com/2024/10/12/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%9F%BA%E7%A1%80/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>2023ICPC网络赛(一)</title>
-      <link>http://iokanux.com/2024/09/13/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/2023ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B(%E4%B8%80)/</link>
-      <guid>http://iokanux.com/2024/09/13/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/2023ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B(%E4%B8%80)/</guid>
-      <pubDate>Fri, 13 Sep 2024 13:10:33 GMT</pubDate>
-      
-        
-        
-      <description>&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;h2 id=&quot;D-Transitivity&quot;&gt;&lt;a href=&quot;#D-Transitivity&quot; class=&quot;headerlink&quot; title=&quot;D. Transitivity&quot;&gt;&lt;/a&gt;D. Transitivity&lt;/h</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<span id="more"></span><h2 id="D-Transitivity"><a href="#D-Transitivity" class="headerlink" title="D. Transitivity"></a>D. Transitivity</h2><p>Given a <strong>simple undirected graph</strong> with $n$ vertices and $m$ edges, and it’s guaranteed that</p><p>We define an undirected graph to be transitive if and only if for any two <strong>different</strong> vertices $u, v$ :</p><p>If there exists a path starting from $u$ and ending at $v$ in the graph, then there should exists an edge connected $u$ and $v$ in the graph.</p><p>Now you should add some undirected edges to the graph (<strong>add at least one edge</strong>). You need to ensure that after adding edges, the graph is still a simple undirected graph and is transitive.</p><p>The question is, how many edges need to be added at least?</p><p>Recall that a simple undirected graph is an undirected graph that does not have more than one edge between any two vertices and no edge starts and ends at the same vertex.</p><p>$n_{k}^9$</p>]]></content:encoded>
-      
-      
-      <category domain="http://iokanux.com/categories/XCPC/">XCPC</category>
-      
-      <category domain="http://iokanux.com/categories/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/">XCPC系列赛</category>
-      
-      
-      
-      <comments>http://iokanux.com/2024/09/13/XCPC/XCPC%E7%B3%BB%E5%88%97%E8%B5%9B/2023ICPC%E7%BD%91%E7%BB%9C%E8%B5%9B(%E4%B8%80)/#disqus_thread</comments>
       
     </item>
     
