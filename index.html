@@ -196,6 +196,306 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2025/02/08/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/2025%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A55(%E6%97%A0F,G,H,K)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Waiting You">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chonu">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/02/08/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/2025%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A55(%E6%97%A0F,G,H,K)/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2025-02-08 20:58:57" itemprop="dateCreated datePublished" datetime="2025-02-08T20:58:57+08:00">2025-02-08</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2025/02/08/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/2025%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A55(%E6%97%A0F,G,H,K)/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2025/02/08/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/2025%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A55(%E6%97%A0F,G,H,K)/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="2025牛客寒假算法基础集训营5-无F-G-H-K"><a href="#2025牛客寒假算法基础集训营5-无F-G-H-K" class="headerlink" title="2025牛客寒假算法基础集训营5(无F,G,H,K)"></a>2025牛客寒假算法基础集训营5(无F,G,H,K)</h1><p>打的晕晕的</p>
+<h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>减法时注意数据范围</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">     <span class="type">char</span> c;cin&gt;&gt;c;</span><br><span class="line">     <span class="keyword">if</span>(c==<span class="string">&#x27;+&#x27;</span>)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="number">1</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;n<span class="number">-1</span>;</span><br><span class="line">     &#125;        </span><br><span class="line">     <span class="keyword">if</span>(c==<span class="string">&#x27;*&#x27;</span>)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="number">1</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;n;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)&#123;</span><br><span class="line">        cout&lt;&lt;n*<span class="number">2</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;n;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="B"><a href="#B" class="headerlink" title="B"></a>B</h2><p>注意限制间隔</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="type">int</span> n,k,t;cin&gt;&gt;n&gt;&gt;t&gt;&gt;k;</span><br><span class="line">    cout&lt;&lt;<span class="built_in">min</span>(((n-k)/t),k<span class="number">+1</span>)&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><p>贪心，已经合法的位我们不对其进行二次操作，且每个非法位我们操作且<strong>仅执行一次</strong>操作，无论是对a执行还是对b执行</p>
+<p>注意到四种非法情况</p>
+<p>a&#x3D;0,b&#x3D;0,c&#x3D;1;</p>
+<p>a&#x3D;0,b&#x3D;1,c&#x3D;0;</p>
+<p>a&#x3D;1,b&#x3D;0,c&#x3D;0;</p>
+<p>a&#x3D;1,b&#x3D;1,c&#x3D;1;</p>
+<p>每两种情况都可以通过交换操作使得两个非法位合法，无非是交换a&#x2F;b的区别；</p>
+<p>所以思路就是，最大化两两配对四种非法位，自身不能和自身配对</p>
+<p>配对过程就是很典的思路：当最大值大于剩下的所有数，非配对数为最大值-其他所有数之和；否则非配对数为所有数字之和为偶数?0:1</p>
+<p>ans&#x3D;min(全用反置操作，配对数$\times$y+非配对数$\times$x)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="type">int</span> n,x,y,ans=<span class="number">0</span>;cin&gt;&gt;n&gt;&gt;x&gt;&gt;y;</span><br><span class="line">     string s1,s2,s3;cin&gt;&gt;s1&gt;&gt;s2&gt;&gt;s3;</span><br><span class="line">     <span class="type">int</span> pos=<span class="number">0</span>;</span><br><span class="line">     vector&lt;<span class="type">int</span>&gt;<span class="built_in">v</span>(<span class="number">4</span>);</span><br><span class="line">     <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>((s1[i]-<span class="string">&#x27;0&#x27;</span>)^(s2[i]-<span class="string">&#x27;0&#x27;</span>)!=(s3[i]-<span class="string">&#x27;0&#x27;</span>))&#123;</span><br><span class="line">            <span class="keyword">if</span>(s1[i]==<span class="string">&#x27;0&#x27;</span>&amp;&amp;s2[i]==<span class="string">&#x27;0&#x27;</span>) v[<span class="number">0</span>]++;</span><br><span class="line">            <span class="keyword">if</span>(s1[i]==<span class="string">&#x27;1&#x27;</span>&amp;&amp;s2[i]==<span class="string">&#x27;1&#x27;</span>) v[<span class="number">1</span>]++;</span><br><span class="line">            <span class="keyword">if</span>(s1[i]==<span class="string">&#x27;0&#x27;</span>&amp;&amp;s2[i]==<span class="string">&#x27;1&#x27;</span>) v[<span class="number">2</span>]++;</span><br><span class="line">            <span class="keyword">if</span>(s1[i]==<span class="string">&#x27;1&#x27;</span>&amp;&amp;s2[i]==<span class="string">&#x27;0&#x27;</span>) v[<span class="number">3</span>]++;</span><br><span class="line">            pos++;</span><br><span class="line">        &#125; </span><br><span class="line">     &#125;</span><br><span class="line">    <span class="built_in">sort</span>(v.<span class="built_in">begin</span>(),v.<span class="built_in">end</span>());</span><br><span class="line">    <span class="keyword">if</span>(v[<span class="number">3</span>]&gt;v[<span class="number">0</span>]+v[<span class="number">1</span>]+v[<span class="number">2</span>])&#123;</span><br><span class="line">      ans=(v[<span class="number">3</span>]-v[<span class="number">1</span>]-v[<span class="number">2</span>]-v[<span class="number">0</span>])*x+(v[<span class="number">1</span>]+v[<span class="number">2</span>]+v[<span class="number">0</span>])*y;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="type">int</span> sum=(v[<span class="number">0</span>]+v[<span class="number">1</span>]+v[<span class="number">2</span>]+v[<span class="number">3</span>]);</span><br><span class="line">      ans=(sum%<span class="number">2</span>)*x+(sum-(sum%<span class="number">2</span>))/<span class="number">2</span>*y;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;<span class="built_in">min</span>(ans,x*pos);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2><p>贪心的想，我们构造字符串一定是某段中为连续的0和连续的1，前面一段的字符串如果为11…00，那么下一段字符串就应该是从0开始，即0…01…1，两段拼接起来并删除重复串后为101，也就是说这样每一段最多只会贡献1</p>
+<p>考虑什么时候执行区间反置操作，当前一段的字符串为01时，若下一段全是1则该段对答案没有贡献，也就是说当该段全是0时，我们执行区间反置操作；同理，前一段是10时，下一段全是1，我们执行反置操作</p>
+<p>用前缀和维护，调和级数复杂度</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">     string s;cin&gt;&gt;s;</span><br><span class="line">     s=<span class="string">&quot; &quot;</span>+s;</span><br><span class="line">     <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">     vector&lt;<span class="type">int</span>&gt;<span class="built_in">pre</span>(n<span class="number">+1</span>,<span class="number">0</span>);</span><br><span class="line">     <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        pre[i]=pre[i<span class="number">-1</span>]+(s[i]==<span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">     &#125;        </span><br><span class="line">     <span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">1</span>;k&lt;=n;k++)&#123;</span><br><span class="line">        <span class="type">int</span> tem=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=k;j&lt;=n;j+=k)&#123;</span><br><span class="line">            <span class="type">int</span> cnt0=pre[j]-pre[j-k],cnt1=k-cnt0;</span><br><span class="line">            <span class="keyword">if</span>(cnt0!=<span class="number">0</span>&amp;&amp;cnt1!=<span class="number">0</span>) tem++;</span><br><span class="line">            <span class="keyword">if</span>(j+k&gt;n)&#123;</span><br><span class="line">                cnt0=pre[n]-pre[j],cnt1=n-j-cnt0;</span><br><span class="line">                <span class="keyword">if</span>(cnt0!=<span class="number">0</span>&amp;&amp;cnt1!=<span class="number">0</span>) tem++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ans^=(tem<span class="number">+1</span>);</span><br><span class="line">     &#125;</span><br><span class="line">     cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="E"><a href="#E" class="headerlink" title="E"></a>E</h2><p>可以想到胜利方式有两种，直接胜利和间接胜利</p>
+<p>直接胜利就是在下两步之后，横&#x2F;竖&#x2F;对角线直接连成三个</p>
+<p>间接胜利就是下两步之后，我们有两行&#x2F;两列&#x2F;一行一列&#x2F;一行一对角&#x2F;一列一对角连成两个且第三个空位没有O阻挡，这样的话无论炸鸡去阻挡哪个，小L都能取得胜利</p>
+<p>我检查间接胜利的方式就是遍历所有可能的组合判断是否符合</p>
+<p>复杂度最高为O(300T)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    vector&lt;vector&lt;<span class="type">char</span>&gt;&gt;<span class="built_in">g</span>(<span class="number">10</span>,<span class="built_in">vector</span>&lt;<span class="type">char</span>&gt;(<span class="number">10</span>));</span><br><span class="line">    vector&lt;array&lt;<span class="type">int</span>,2&gt;&gt;pos;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">3</span>;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=<span class="number">3</span>;j++)&#123;</span><br><span class="line">            cin&gt;&gt;g[i][j];</span><br><span class="line">            <span class="keyword">if</span>(g[i][j]==<span class="string">&#x27;G&#x27;</span>)&#123;</span><br><span class="line">                pos.<span class="built_in">push_back</span>(&#123;i,j&#125;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">auto</span> check1=[&amp;](<span class="type">char</span> c)&#123;</span><br><span class="line">        <span class="keyword">return</span> c==<span class="string">&#x27;G&#x27;</span>||c==<span class="string">&#x27;X&#x27;</span>;</span><br><span class="line">    &#125;;  </span><br><span class="line">    <span class="keyword">auto</span> check2=[&amp;](<span class="type">char</span> c)&#123;</span><br><span class="line">        <span class="keyword">return</span> c==<span class="string">&#x27;X&#x27;</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="type">int</span> ok=<span class="number">0</span>;             </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">3</span>;i++)&#123;</span><br><span class="line">        <span class="type">int</span> num1=<span class="built_in">check1</span>(g[i][<span class="number">1</span>])+<span class="built_in">check1</span>(g[i][<span class="number">2</span>])+<span class="built_in">check1</span>(g[i][<span class="number">3</span>]);</span><br><span class="line">        <span class="type">int</span> num11=<span class="built_in">check2</span>(g[i][<span class="number">1</span>])+<span class="built_in">check2</span>(g[i][<span class="number">2</span>])+<span class="built_in">check2</span>(g[i][<span class="number">3</span>]);</span><br><span class="line">        <span class="type">int</span> num2=<span class="built_in">check1</span>(g[<span class="number">1</span>][i])+<span class="built_in">check1</span>(g[<span class="number">2</span>][i])+<span class="built_in">check1</span>(g[<span class="number">3</span>][i]);</span><br><span class="line">        <span class="type">int</span> num22=<span class="built_in">check2</span>(g[<span class="number">1</span>][i])+<span class="built_in">check2</span>(g[<span class="number">2</span>][i])+<span class="built_in">check2</span>(g[<span class="number">3</span>][i]);</span><br><span class="line">        <span class="keyword">if</span>((num11&gt;=<span class="number">1</span>&amp;&amp;num1==<span class="number">3</span>)||(num22&gt;=<span class="number">1</span>&amp;&amp;num2==<span class="number">3</span>)) ok=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> num1=<span class="built_in">check1</span>(g[<span class="number">1</span>][<span class="number">1</span>])+<span class="built_in">check1</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check1</span>(g[<span class="number">3</span>][<span class="number">3</span>]);</span><br><span class="line">    <span class="type">int</span> num11=<span class="built_in">check2</span>(g[<span class="number">1</span>][<span class="number">1</span>])+<span class="built_in">check2</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check2</span>(g[<span class="number">3</span>][<span class="number">3</span>]);</span><br><span class="line">    <span class="type">int</span> num2=<span class="built_in">check1</span>(g[<span class="number">1</span>][<span class="number">3</span>])+<span class="built_in">check1</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check1</span>(g[<span class="number">3</span>][<span class="number">1</span>]);</span><br><span class="line">    <span class="type">int</span> num22=<span class="built_in">check2</span>(g[<span class="number">1</span>][<span class="number">3</span>])+<span class="built_in">check2</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check2</span>(g[<span class="number">3</span>][<span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">if</span>((num1==<span class="number">3</span>&amp;&amp;num11&gt;=<span class="number">1</span>)||(num2==<span class="number">3</span>&amp;&amp;num22&gt;=<span class="number">1</span>)) ok=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> i:pos)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> j:pos)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i[<span class="number">0</span>]==j[<span class="number">0</span>]&amp;&amp;i[<span class="number">1</span>]==j[<span class="number">1</span>]) <span class="keyword">continue</span>;</span><br><span class="line">            g[i[<span class="number">0</span>]][i[<span class="number">1</span>]]=<span class="string">&#x27;X&#x27;</span>;g[j[<span class="number">0</span>]][j[<span class="number">1</span>]]=<span class="string">&#x27;X&#x27;</span>;</span><br><span class="line">            <span class="type">int</span> op=<span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> x=<span class="number">1</span>;x&lt;=<span class="number">3</span>;x++)&#123;  </span><br><span class="line">                <span class="type">int</span> num1=<span class="built_in">check1</span>(g[x][<span class="number">1</span>])+<span class="built_in">check1</span>(g[x][<span class="number">2</span>])+<span class="built_in">check1</span>(g[x][<span class="number">3</span>]);</span><br><span class="line">                <span class="keyword">if</span>(num1==<span class="number">3</span>) op++;</span><br><span class="line">                <span class="type">int</span> num2=<span class="built_in">check1</span>(g[<span class="number">1</span>][x])+<span class="built_in">check1</span>(g[<span class="number">2</span>][x])+<span class="built_in">check1</span>(g[<span class="number">3</span>][x]);</span><br><span class="line">                <span class="keyword">if</span>(num2==<span class="number">3</span>) op++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="type">int</span> num11=<span class="built_in">check1</span>(g[<span class="number">1</span>][<span class="number">1</span>])+<span class="built_in">check1</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check1</span>(g[<span class="number">3</span>][<span class="number">3</span>]);</span><br><span class="line">            <span class="keyword">if</span>(num11==<span class="number">3</span>) op++;</span><br><span class="line">            <span class="type">int</span> num22=<span class="built_in">check1</span>(g[<span class="number">1</span>][<span class="number">3</span>])+<span class="built_in">check1</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check1</span>(g[<span class="number">3</span>][<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">if</span>(num22==<span class="number">3</span>) op++;</span><br><span class="line">            <span class="keyword">if</span>(op&gt;=<span class="number">2</span>) ok=<span class="number">1</span>;</span><br><span class="line">            g[i[<span class="number">0</span>]][i[<span class="number">1</span>]]=<span class="string">&#x27;G&#x27;</span>;g[j[<span class="number">0</span>]][j[<span class="number">1</span>]]=<span class="string">&#x27;G&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;(ok?<span class="string">&quot;Yes\n&quot;</span>:<span class="string">&quot;No\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="I"><a href="#I" class="headerlink" title="I"></a>I</h2><p>想复杂了，最后结论就是除非n为0，通过若干次两种操作组合可以操作出来任何数</p>
+<p>应该是可以证出来的，这里放个伪证明</p>
+<p>给定一个目标m&gt;&#x3D;1，我们只需要使得n最终的值在$[m^2,(m+1)^{2})$之间即可通过开方得到m，这中间有2m+1个数字，在m&lt;&#x3D;1e9时，任何2m+1个连续数字之间一定存在2的幂次</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,m,ok=<span class="number">0</span>;cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">if</span>(m==<span class="number">0</span>||n==<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(n==m)&#123;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Yes\n&quot;</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;No\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;(<span class="string">&quot;Yes\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="J"><a href="#J" class="headerlink" title="J"></a>J</h2><p>没啥说的，模拟</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">     string s;cin&gt;&gt;s;</span><br><span class="line">     <span class="type">int</span> v=<span class="number">0</span>,ans=<span class="number">0</span>;</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">auto</span> i:s)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i==<span class="string">&#x27;0&#x27;</span>)&#123;</span><br><span class="line">            v+=<span class="number">10</span>;</span><br><span class="line">            ans+=v;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(i==<span class="string">&#x27;1&#x27;</span>)&#123;</span><br><span class="line">            v-=<span class="number">5</span>;v=<span class="built_in">max</span>(v,<span class="number">0LL</span>);</span><br><span class="line">            ans+=v;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            ans+=<span class="built_in">max</span>(v<span class="number">-10</span>,<span class="number">0LL</span>);</span><br><span class="line">        &#125;</span><br><span class="line">     &#125;        </span><br><span class="line">     cout&lt;&lt;ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="L"><a href="#L" class="headerlink" title="L"></a>L</h2><p>构造题，可以很贪心的想到答案除了n&#x3D;&#x3D;3之外就是n&#x2F;3</p>
+<p>想到互质，联想两个连续的数一定互质，自然的想到构造多组连续的三元组，即</p>
+<p>1 2 3</p>
+<p>4 5 6</p>
+<p>7 8 9</p>
+<p>10 11 12</p>
+<p>可以观察到有的符合题意，有的不符合（每个三元组是三对质数），要想方法缩减质数的对数</p>
+<p>可以发现每两个数就会出现一个偶数，每三个数就会出现一个整除3的数，无论是两个偶数&#x2F;两个是3的倍数的数都会使得质数的对数-1，初步构造方法如下</p>
+<p>x        x+1          x+1+2</p>
+<p>x+2    x+2+2     x+2+2+1</p>
+<p>即1 2 4</p>
+<p>​    3 5 6</p>
+<p>这样每行都能出现两个偶数&#x2F;两个3的倍数，缺点就是当n%3&#x3D;&#x3D;0且为奇数的时候，右下角的数&#x3D;&#x3D;n+1，即</p>
+<p>1 2 4</p>
+<p>3 5 6</p>
+<p>7 8 10</p>
+<p>考虑将10调整为9的方法即可，swap（6，10）可以轻松的满足条件，构造完成</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">3</span>)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="number">0</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;n/<span class="number">3</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span>((n/<span class="number">3</span>)*<span class="number">3</span>==n)&#123;</span><br><span class="line">        vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;<span class="built_in">a</span>(n<span class="number">+1</span>,<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(<span class="number">4</span>));</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n/<span class="number">3</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i&amp;<span class="number">1</span>)&#123;</span><br><span class="line">                a[i][<span class="number">1</span>]=(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+1</span>;a[i][<span class="number">2</span>]=(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+2</span>;a[i][<span class="number">3</span>]=(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+4</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                a[i][<span class="number">1</span>]=(i<span class="number">-1</span>)*<span class="number">3</span>;a[i][<span class="number">2</span>]=(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+2</span>;a[i][<span class="number">3</span>]=(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+3</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        a[n/<span class="number">3</span>][<span class="number">3</span>]=n;</span><br><span class="line">        <span class="keyword">if</span>(n&amp;<span class="number">1</span>) <span class="built_in">swap</span>(a[n/<span class="number">3</span>][<span class="number">3</span>],a[n/<span class="number">3</span><span class="number">-1</span>][<span class="number">3</span>]);</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n/<span class="number">3</span>;i++)&#123;</span><br><span class="line">            cout&lt;&lt;a[i][<span class="number">1</span>]&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;a[i][<span class="number">2</span>]&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;a[i][<span class="number">3</span>]&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n/<span class="number">3</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i&amp;<span class="number">1</span>) cout&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+1</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+2</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+4</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">            <span class="keyword">else</span> cout&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+2</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+3</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2025/02/04/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/%E7%89%9B%E5%AE%A2%E5%91%A8%E8%B5%9BRound%2079(A-F)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Waiting You">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chonu">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/02/04/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/%E7%89%9B%E5%AE%A2%E5%91%A8%E8%B5%9BRound%2079(A-F)/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2025-02-04 01:45:31" itemprop="dateCreated datePublished" datetime="2025-02-04T01:45:31+08:00">2025-02-04</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2025/02/04/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/%E7%89%9B%E5%AE%A2%E5%91%A8%E8%B5%9BRound%2079(A-F)/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2025/02/04/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/%E7%89%9B%E5%AE%A2%E5%91%A8%E8%B5%9BRound%2079(A-F)/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="牛客周赛Round-79-A-F"><a href="#牛客周赛Round-79-A-F" class="headerlink" title="牛客周赛Round 79(A-F)"></a>牛客周赛Round 79(A-F)</h1><h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>除1外的n*2必不为质数</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">     cout&lt;&lt;(n==<span class="number">1</span>?<span class="number">-1</span>:n*<span class="number">2</span>);        </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="B"><a href="#B" class="headerlink" title="B"></a>B</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">     <span class="type">int</span> mx=n/<span class="number">2</span>,mn=(n<span class="number">+1</span>)/<span class="number">3</span>;</span><br><span class="line">     cout&lt;&lt;mn&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;mx;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">1</span>)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">2</span>)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">pre</span>(<span class="number">100000</span>);</span><br><span class="line">    pre[<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">3</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="type">int</span> cnt=<span class="built_in">power</span>(<span class="number">2</span>,i<span class="number">-1</span>,mod);</span><br><span class="line">        pre[i]=(pre[i<span class="number">-1</span>]+cnt+(cnt*<span class="built_in">power</span>(<span class="number">2</span>,mod<span class="number">-2</span>,mod))%mod)%mod;</span><br><span class="line">    &#125;             </span><br><span class="line">    cout&lt;&lt;pre[n];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2025/02/03/XCPC/codeforces/Codeforces%20Round%201002%20(Div.%202%EF%BC%8CA-C)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Waiting You">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chonu">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/02/03/XCPC/codeforces/Codeforces%20Round%201002%20(Div.%202%EF%BC%8CA-C)/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2025-02-03 01:41:53" itemprop="dateCreated datePublished" datetime="2025-02-03T01:41:53+08:00">2025-02-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2025-02-04 01:45:16" itemprop="dateModified" datetime="2025-02-04T01:45:16+08:00">2025-02-04</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2025/02/03/XCPC/codeforces/Codeforces%20Round%201002%20(Div.%202%EF%BC%8CA-C)/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2025/02/03/XCPC/codeforces/Codeforces%20Round%201002%20(Div.%202%EF%BC%8CA-C)/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Codeforces-Round-1002-Div-2，A-C"><a href="#Codeforces-Round-1002-Div-2，A-C" class="headerlink" title="Codeforces Round 1002 (Div. 2，A-C)"></a>Codeforces Round 1002 (Div. 2，A-C)</h1><p>想了一下，我觉得个人赛的一个基本流程大致是这样的</p>
+<ol>
+<li>认真的读一遍题，如果有，<strong>一定</strong>要看样例的解释，最后模拟样例</li>
+<li>从问题的性质出发，包括但不限于复杂度，题目与数据的限制，<strong>重新读题</strong>，将问题转化为子问题。如果一个hint都没有，建议重复步骤1，如果卡这超过10分钟，建议切题</li>
+<li>给出相应的解决方法，<strong>一定要思考可做性</strong>，可以参考过题人数与速度，同时思考一下代码的实现难易程度，在这里卡超过10分钟，也建议重新读题&#x2F;切题</li>
+</ol>
+<h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>GuessForces</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n),<span class="built_in">b</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) cin&gt;&gt;a[i];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) cin&gt;&gt;b[i];</span><br><span class="line">    <span class="built_in">sort</span>(a.<span class="built_in">begin</span>(),a.<span class="built_in">end</span>());</span><br><span class="line">    <span class="built_in">sort</span>(b.<span class="built_in">begin</span>(),b.<span class="built_in">end</span>());             </span><br><span class="line">    set&lt;<span class="type">int</span>&gt;st;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;v1,v2;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!st.<span class="built_in">count</span>(a[i]+b[i])) st.<span class="built_in">insert</span>(a[i]+b[i]);</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            v<span class="number">1.</span><span class="built_in">push_back</span>(a[i]);</span><br><span class="line">            v<span class="number">2.</span><span class="built_in">push_back</span>(b[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">sort</span>(v<span class="number">1.</span><span class="built_in">begin</span>(),v<span class="number">1.</span><span class="built_in">end</span>());</span><br><span class="line">    <span class="built_in">sort</span>(v<span class="number">2.</span><span class="built_in">begin</span>(),v<span class="number">2.</span><span class="built_in">end</span>(),<span class="built_in">greater</span>&lt;<span class="type">int</span>&gt;());</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;v<span class="number">1.</span><span class="built_in">size</span>();i++)&#123;</span><br><span class="line">        st.<span class="built_in">insert</span>(v1[i]+v2[i]);    </span><br><span class="line">    &#125;   </span><br><span class="line">    cout&lt;&lt;(st.<span class="built_in">size</span>()&gt;=<span class="number">3</span>?<span class="string">&quot;YES\n&quot;</span>:<span class="string">&quot;NO\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="B"><a href="#B" class="headerlink" title="B"></a>B</h1><p>贪心的想，越长的串出现非i数一定越多</p>
+<p>如果恰好填满(即k&#x3D;&#x3D;n),只能按部就班的模拟</p>
+<p>否则我们使得前2个子数组尽可能长(即让后k-2个子数组每个只包含一个数字)，遍历前[2,n-(k-2)]的数组，容易发现一旦a[i]!&#x3D;1，我们就将其作为第二段子数组的起点，此时答案为1</p>
+<p>否则只能是该段数组都只包含1，此时将a[1]作为第一段子数组，第二段子数组将包含&gt;1个数的1(因为此时n&gt;k)，此时答案为2</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,k,cnt=<span class="number">1</span>;cin&gt;&gt;n&gt;&gt;k;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n<span class="number">+1</span>),st;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(k==n)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i%<span class="number">2</span>==<span class="number">0</span>) st.<span class="built_in">push_back</span>(a[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        st.<span class="built_in">push_back</span>(<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> i:st)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i!=cnt)&#123;</span><br><span class="line">                cout&lt;&lt;cnt&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            cnt++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=n-(k<span class="number">-2</span>);i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]!=<span class="number">1</span>)&#123;</span><br><span class="line">            cout&lt;&lt;<span class="number">1</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;<span class="number">2</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://iokanux.com/2025/01/23/XCPC/codeforces/Codeforces%20Round%201000%20(Div2,A-C)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -210,7 +510,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2025/01/23/XCPC/codeforces/Codeforces%20Round%201000%20(Div2,A-C)/" class="post-title-link" itemprop="url">Codeforces Round 1000 (Div2,A-C)</a>
+            <a href="/2025/01/23/XCPC/codeforces/Codeforces%20Round%201000%20(Div2,A-C)/" class="post-title-link" itemprop="url">Codeforces Round 1000 (Div2,A-D)</a>
         </h2>
 
         <div class="post-meta">
@@ -219,10 +519,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2025-01-23 22:53:25 / Modified: 00:37:55" itemprop="dateCreated datePublished" datetime="2025-01-23T22:53:25+08:00">2025-01-23</time>
+              <time title="Created: 2025-01-23 22:53:25" itemprop="dateCreated datePublished" datetime="2025-01-23T22:53:25+08:00">2025-01-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2025-01-29 16:47:56" itemprop="dateModified" datetime="2025-01-29T16:47:56+08:00">2025-01-29</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -262,7 +568,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>D题明天补一下</p>
+          <p>E题明天补一下</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2025/01/23/XCPC/codeforces/Codeforces%20Round%201000%20(Div2,A-C)/#more" rel="contents">
@@ -437,6 +743,88 @@
             </div>
           <!--/noindex-->
         
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/11/15/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%AD%97%E7%AC%A6%E4%B8%B2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Waiting You">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chonu">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/15/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-11-15 14:03:16 / Modified: 15:00:03" itemprop="dateCreated datePublished" datetime="2024-11-15T14:03:16+08:00">2024-11-15</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/11/15/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%AD%97%E7%AC%A6%E4%B8%B2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/11/15/XCPC/XCPC%E6%A8%A1%E6%9D%BF/XCPC/XCPC%E5%AD%97%E7%AC%A6%E4%B8%B2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <hr>
+<hr>
+<h1 id="Manacher"><a href="#Manacher" class="headerlink" title="Manacher"></a>Manacher</h1><p>能在O(N)的时间内求出以每个位置为回文中心的回文半径</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">manacher</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">    string t = <span class="string">&quot;#&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> c : s) &#123;</span><br><span class="line">        t += c;</span><br><span class="line">        t += <span class="string">&#x27;#&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> n = t.<span class="built_in">size</span>();</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">r</span><span class="params">(n)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="number">2</span> * j - i &gt;= <span class="number">0</span> &amp;&amp; j + r[j] &gt; i) &#123;</span><br><span class="line">            r[i] = <span class="built_in">min</span>(r[<span class="number">2</span> * j - i], j + r[j] - i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (i - r[i] &gt;= <span class="number">0</span> &amp;&amp; i + r[i] &lt; n &amp;&amp; t[i - r[i]] == t[i + r[i]]) &#123;</span><br><span class="line">            r[i] += <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (i + r[i] &gt; j + r[j]) &#123;</span><br><span class="line">            j = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> r;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    string s;cin&gt;&gt;s;</span><br><span class="line">    <span class="keyword">auto</span> r=<span class="built_in">manacher</span>(s);</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; <span class="number">2</span> * s.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">        ans = <span class="built_in">max</span>(ans, r[i] - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="KMP"><a href="#KMP" class="headerlink" title="KMP"></a>KMP</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">kmp</span><span class="params">(std::string s)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n = s.<span class="built_in">size</span>();</span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">f</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>, j = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">while</span> (j &amp;&amp; s[i] != s[j]) &#123;</span><br><span class="line">            j = f[j];</span><br><span class="line">        &#125;</span><br><span class="line">        j += (s[i] == s[j]);</span><br><span class="line">        f[i + <span class="number">1</span>] = j;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> f;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Z函数-扩展kmp-exkmp"><a href="#Z函数-扩展kmp-exkmp" class="headerlink" title="Z函数(扩展kmp&#x2F;exkmp)"></a>Z函数(扩展kmp&#x2F;exkmp)</h1><p>能在O(n)的时间范围里找到给定字符串s，对于每个位置i，s整个字符串和$(s[i]-s[n-1])(等价于s.substr(i))$的LCP(最长公共前缀)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">Z</span><span class="params">(std::string s)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n = s.<span class="built_in">size</span>();</span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">z</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">    z[<span class="number">0</span>] = n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>, j = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">        z[i] = std::<span class="built_in">max</span>(<span class="number">0</span>, std::<span class="built_in">min</span>(j + z[j] - i, z[i - j]));</span><br><span class="line">        <span class="keyword">while</span> (i + z[i] &lt; n &amp;&amp; s[z[i]] == s[i + z[i]]) &#123;</span><br><span class="line">            z[i]++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (i + z[i] &gt; j + z[j]) &#123;</span><br><span class="line">            j = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
 
@@ -740,424 +1128,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/10/21/XCPC/codeforces/Codeforces%20Round%20981%20(Div.%203)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wodetouxiang.png">
-      <meta itemprop="name" content="iokanux">
-      <meta itemprop="description" content="Waiting You">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chonu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/10/21/XCPC/codeforces/Codeforces%20Round%20981%20(Div.%203)/" class="post-title-link" itemprop="url">Codeforces Round 981 (Div3,A-F)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-10-21 15:40:25" itemprop="dateCreated datePublished" datetime="2024-10-21T15:40:25+08:00">2024-10-21</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-10-26 01:23:37" itemprop="dateModified" datetime="2024-10-26T01:23:37+08:00">2024-10-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/Codeforces/" itemprop="url" rel="index"><span itemprop="name">Codeforces</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/10/21/XCPC/codeforces/Codeforces%20Round%20981%20(Div.%203)/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/10/21/XCPC/codeforces/Codeforces%20Round%20981%20(Div.%203)/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <span id="more"></span>
-
-<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/A">A - Sakurako and Kosuke</a></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    <span class="type">int</span> m=<span class="number">1</span>,cnt=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i&amp;<span class="number">1</span>)&#123;</span><br><span class="line">            cnt-=(<span class="number">2</span>*i<span class="number">-1</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            cnt+=(<span class="number">2</span>*i<span class="number">-1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">abs</span>(cnt)&lt;=n)&#123;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            m=i;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;            </span><br><span class="line">    cout&lt;&lt;(m&amp;<span class="number">1</span>?<span class="string">&quot;Kosuke&quot;</span>:<span class="string">&quot;Sakurako&quot;</span>)&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/B"> B - Sakurako and Water</a></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;<span class="built_in">g</span>(n<span class="number">+1</span>,<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(n<span class="number">+1</span>));</span><br><span class="line">    map&lt;<span class="type">int</span>,vector&lt;<span class="type">int</span>&gt;&gt;mp;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            cin&gt;&gt;g[i][j];</span><br><span class="line">            <span class="keyword">if</span>(g[i][j]&lt;<span class="number">0</span>)&#123;</span><br><span class="line">                mp[i-j].<span class="built_in">push_back</span>(<span class="built_in">abs</span>(g[i][j]));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;    </span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> &amp;[x,y]:mp)&#123;</span><br><span class="line">        <span class="built_in">sort</span>(y.<span class="built_in">begin</span>(),y.<span class="built_in">end</span>(),<span class="built_in">greater</span>&lt;<span class="type">int</span>&gt;());</span><br><span class="line">        ans+=y[<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/C">C - Sakurako’s Field Trip</a></p>
-<p>C这个题有一点说法，其实想明白什么时候换就可以</p>
-<p>从左到n&#x2F;2的位置每次考虑是否交换当前位置，当i这个位置与i-1的数相同的时候或者n-i+1与其下一个数（就是当前数与其遍历过的上一个数）相同的时候选择交换，可以证明这样操作对答案的增益一定是非负的</p>
-<p>证明如下</p>
-<ol>
-<li><p>如果a[i]&#x3D;&#x3D;a[n-i+1]，操作无影响</p>
-</li>
-<li><p>a[i]!&#x3D;a[n-i+1]，</p>
-<p>设交换之前点i对答案的增益为 ans&#x3D;(a[i]&#x3D;&#x3D;a[i-1]+a[i]&#x3D;&#x3D;a[i+1]+a[n-i+1]&#x3D;&#x3D;a[n-i]+a[n-i+1]&#x3D;&#x3D;a[n-i+2])</p>
-<p>交换之后点i对答案的增益为 ans1&#x3D;(a[n-i+1]&#x3D;&#x3D;a[i-1]+a[n-i+1]&#x3D;&#x3D;a[i+1]+a[i]&#x3D;&#x3D;a[n-i]+a[i]&#x3D;&#x3D;a[n-i+2])</p>
-<p>最坏情况就是</p>
-<p>a[i]&#x3D;&#x3D;a[i-1]&amp;&amp;a[i]!&#x3D;a[i+1]&amp;&amp;a[n-i+1]!&#x3D;a[n-i]&amp;&amp;a[n-i+1]!&#x3D;a[n-i+2]</p>
-<p>a[n-i+1]&#x3D;&#x3D;a[i+1]&amp;&amp;a[i]&#x3D;&#x3D;a[n-i]&amp;&amp;a[i]&#x3D;&#x3D;a[n-i+2]</p>
-<p>这样的话，交换之后答案多2，但是这种情况下在下一次交换过程中会被重新满足条件执行交换</p>
-</li>
-</ol>
-<p>综上，一直执行交换，最后求答案即可</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n<span class="number">+10</span>,<span class="number">0</span>),<span class="built_in">cnt</span>(n<span class="number">+1</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) cin&gt;&gt;a[i];</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=(n<span class="number">+1</span>)/<span class="number">2</span>;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]==a[i<span class="number">-1</span>]||a[n-i<span class="number">+1</span>]==a[n-i<span class="number">+2</span>])&#123;</span><br><span class="line">            <span class="built_in">swap</span>(a[i],a[n-i<span class="number">+1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n<span class="number">-1</span>;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]==a[i<span class="number">+1</span>]) ans++;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/D">D - Kousuke’s Assignment</a></p>
-<p>没啥说的，遇到0就断开一定是最优的</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n<span class="number">+1</span>),<span class="built_in">pre</span>(n<span class="number">+1</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">        pre[i]=pre[i<span class="number">-1</span>]+a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>,lst=<span class="number">0</span>;</span><br><span class="line">    map&lt;<span class="type">int</span>,<span class="type">int</span>&gt;mp;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]==<span class="number">0</span>)&#123;</span><br><span class="line">            lst=i;ans++;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> d=pre[i]-pre[lst];</span><br><span class="line">        <span class="keyword">if</span>(d==<span class="number">0</span>)&#123; </span><br><span class="line">            <span class="keyword">if</span>(lst&lt;i)&#123;</span><br><span class="line">                ans++;</span><br><span class="line">                lst=<span class="built_in">max</span>(i,lst);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(mp.<span class="built_in">count</span>(d))&#123;</span><br><span class="line">            <span class="keyword">if</span>(lst&lt;mp[d])&#123;</span><br><span class="line">                 ans++;</span><br><span class="line">                lst=<span class="built_in">max</span>(i,lst);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        mp[d]=i;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/E">E - Sakurako, Kosuke, and the Permutation</a></p>
-<p>每次交换完之后就保证当前位置不再交换,这样顺序从1到n就是最小交换次数</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">     vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n<span class="number">+1</span>),<span class="built_in">pos</span>(n<span class="number">+1</span>);</span><br><span class="line">     <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">        pos[a[i]]=i;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">     <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">         <span class="keyword">if</span>(a[i]==i) <span class="keyword">continue</span>;</span><br><span class="line">         <span class="keyword">if</span>(pos[i]==a[i]&amp;&amp;a[a[i]]==i) <span class="keyword">continue</span>;</span><br><span class="line">         <span class="built_in">swap</span>(a[pos[i]],a[a[i]]);</span><br><span class="line">         <span class="built_in">swap</span>(pos[a[pos[i]]],pos[a[a[i]]]);</span><br><span class="line">         ans++;</span><br><span class="line">     &#125;</span><br><span class="line">     cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2033/problem/F">F - Kosuke’s Sloth</a></p>
-<p>递推数列具有模周期性，找到第一个循环节中的下标再乘n即可</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">int</span> n,k;cin&gt;&gt;n&gt;&gt;k;</span><br><span class="line">	f[<span class="number">1</span>]=f[<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">	<span class="type">int</span> pos=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(i&gt;=<span class="number">3</span>) f[i]=(f[i<span class="number">-1</span>]+f[i<span class="number">-2</span>])%k;</span><br><span class="line">		<span class="keyword">if</span>(f[i]%k==<span class="number">0</span>)&#123;</span><br><span class="line">			pos=i;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;(pos%mod)*(n%mod)%mod&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/10/21/XCPC/codeforces/Codeforces%20Round%20980%20(Div.%202)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wodetouxiang.png">
-      <meta itemprop="name" content="iokanux">
-      <meta itemprop="description" content="Waiting You">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chonu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/10/21/XCPC/codeforces/Codeforces%20Round%20980%20(Div.%202)/" class="post-title-link" itemprop="url">Codeforces Round 980 (Div2,A-D)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2024-10-21 15:40:25 / Modified: 16:12:26" itemprop="dateCreated datePublished" datetime="2024-10-21T15:40:25+08:00">2024-10-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/Codeforces/" itemprop="url" rel="index"><span itemprop="name">Codeforces</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/10/21/XCPC/codeforces/Codeforces%20Round%20980%20(Div.%202)/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/10/21/XCPC/codeforces/Codeforces%20Round%20980%20(Div.%202)/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <span id="more"></span>
-
-<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2024/problem/A">A - Profitable Interest Rate</a></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> a,b;cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    <span class="keyword">if</span>(a&gt;=b)&#123;</span><br><span class="line">        cout&lt;&lt;a&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="type">int</span> k=<span class="number">2</span>*a-b;</span><br><span class="line">        <span class="keyword">if</span>(k&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            cout&lt;&lt;k&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            cout&lt;&lt;<span class="number">0</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;            </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2024/problem/B">B - Buying Lemonade</a></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="type">int</span> n,k;cin&gt;&gt;n&gt;&gt;k;</span><br><span class="line">   vector&lt;<span class="type">int</span>&gt;<span class="built_in">a</span>(n);</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++) cin&gt;&gt;a[i];</span><br><span class="line">   <span class="built_in">sort</span>(a.<span class="built_in">begin</span>(),a.<span class="built_in">end</span>());</span><br><span class="line">   <span class="type">int</span> sum=<span class="number">0</span>,ans=<span class="number">0</span>,mn=<span class="number">0</span>;</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">      a[i]-=mn;</span><br><span class="line">      <span class="keyword">if</span>(sum+a[i]*(n-i)&lt;k)&#123;</span><br><span class="line">         sum+=a[i]*(n-i);</span><br><span class="line">         mn+=a[i];ans+=a[i]*(n-i);</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">         ans+=k-sum;</span><br><span class="line">         <span class="keyword">break</span>;</span><br><span class="line">      &#125;  </span><br><span class="line">      ans++; </span><br><span class="line">   &#125;     </span><br><span class="line">   cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;       </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2024/problem/C">C - Concatenation of Arrays</a></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    vector&lt;array&lt;<span class="type">int</span>,3&gt;&gt;<span class="built_in">a</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;a[i][<span class="number">0</span>]&gt;&gt;a[i][<span class="number">1</span>];</span><br><span class="line">        a[i][<span class="number">2</span>]=a[i][<span class="number">0</span>]+a[i][<span class="number">1</span>];</span><br><span class="line">    &#125;     </span><br><span class="line">    <span class="built_in">sort</span>(a.<span class="built_in">begin</span>(),a.<span class="built_in">end</span>(),[&amp;](<span class="keyword">auto</span> l,<span class="keyword">auto</span> r)&#123;</span><br><span class="line">        <span class="keyword">if</span>(l[<span class="number">2</span>]!=r[<span class="number">2</span>])<span class="keyword">return</span> l[<span class="number">2</span>]&lt;r[<span class="number">2</span>]; </span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="built_in">min</span>(l[<span class="number">0</span>],l[<span class="number">1</span>])&lt;<span class="built_in">min</span>(r[<span class="number">0</span>],r[<span class="number">1</span>]);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        cout&lt;&lt;a[i][<span class="number">0</span>]&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;a[i][<span class="number">1</span>]&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2024/problem/D">D - Skipping</a></p>
-<p>只有答题才能得分，所以跳题相当于花费a[i]从位置i转移到b[i]</p>
-<p>答题就是花费0从i转移到i-1</p>
-<p>最终答案就是所有能遍历到的位置上的a[i]-cost[i]</p>
-<p>b[i]小于等于i时选择跳过是不明智的，因为此时在到达b[i]的过程中通过答题到b[i]能获得的分数一定更大</p>
-<p>i 到 j 有两种方法，第一种是 j&#x3D;b[i]，直接从 i 跳到 j ；第二种是 i&lt;j&lt;b[i] ，从 i 跳到 b[i] 再向左答题到 j，两种方法的花费都是a[i]，</p>
-<p>所以我们遍历所有位置，每次取能到当前位置且花费最小，转移到当前位置求每个能遍历到的位置的最小花费</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">   vector&lt;pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;&gt;<span class="built_in">a</span>(n<span class="number">+1</span>);</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) cin&gt;&gt;a[i].first;</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) cin&gt;&gt;a[i].second;</span><br><span class="line">   priority_queue&lt;pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;,vector&lt;pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;&gt;,greater&lt;pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;&gt;&gt;pq;</span><br><span class="line">   pq.<span class="built_in">push</span>(&#123;a[<span class="number">1</span>].first,a[<span class="number">1</span>].second&#125;);</span><br><span class="line">   vector&lt;<span class="type">int</span>&gt;<span class="built_in">dp</span>(n<span class="number">+1</span>,<span class="number">1e18</span>);</span><br><span class="line">   dp[<span class="number">1</span>]=<span class="number">0</span>;</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">      <span class="keyword">while</span>(pq.<span class="built_in">size</span>()&amp;&amp;pq.<span class="built_in">top</span>().second&lt;i)&#123;</span><br><span class="line">         pq.<span class="built_in">pop</span>();</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span>(pq.<span class="built_in">empty</span>())&#123;</span><br><span class="line">         <span class="keyword">break</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      dp[i]=pq.<span class="built_in">top</span>().first;   </span><br><span class="line">      <span class="keyword">if</span>(a[i].second&gt;i)&#123;</span><br><span class="line">         pq.<span class="built_in">push</span>(&#123;dp[i]+a[i].first,a[i].second&#125;);</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;  </span><br><span class="line">   <span class="type">int</span> sum=<span class="number">0</span>,ans=<span class="number">0</span>;          </span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">      sum+=a[i].first;</span><br><span class="line">      ans=<span class="built_in">max</span>(ans,sum-dp[i]);</span><br><span class="line">   &#125;</span><br><span class="line">   cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/10/21/XCPC/codeforces/Educational%20Codeforces%20Round%20171%20(Rated%20for%20Div.%202)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wodetouxiang.png">
-      <meta itemprop="name" content="iokanux">
-      <meta itemprop="description" content="Waiting You">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chonu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/10/21/XCPC/codeforces/Educational%20Codeforces%20Round%20171%20(Rated%20for%20Div.%202)/" class="post-title-link" itemprop="url">Educational Codeforces Round 171 (Rated for Div. 2,A-D)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-10-21 15:40:25" itemprop="dateCreated datePublished" datetime="2024-10-21T15:40:25+08:00">2024-10-21</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-10-31 21:38:19" itemprop="dateModified" datetime="2024-10-31T21:38:19+08:00">2024-10-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/Codeforces/" itemprop="url" rel="index"><span itemprop="name">Codeforces</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/10/21/XCPC/codeforces/Educational%20Codeforces%20Round%20171%20(Rated%20for%20Div.%202)/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/10/21/XCPC/codeforces/Educational%20Codeforces%20Round%20171%20(Rated%20for%20Div.%202)/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <span id="more"></span>
-
-<p><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2026/problem/A">A - Perpendicular Segments</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2024/10/15/XCPC/codeforces/Educational%20Codeforces%20Round%20170%20(Rated%20for%20Div.%202)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wodetouxiang.png">
-      <meta itemprop="name" content="iokanux">
-      <meta itemprop="description" content="Waiting You">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chonu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/10/15/XCPC/codeforces/Educational%20Codeforces%20Round%20170%20(Rated%20for%20Div.%202)/" class="post-title-link" itemprop="url">Educational Codeforces Round 170 (Rated for Div.2)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2024-10-15 14:53:25 / Modified: 15:40:23" itemprop="dateCreated datePublished" datetime="2024-10-15T14:53:25+08:00">2024-10-15</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/" itemprop="url" rel="index"><span itemprop="name">XCPC</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/XCPC/Codeforces/" itemprop="url" rel="index"><span itemprop="name">Codeforces</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/10/15/XCPC/codeforces/Educational%20Codeforces%20Round%20170%20(Rated%20for%20Div.%202)/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/10/15/XCPC/codeforces/Educational%20Codeforces%20Round%20170%20(Rated%20for%20Div.%202)/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <span id="more"></span>
-
-<h1 id="D-Attribute-Checks"><a href="#D-Attribute-Checks" class="headerlink" title="D - Attribute Checks"></a><a target="_blank" rel="noopener" href="https://mirror.codeforces.com/contest/2025/problem/D">D - Attribute Checks</a></h1><p>$设&gt;0为s技能点,小于0为t技能点$</p>
-<p>$dp[i][j]$表示前i个位置加了j个s技能点,自然在前i个位置加了i*m-j个t技能点</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1228,14 +1198,14 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">

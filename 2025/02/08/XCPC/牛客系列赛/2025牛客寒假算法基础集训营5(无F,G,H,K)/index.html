@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32%C3%9732.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16%C3%9716.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="U1bNH9i41U8sJYAP_vcgEX07HMfBpH8OM1rXtmPEE94">
+  <meta name="msvalidate.01" content="434F263C0FF4FF1F3CEC227722243E0C">
+  <meta name="baidu-site-verification" content="codeva-GRS7kmilR1">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"iokanux.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+<script> 
+   (function(){
+          if(''){
+              if (prompt('请输入文章密码') !== ''){
+                  alert('密码错误！');
+                  history.back();
+              }
+          }
+      })();
+  </script>
+
+  <meta name="description" content="2025牛客寒假算法基础集训营5(无F,G,H,K)打的晕晕的 A减法时注意数据范围 12345678910111213void solve()&#123;     int n;cin&gt;&gt;n;     char c;cin&gt;&gt;c;     if(c&#x3D;&#x3D;&#x27;+&#x27;)&#123;        cout&lt;&lt;1&lt;&lt;&quot; &quot;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Chonu">
+<meta property="og:url" content="http://iokanux.com/2025/02/08/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/2025%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A55(%E6%97%A0F,G,H,K)/index.html">
+<meta property="og:site_name" content="Chonu">
+<meta property="og:description" content="2025牛客寒假算法基础集训营5(无F,G,H,K)打的晕晕的 A减法时注意数据范围 12345678910111213void solve()&#123;     int n;cin&gt;&gt;n;     char c;cin&gt;&gt;c;     if(c&#x3D;&#x3D;&#x27;+&#x27;)&#123;        cout&lt;&lt;1&lt;&lt;&quot; &quot;">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-02-08T12:58:57.420Z">
+<meta property="article:modified_time" content="2025-02-08T12:58:57.420Z">
+<meta property="article:author" content="iokanux">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://iokanux.com/2025/02/08/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/2025%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A55(%E6%97%A0F,G,H,K)/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title> | Chonu</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/rss2.xml" title="Chonu" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chonu</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://iokanux.com/2025/02/08/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/2025%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A55(%E6%97%A0F,G,H,K)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wodetouxiang.png">
+      <meta itemprop="name" content="iokanux">
+      <meta itemprop="description" content="Waiting You">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chonu">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2025-02-08 20:58:57" itemprop="dateCreated datePublished" datetime="2025-02-08T20:58:57+08:00">2025-02-08</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2025/02/08/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/2025%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A55(%E6%97%A0F,G,H,K)/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2025/02/08/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/2025%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A55(%E6%97%A0F,G,H,K)/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="2025牛客寒假算法基础集训营5-无F-G-H-K"><a href="#2025牛客寒假算法基础集训营5-无F-G-H-K" class="headerlink" title="2025牛客寒假算法基础集训营5(无F,G,H,K)"></a>2025牛客寒假算法基础集训营5(无F,G,H,K)</h1><p>打的晕晕的</p>
+<h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>减法时注意数据范围</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">     <span class="type">char</span> c;cin&gt;&gt;c;</span><br><span class="line">     <span class="keyword">if</span>(c==<span class="string">&#x27;+&#x27;</span>)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="number">1</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;n<span class="number">-1</span>;</span><br><span class="line">     &#125;        </span><br><span class="line">     <span class="keyword">if</span>(c==<span class="string">&#x27;*&#x27;</span>)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="number">1</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;n;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)&#123;</span><br><span class="line">        cout&lt;&lt;n*<span class="number">2</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;n;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="B"><a href="#B" class="headerlink" title="B"></a>B</h2><p>注意限制间隔</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="type">int</span> n,k,t;cin&gt;&gt;n&gt;&gt;t&gt;&gt;k;</span><br><span class="line">    cout&lt;&lt;<span class="built_in">min</span>(((n-k)/t),k<span class="number">+1</span>)&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><p>贪心，已经合法的位我们不对其进行二次操作，且每个非法位我们操作且<strong>仅执行一次</strong>操作，无论是对a执行还是对b执行</p>
+<p>注意到四种非法情况</p>
+<p>a&#x3D;0,b&#x3D;0,c&#x3D;1;</p>
+<p>a&#x3D;0,b&#x3D;1,c&#x3D;0;</p>
+<p>a&#x3D;1,b&#x3D;0,c&#x3D;0;</p>
+<p>a&#x3D;1,b&#x3D;1,c&#x3D;1;</p>
+<p>每两种情况都可以通过交换操作使得两个非法位合法，无非是交换a&#x2F;b的区别；</p>
+<p>所以思路就是，最大化两两配对四种非法位，自身不能和自身配对</p>
+<p>配对过程就是很典的思路：当最大值大于剩下的所有数，非配对数为最大值-其他所有数之和；否则非配对数为所有数字之和为偶数?0:1</p>
+<p>ans&#x3D;min(全用反置操作，配对数$\times$y+非配对数$\times$x)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="type">int</span> n,x,y,ans=<span class="number">0</span>;cin&gt;&gt;n&gt;&gt;x&gt;&gt;y;</span><br><span class="line">     string s1,s2,s3;cin&gt;&gt;s1&gt;&gt;s2&gt;&gt;s3;</span><br><span class="line">     <span class="type">int</span> pos=<span class="number">0</span>;</span><br><span class="line">     vector&lt;<span class="type">int</span>&gt;<span class="built_in">v</span>(<span class="number">4</span>);</span><br><span class="line">     <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>((s1[i]-<span class="string">&#x27;0&#x27;</span>)^(s2[i]-<span class="string">&#x27;0&#x27;</span>)!=(s3[i]-<span class="string">&#x27;0&#x27;</span>))&#123;</span><br><span class="line">            <span class="keyword">if</span>(s1[i]==<span class="string">&#x27;0&#x27;</span>&amp;&amp;s2[i]==<span class="string">&#x27;0&#x27;</span>) v[<span class="number">0</span>]++;</span><br><span class="line">            <span class="keyword">if</span>(s1[i]==<span class="string">&#x27;1&#x27;</span>&amp;&amp;s2[i]==<span class="string">&#x27;1&#x27;</span>) v[<span class="number">1</span>]++;</span><br><span class="line">            <span class="keyword">if</span>(s1[i]==<span class="string">&#x27;0&#x27;</span>&amp;&amp;s2[i]==<span class="string">&#x27;1&#x27;</span>) v[<span class="number">2</span>]++;</span><br><span class="line">            <span class="keyword">if</span>(s1[i]==<span class="string">&#x27;1&#x27;</span>&amp;&amp;s2[i]==<span class="string">&#x27;0&#x27;</span>) v[<span class="number">3</span>]++;</span><br><span class="line">            pos++;</span><br><span class="line">        &#125; </span><br><span class="line">     &#125;</span><br><span class="line">    <span class="built_in">sort</span>(v.<span class="built_in">begin</span>(),v.<span class="built_in">end</span>());</span><br><span class="line">    <span class="keyword">if</span>(v[<span class="number">3</span>]&gt;v[<span class="number">0</span>]+v[<span class="number">1</span>]+v[<span class="number">2</span>])&#123;</span><br><span class="line">      ans=(v[<span class="number">3</span>]-v[<span class="number">1</span>]-v[<span class="number">2</span>]-v[<span class="number">0</span>])*x+(v[<span class="number">1</span>]+v[<span class="number">2</span>]+v[<span class="number">0</span>])*y;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="type">int</span> sum=(v[<span class="number">0</span>]+v[<span class="number">1</span>]+v[<span class="number">2</span>]+v[<span class="number">3</span>]);</span><br><span class="line">      ans=(sum%<span class="number">2</span>)*x+(sum-(sum%<span class="number">2</span>))/<span class="number">2</span>*y;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;<span class="built_in">min</span>(ans,x*pos);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2><p>贪心的想，我们构造字符串一定是某段中为连续的0和连续的1，前面一段的字符串如果为11…00，那么下一段字符串就应该是从0开始，即0…01…1，两段拼接起来并删除重复串后为101，也就是说这样每一段最多只会贡献1</p>
+<p>考虑什么时候执行区间反置操作，当前一段的字符串为01时，若下一段全是1则该段对答案没有贡献，也就是说当该段全是0时，我们执行区间反置操作；同理，前一段是10时，下一段全是1，我们执行反置操作</p>
+<p>用前缀和维护，调和级数复杂度</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">     string s;cin&gt;&gt;s;</span><br><span class="line">     s=<span class="string">&quot; &quot;</span>+s;</span><br><span class="line">     <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">     vector&lt;<span class="type">int</span>&gt;<span class="built_in">pre</span>(n<span class="number">+1</span>,<span class="number">0</span>);</span><br><span class="line">     <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        pre[i]=pre[i<span class="number">-1</span>]+(s[i]==<span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">     &#125;        </span><br><span class="line">     <span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">1</span>;k&lt;=n;k++)&#123;</span><br><span class="line">        <span class="type">int</span> tem=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=k;j&lt;=n;j+=k)&#123;</span><br><span class="line">            <span class="type">int</span> cnt0=pre[j]-pre[j-k],cnt1=k-cnt0;</span><br><span class="line">            <span class="keyword">if</span>(cnt0!=<span class="number">0</span>&amp;&amp;cnt1!=<span class="number">0</span>) tem++;</span><br><span class="line">            <span class="keyword">if</span>(j+k&gt;n)&#123;</span><br><span class="line">                cnt0=pre[n]-pre[j],cnt1=n-j-cnt0;</span><br><span class="line">                <span class="keyword">if</span>(cnt0!=<span class="number">0</span>&amp;&amp;cnt1!=<span class="number">0</span>) tem++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ans^=(tem<span class="number">+1</span>);</span><br><span class="line">     &#125;</span><br><span class="line">     cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="E"><a href="#E" class="headerlink" title="E"></a>E</h2><p>可以想到胜利方式有两种，直接胜利和间接胜利</p>
+<p>直接胜利就是在下两步之后，横&#x2F;竖&#x2F;对角线直接连成三个</p>
+<p>间接胜利就是下两步之后，我们有两行&#x2F;两列&#x2F;一行一列&#x2F;一行一对角&#x2F;一列一对角连成两个且第三个空位没有O阻挡，这样的话无论炸鸡去阻挡哪个，小L都能取得胜利</p>
+<p>我检查间接胜利的方式就是遍历所有可能的组合判断是否符合</p>
+<p>复杂度最高为O(300T)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    vector&lt;vector&lt;<span class="type">char</span>&gt;&gt;<span class="built_in">g</span>(<span class="number">10</span>,<span class="built_in">vector</span>&lt;<span class="type">char</span>&gt;(<span class="number">10</span>));</span><br><span class="line">    vector&lt;array&lt;<span class="type">int</span>,2&gt;&gt;pos;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">3</span>;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=<span class="number">3</span>;j++)&#123;</span><br><span class="line">            cin&gt;&gt;g[i][j];</span><br><span class="line">            <span class="keyword">if</span>(g[i][j]==<span class="string">&#x27;G&#x27;</span>)&#123;</span><br><span class="line">                pos.<span class="built_in">push_back</span>(&#123;i,j&#125;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">auto</span> check1=[&amp;](<span class="type">char</span> c)&#123;</span><br><span class="line">        <span class="keyword">return</span> c==<span class="string">&#x27;G&#x27;</span>||c==<span class="string">&#x27;X&#x27;</span>;</span><br><span class="line">    &#125;;  </span><br><span class="line">    <span class="keyword">auto</span> check2=[&amp;](<span class="type">char</span> c)&#123;</span><br><span class="line">        <span class="keyword">return</span> c==<span class="string">&#x27;X&#x27;</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="type">int</span> ok=<span class="number">0</span>;             </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">3</span>;i++)&#123;</span><br><span class="line">        <span class="type">int</span> num1=<span class="built_in">check1</span>(g[i][<span class="number">1</span>])+<span class="built_in">check1</span>(g[i][<span class="number">2</span>])+<span class="built_in">check1</span>(g[i][<span class="number">3</span>]);</span><br><span class="line">        <span class="type">int</span> num11=<span class="built_in">check2</span>(g[i][<span class="number">1</span>])+<span class="built_in">check2</span>(g[i][<span class="number">2</span>])+<span class="built_in">check2</span>(g[i][<span class="number">3</span>]);</span><br><span class="line">        <span class="type">int</span> num2=<span class="built_in">check1</span>(g[<span class="number">1</span>][i])+<span class="built_in">check1</span>(g[<span class="number">2</span>][i])+<span class="built_in">check1</span>(g[<span class="number">3</span>][i]);</span><br><span class="line">        <span class="type">int</span> num22=<span class="built_in">check2</span>(g[<span class="number">1</span>][i])+<span class="built_in">check2</span>(g[<span class="number">2</span>][i])+<span class="built_in">check2</span>(g[<span class="number">3</span>][i]);</span><br><span class="line">        <span class="keyword">if</span>((num11&gt;=<span class="number">1</span>&amp;&amp;num1==<span class="number">3</span>)||(num22&gt;=<span class="number">1</span>&amp;&amp;num2==<span class="number">3</span>)) ok=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> num1=<span class="built_in">check1</span>(g[<span class="number">1</span>][<span class="number">1</span>])+<span class="built_in">check1</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check1</span>(g[<span class="number">3</span>][<span class="number">3</span>]);</span><br><span class="line">    <span class="type">int</span> num11=<span class="built_in">check2</span>(g[<span class="number">1</span>][<span class="number">1</span>])+<span class="built_in">check2</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check2</span>(g[<span class="number">3</span>][<span class="number">3</span>]);</span><br><span class="line">    <span class="type">int</span> num2=<span class="built_in">check1</span>(g[<span class="number">1</span>][<span class="number">3</span>])+<span class="built_in">check1</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check1</span>(g[<span class="number">3</span>][<span class="number">1</span>]);</span><br><span class="line">    <span class="type">int</span> num22=<span class="built_in">check2</span>(g[<span class="number">1</span>][<span class="number">3</span>])+<span class="built_in">check2</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check2</span>(g[<span class="number">3</span>][<span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">if</span>((num1==<span class="number">3</span>&amp;&amp;num11&gt;=<span class="number">1</span>)||(num2==<span class="number">3</span>&amp;&amp;num22&gt;=<span class="number">1</span>)) ok=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> i:pos)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> j:pos)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i[<span class="number">0</span>]==j[<span class="number">0</span>]&amp;&amp;i[<span class="number">1</span>]==j[<span class="number">1</span>]) <span class="keyword">continue</span>;</span><br><span class="line">            g[i[<span class="number">0</span>]][i[<span class="number">1</span>]]=<span class="string">&#x27;X&#x27;</span>;g[j[<span class="number">0</span>]][j[<span class="number">1</span>]]=<span class="string">&#x27;X&#x27;</span>;</span><br><span class="line">            <span class="type">int</span> op=<span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> x=<span class="number">1</span>;x&lt;=<span class="number">3</span>;x++)&#123;  </span><br><span class="line">                <span class="type">int</span> num1=<span class="built_in">check1</span>(g[x][<span class="number">1</span>])+<span class="built_in">check1</span>(g[x][<span class="number">2</span>])+<span class="built_in">check1</span>(g[x][<span class="number">3</span>]);</span><br><span class="line">                <span class="keyword">if</span>(num1==<span class="number">3</span>) op++;</span><br><span class="line">                <span class="type">int</span> num2=<span class="built_in">check1</span>(g[<span class="number">1</span>][x])+<span class="built_in">check1</span>(g[<span class="number">2</span>][x])+<span class="built_in">check1</span>(g[<span class="number">3</span>][x]);</span><br><span class="line">                <span class="keyword">if</span>(num2==<span class="number">3</span>) op++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="type">int</span> num11=<span class="built_in">check1</span>(g[<span class="number">1</span>][<span class="number">1</span>])+<span class="built_in">check1</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check1</span>(g[<span class="number">3</span>][<span class="number">3</span>]);</span><br><span class="line">            <span class="keyword">if</span>(num11==<span class="number">3</span>) op++;</span><br><span class="line">            <span class="type">int</span> num22=<span class="built_in">check1</span>(g[<span class="number">1</span>][<span class="number">3</span>])+<span class="built_in">check1</span>(g[<span class="number">2</span>][<span class="number">2</span>])+<span class="built_in">check1</span>(g[<span class="number">3</span>][<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">if</span>(num22==<span class="number">3</span>) op++;</span><br><span class="line">            <span class="keyword">if</span>(op&gt;=<span class="number">2</span>) ok=<span class="number">1</span>;</span><br><span class="line">            g[i[<span class="number">0</span>]][i[<span class="number">1</span>]]=<span class="string">&#x27;G&#x27;</span>;g[j[<span class="number">0</span>]][j[<span class="number">1</span>]]=<span class="string">&#x27;G&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;(ok?<span class="string">&quot;Yes\n&quot;</span>:<span class="string">&quot;No\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="I"><a href="#I" class="headerlink" title="I"></a>I</h2><p>想复杂了，最后结论就是除非n为0，通过若干次两种操作组合可以操作出来任何数</p>
+<p>应该是可以证出来的，这里放个伪证明</p>
+<p>给定一个目标m&gt;&#x3D;1，我们只需要使得n最终的值在$[m^2,(m+1)^{2})$之间即可通过开方得到m，这中间有2m+1个数字，在m&lt;&#x3D;1e9时，任何2m+1个连续数字之间一定存在2的幂次</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,m,ok=<span class="number">0</span>;cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">if</span>(m==<span class="number">0</span>||n==<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(n==m)&#123;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Yes\n&quot;</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;No\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;(<span class="string">&quot;Yes\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="J"><a href="#J" class="headerlink" title="J"></a>J</h2><p>没啥说的，模拟</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">     string s;cin&gt;&gt;s;</span><br><span class="line">     <span class="type">int</span> v=<span class="number">0</span>,ans=<span class="number">0</span>;</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">auto</span> i:s)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i==<span class="string">&#x27;0&#x27;</span>)&#123;</span><br><span class="line">            v+=<span class="number">10</span>;</span><br><span class="line">            ans+=v;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(i==<span class="string">&#x27;1&#x27;</span>)&#123;</span><br><span class="line">            v-=<span class="number">5</span>;v=<span class="built_in">max</span>(v,<span class="number">0LL</span>);</span><br><span class="line">            ans+=v;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            ans+=<span class="built_in">max</span>(v<span class="number">-10</span>,<span class="number">0LL</span>);</span><br><span class="line">        &#125;</span><br><span class="line">     &#125;        </span><br><span class="line">     cout&lt;&lt;ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="L"><a href="#L" class="headerlink" title="L"></a>L</h2><p>构造题，可以很贪心的想到答案除了n&#x3D;&#x3D;3之外就是n&#x2F;3</p>
+<p>想到互质，联想两个连续的数一定互质，自然的想到构造多组连续的三元组，即</p>
+<p>1 2 3</p>
+<p>4 5 6</p>
+<p>7 8 9</p>
+<p>10 11 12</p>
+<p>可以观察到有的符合题意，有的不符合（每个三元组是三对质数），要想方法缩减质数的对数</p>
+<p>可以发现每两个数就会出现一个偶数，每三个数就会出现一个整除3的数，无论是两个偶数&#x2F;两个是3的倍数的数都会使得质数的对数-1，初步构造方法如下</p>
+<p>x        x+1          x+1+2</p>
+<p>x+2    x+2+2     x+2+2+1</p>
+<p>即1 2 4</p>
+<p>​    3 5 6</p>
+<p>这样每行都能出现两个偶数&#x2F;两个3的倍数，缺点就是当n%3&#x3D;&#x3D;0且为奇数的时候，右下角的数&#x3D;&#x3D;n+1，即</p>
+<p>1 2 4</p>
+<p>3 5 6</p>
+<p>7 8 10</p>
+<p>考虑将10调整为9的方法即可，swap（6，10）可以轻松的满足条件，构造完成</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">3</span>)&#123;</span><br><span class="line">        cout&lt;&lt;<span class="number">0</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;n/<span class="number">3</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span>((n/<span class="number">3</span>)*<span class="number">3</span>==n)&#123;</span><br><span class="line">        vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;<span class="built_in">a</span>(n<span class="number">+1</span>,<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(<span class="number">4</span>));</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n/<span class="number">3</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i&amp;<span class="number">1</span>)&#123;</span><br><span class="line">                a[i][<span class="number">1</span>]=(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+1</span>;a[i][<span class="number">2</span>]=(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+2</span>;a[i][<span class="number">3</span>]=(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+4</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                a[i][<span class="number">1</span>]=(i<span class="number">-1</span>)*<span class="number">3</span>;a[i][<span class="number">2</span>]=(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+2</span>;a[i][<span class="number">3</span>]=(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+3</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        a[n/<span class="number">3</span>][<span class="number">3</span>]=n;</span><br><span class="line">        <span class="keyword">if</span>(n&amp;<span class="number">1</span>) <span class="built_in">swap</span>(a[n/<span class="number">3</span>][<span class="number">3</span>],a[n/<span class="number">3</span><span class="number">-1</span>][<span class="number">3</span>]);</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n/<span class="number">3</span>;i++)&#123;</span><br><span class="line">            cout&lt;&lt;a[i][<span class="number">1</span>]&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;a[i][<span class="number">2</span>]&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;a[i][<span class="number">3</span>]&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n/<span class="number">3</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i&amp;<span class="number">1</span>) cout&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+1</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+2</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+4</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">            <span class="keyword">else</span> cout&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+2</span>&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;(i<span class="number">-1</span>)*<span class="number">3</span><span class="number">+3</span>&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>iokanux
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="http://iokanux.com/2025/02/08/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/2025%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A55(%E6%97%A0F,G,H,K)/" title="">http://iokanux.com/2025/02/08/XCPC/牛客系列赛/2025牛客寒假算法基础集训营5(无F,G,H,K)/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat.jpg">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025/02/04/XCPC/%E7%89%9B%E5%AE%A2%E7%B3%BB%E5%88%97%E8%B5%9B/%E7%89%9B%E5%AE%A2%E5%91%A8%E8%B5%9BRound%2079(A-F)/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2025%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A55-%E6%97%A0F-G-H-K"><span class="nav-number">1.</span> <span class="nav-text">2025牛客寒假算法基础集训营5(无F,G,H,K)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#A"><span class="nav-number">1.1.</span> <span class="nav-text">A</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B"><span class="nav-number">1.2.</span> <span class="nav-text">B</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C"><span class="nav-number">1.3.</span> <span class="nav-text">C</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#D"><span class="nav-number">1.4.</span> <span class="nav-text">D</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#E"><span class="nav-number">1.5.</span> <span class="nav-text">E</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#I"><span class="nav-number">1.6.</span> <span class="nav-text">I</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#J"><span class="nav-number">1.7.</span> <span class="nav-text">J</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L"><span class="nav-number">1.8.</span> <span class="nav-text">L</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="iokanux"
+      src="/images/wodetouxiang.png">
+  <p class="site-author-name" itemprop="name">iokanux</p>
+  <div class="site-description" itemprop="description">Waiting You</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/iokanux" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iokanux" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/3111046963@qq.com" title="E-Mail → 3111046963@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/iokanux" title="zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;iokanux" rel="noopener" target="_blank"><i class="gratipay fa-fw"></i>zhihu</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.zhihu.com/people/iokanux" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;iokanux" rel="noopener" target="_blank">知乎</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2024 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">iokanux</span>
+</div>
+
+
+<!--
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div> -->
+
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">总访客数<span id="busuanzi_value_site_uv"></span>人</span>
+    <span class="post-meta-divider"></span>
+<!-- 不蒜子计数初始值纠正 -->
+<script>
+$(document).ready(function() {
+
+    var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+    var countOffset = 20000;  // 初始化首次数据
+
+    function fixCount() {            
+       if (document.getElementById("busuanzi_container_site_pv").style.display != "none")
+        {
+            $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + countOffset); 
+            clearInterval(int);
+        }                  
+        if ($("#busuanzi_container_site_pv").css("display") != "none")
+        {
+            $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + countOffset); // 加上初始数据 
+            clearInterval(int); // 停止检测
+        }  
+    }
+       	
+});
+</script> 
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'u7N0l1gvNPMnq99bBpqV2geY-gzGzoHsz',
+      appKey     : 'MMj1jYMwfho43FaVb4FU2mnc',
+      placeholder: "Welcome!",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
